@@ -1,0 +1,271 @@
+# AI company default model: version 1 configuration.
+#
+# Every number in this file is an expert placeholder, set so the pipeline
+# runs end to end. None of them is fitted or sourced yet. Each one should be
+# replaced, with its source and date, before results are used for anything.
+
+[model]
+# Horizon of the headline PD, in years. A 3-year PD is also reported.
+headline_horizon_years = 1
+# 3-year PD is derived from the 1-year PD with a constant hazard:
+# PD_3y = 1 - (1 - PD_1y)^3
+# Flag a company when scorecard and Merton log-odds differ by more than this.
+merton_gap_flag_logodds = 1.5
+# Risk-free rate used in the Merton equity valuation.
+risk_free_rate = 0.04
+
+[default_definition]
+# A default is the first of these events inside the horizon.
+events = ["missed_debt_payment", "bankruptcy_filing", "shutdown", "distressed_markdown"]
+# A distressed sale or a down round counts when equity is marked down by at
+# least this share from the last price investors paid.
+markdown_threshold = 0.90
+# Reference price: last funding round price, or last offering price for
+# public companies.
+reference_price = "last_round_or_offering"
+down_rounds_count = true
+
+# ---------------------------------------------------------------------------
+# Segments. prior_pd_1y is the segment's starting 1-year PD under the wide
+# default definition above (so it sits above a classic credit PD).
+# gamma_* is the segment's extra log-odds shift per unit of scenario
+# severity, for effects the company features don't capture (contagion,
+# sentiment). Set a gamma to 0 to rely on feature re-scoring alone.
+# ---------------------------------------------------------------------------
+
+[segments.closed_model]
+name = "Closed model providers"
+prior_pd_1y = 0.06
+gamma_compute_glut = 0.0
+gamma_demand_stall = 0.5
+gamma_funding_freeze = 0.8
+gamma_rates_up = 0.1
+
+[segments.open_weight_model]
+name = "Open-weight model providers"
+prior_pd_1y = 0.10
+gamma_compute_glut = 0.0
+gamma_demand_stall = 0.5
+gamma_funding_freeze = 0.9
+gamma_rates_up = 0.1
+
+[segments.app_maker]
+name = "AI app makers"
+prior_pd_1y = 0.12
+gamma_compute_glut = -0.1
+gamma_demand_stall = 0.6
+gamma_funding_freeze = 0.7
+gamma_rates_up = 0.1
+
+[segments.data_strong_moat]
+name = "Data providers, strong moat"
+prior_pd_1y = 0.04
+gamma_compute_glut = 0.0
+gamma_demand_stall = 0.4
+gamma_funding_freeze = 0.3
+gamma_rates_up = 0.1
+
+[segments.data_weak_moat]
+name = "Data providers, weak moat"
+prior_pd_1y = 0.09
+gamma_compute_glut = 0.0
+gamma_demand_stall = 0.5
+gamma_funding_freeze = 0.5
+gamma_rates_up = 0.1
+
+[segments.neocloud]
+name = "Neoclouds and data center operators"
+prior_pd_1y = 0.08
+gamma_compute_glut = 0.8
+gamma_demand_stall = 0.5
+gamma_funding_freeze = 0.5
+gamma_rates_up = 0.4
+
+[segments.power]
+name = "Power suppliers to data centers"
+prior_pd_1y = 0.03
+gamma_compute_glut = 0.2
+gamma_demand_stall = 0.3
+gamma_funding_freeze = 0.2
+gamma_rates_up = 0.4
+
+[segments.chip_designer]
+name = "Chip designers"
+prior_pd_1y = 0.03
+gamma_compute_glut = 0.4
+gamma_demand_stall = 0.4
+gamma_funding_freeze = 0.3
+gamma_rates_up = 0.1
+
+[segments.fab_equipment]
+name = "Fabs, wafers, equipment, memory"
+prior_pd_1y = 0.02
+gamma_compute_glut = 0.4
+gamma_demand_stall = 0.3
+gamma_funding_freeze = 0.1
+gamma_rates_up = 0.3
+
+[segments.networking]
+name = "Networking, optics, cooling"
+prior_pd_1y = 0.03
+gamma_compute_glut = 0.4
+gamma_demand_stall = 0.4
+gamma_funding_freeze = 0.2
+gamma_rates_up = 0.2
+
+[segments.infra_software]
+name = "AI infrastructure software"
+prior_pd_1y = 0.10
+gamma_compute_glut = 0.0
+gamma_demand_stall = 0.5
+gamma_funding_freeze = 0.7
+gamma_rates_up = 0.1
+
+[segments.robotics]
+name = "Robotics and embodied AI"
+prior_pd_1y = 0.12
+gamma_compute_glut = 0.0
+gamma_demand_stall = 0.4
+gamma_funding_freeze = 0.9
+gamma_rates_up = 0.2
+
+[segments.gpu_lessor]
+name = "GPU lessors and financiers"
+prior_pd_1y = 0.05
+gamma_compute_glut = 0.9
+gamma_demand_stall = 0.3
+gamma_funding_freeze = 0.4
+gamma_rates_up = 0.5
+
+# ---------------------------------------------------------------------------
+# Features. Each is scored 1 (safest) to 5 (riskiest), then enters the
+# scorecard as z = score - 3, times its weight (log-odds per score point).
+#
+# direction:
+#   "higher_safer": value >= bins[0] scores 1, >= bins[1] scores 2, ...
+#   "lower_safer":  value <= bins[0] scores 1, <= bins[1] scores 2, ...
+#   "score":        the metric is already a 1-5 judgment score
+# Compute sensitivity carries the largest weight, as requested.
+# ---------------------------------------------------------------------------
+
+[features.compute_sensitivity]
+metric = "compute_exposure"
+direction = "lower_safer"
+bins = [0.10, 0.25, 0.40, 0.60]
+weight = 0.40
+
+[features.runway]
+metric = "runway_months"
+direction = "higher_safer"
+bins = [36, 24, 12, 6]
+weight = 0.30
+
+[features.funding_dependence]
+metric = "funding_dependence"
+direction = "lower_safer"
+bins = [0.10, 0.30, 0.50, 0.75]
+weight = 0.30
+
+[features.revenue]
+metric = "revenue_score"
+direction = "score"
+weight = 0.25
+
+[features.gross_margin]
+metric = "gross_margin"
+direction = "higher_safer"
+bins = [0.70, 0.50, 0.30, 0.10]
+weight = 0.20
+
+[features.moat]
+metric = "moat_score"
+direction = "score"
+weight = 0.20
+
+[features.margin_path]
+metric = "margin_path_score"
+direction = "score"
+weight = 0.15
+
+[features.rate_sensitivity]
+metric = "rate_exposure"
+direction = "lower_safer"
+bins = [0.05, 0.15, 0.30, 0.50]
+weight = 0.15
+
+[features.customer_concentration]
+metric = "top5_customer_share"
+direction = "lower_safer"
+bins = [0.20, 0.40, 0.60, 0.80]
+weight = 0.15
+
+[features.leverage]
+metric = "debt_to_assets"
+direction = "lower_safer"
+bins = [0.10, 0.30, 0.50, 0.70]
+weight = 0.15
+
+[features.collateral]
+metric = "collateral_cover"
+direction = "higher_safer"
+bins = [2.0, 1.0, 0.5, 0.25]
+weight = 0.10
+
+[features.counterparty_quality]
+metric = "ig_customer_share"
+direction = "higher_safer"
+bins = [0.80, 0.60, 0.40, 0.20]
+weight = 0.10
+
+[features.circular_financing]
+metric = "circular_revenue_share"
+direction = "lower_safer"
+bins = [0.02, 0.10, 0.20, 0.35]
+weight = 0.10
+
+[features.labor_intensity]
+metric = "revenue_per_employee"
+direction = "higher_safer"
+bins = [1000000, 500000, 250000, 100000]
+weight = 0.05
+
+# ---------------------------------------------------------------------------
+# Scenarios. severity scales the segment gamma term. The other keys move the
+# company's raw inputs, which re-scores its features. Shock sizes are
+# parameters set from the analog episodes, not forecasts.
+# ---------------------------------------------------------------------------
+
+[scenarios.compute_glut]
+description = "GPU rental prices fall sharply and utilisation drops"
+severity = 1.0
+gpu_price_change = -0.40
+utilisation_change = -0.20
+
+[scenarios.demand_stall]
+description = "Enterprise AI spending flattens; model API revenue misses plans"
+severity = 1.0
+revenue_change = -0.20
+growth_change = -0.30
+
+[scenarios.funding_freeze]
+description = "Venture and private credit for AI dries up for 18 to 24 months"
+severity = 1.0
+equity_value_change = -0.50
+
+[scenarios.rates_up]
+description = "Borrowing costs rise and refinancing gets harder"
+severity = 1.0
+rate_change = 0.03
+
+[scenarios.combined]
+description = "All of the above, as the severe but plausible case"
+combine = ["compute_glut", "demand_stall", "funding_freeze", "rates_up"]
+
+# ---------------------------------------------------------------------------
+# Implied rating grades: upper bound of 1-year PD for each grade.
+# Placeholder values. Replace with a published agency default study.
+# ---------------------------------------------------------------------------
+
+[calibration]
+grades = ["AAA", "AA", "A", "BBB", "BB", "B", "CCC/C"]
+upper_pd_1y = [0.0002, 0.0005, 0.0010, 0.0030, 0.0120, 0.0500, 1.0]
