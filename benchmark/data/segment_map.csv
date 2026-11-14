@@ -1,0 +1,13 @@
+company_id,name,segment,fit,reason
+coreweave,CoreWeave,neocloud,good,GPU cloud that rents compute; textbook neocloud
+oracle,Oracle,neocloud,approximate,Fast-growing GPU data center operator but most revenue and cash flow still come from database and applications software
+nvidia,NVIDIA,chip_designer,good,Fabless AI accelerator designer
+amd,Advanced Micro Devices,chip_designer,good,Fabless CPU and GPU designer
+broadcom,Broadcom,chip_designer,approximate,Custom AI chips plus networking and a large software business (VMware)
+intel,Intel,fab_equipment,approximate,Integrated maker with its own fabs and a foundry business; also designs chips
+tsmc,TSMC,fab_equipment,good,Leading-edge foundry
+sk_hynix,SK Hynix,fab_equipment,good,Memory maker (HBM supplier for AI accelerators)
+corning,Corning,networking,approximate,Optical fiber and connectivity for data centers; also display glass and other businesses
+meta,Meta Platforms,closed_model,poor,Builds frontier models but is an advertising company funded by its own cash flow; no segment fits
+amazon,Amazon,neocloud,poor,AWS is a cloud operator but Amazon is a diversified retailer and hyperscaler; no segment fits
+softbank,SoftBank Group,gpu_lessor,poor,Holding company that finances AI (OpenAI stake and data center projects); closest segment is AI financiers

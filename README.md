@@ -55,6 +55,16 @@ To score real companies, pass a CSV with the columns in
 Outputs in `output/`: `companies.csv` (base, Merton and stressed PDs per
 company), `feature_scores.csv`, `sensitivity.csv` and `summary.md`.
 
+## Benchmark against CDS
+
+`python -m ai_pd.benchmark` compares model PDs for 12 real companies with
+PDs implied by their 5-year credit default swap spreads. Inputs come from
+the latest public filings, with a source row per figure in
+`benchmark/data/companies_sources.csv`; to rebuild them run
+`python benchmark/build_inputs.py`. Results land in `benchmark/results/`
+(the committed copy is from November 14, 2026). See section 6 of
+`docs/model_document.md` for findings and caveats.
+
 ## Layout
 
 | Path | What it holds |
@@ -67,4 +77,9 @@ company), `feature_scores.csv`, `sensitivity.csv` and `summary.md`.
 | `ai_pd/scenarios.py` | Stress scenarios |
 | `ai_pd/synthetic.py` | Synthetic companies per segment |
 | `ai_pd/sensitivity.py` | One-at-a-time sensitivity |
+| `ai_pd/market_implied.py` | CDS spread to PD, risk-neutral to physical, rank statistics |
+| `ai_pd/benchmark.py` | Model vs CDS comparison and report |
+| `benchmark/data/` | CDS quotes, filing figures, judgments, segment map, built inputs |
+| `benchmark/build_inputs.py` | Filings and judgments to model inputs, with provenance |
+| `benchmark/results/` | Latest benchmark report and tables |
 | `docs/model_document.md` | Draft model document |

@@ -1,0 +1,897 @@
+[
+ {
+  "company": "Taiwan Semiconductor Manufacturing Co.",
+  "ticker": "2330.TW / TSM",
+  "reporting_currency": "TWD",
+  "period_end": {
+   "value": null,
+   "unit": "date",
+   "period": "3Q26",
+   "source": "",
+   "url": "https://www.sec.gov/Archives/edgar/data/0001046179/000104617926000726/a3q26e_withguidancexfinal.htm",
+   "date": "2026-09-30",
+   "note": "period end 2026-09-30"
+  },
+  "report_date": {
+   "value": null,
+   "unit": "date",
+   "period": "3Q26",
+   "source": "TSMC 6-K earnings release",
+   "url": "https://www.sec.gov/Archives/edgar/data/0001046179/000104617926000726/a3q26e_withguidancexfinal.htm",
+   "date": "2026-10-15",
+   "note": "results released 2026-10-15"
+  },
+  "cash_and_st_investments": {
+   "value": 4016980,
+   "unit": "TWD_m",
+   "period": "as of 2026-09-30",
+   "source": "TSMC 3Q26 Management Report",
+   "url": "https://investor.tsmc.com/schinese/encrypt/files/encrypt_file/reports/2026-10/f83780000ddc0c3b48e57a87eab6814c4ab35058/3Q26%20ManagementReport.pdf",
+   "date": "2026-10-15",
+   "note": "'Cash & marketable securities' NT$4,016.98bn. FS: cash & equivalents 3,621,894 + investments in marketable financial instruments (current) 395,085 = 4,016,979"
+  },
+  "total_debt": {
+   "value": 1031580,
+   "unit": "TWD_m",
+   "period": "as of 2026-09-30",
+   "source": "TSMC 3Q26 Management Report",
+   "url": "https://investor.tsmc.com/schinese/encrypt/files/encrypt_file/reports/2026-10/f83780000ddc0c3b48e57a87eab6814c4ab35058/3Q26%20ManagementReport.pdf",
+   "date": "2026-10-15",
+   "note": "'Interest-bearing debts' NT$1,031.58bn. FS: current portion of bonds & bank loans 213,198; bonds payable non-current 770,315; remainder (~48bn) long-term bank loans (not split in FS summary)"
+  },
+  "debt_due_within_24m": {
+   "value": 213198,
+   "unit": "TWD_m",
+   "period": "as of 2026-09-30",
+   "source": "TSMC 3Q26 consolidated financial statements (FS.pdf)",
+   "url": "https://investor.tsmc.com/schinese/encrypt/files/encrypt_file/reports/2026-10/3a94d1034b9e6b22446b674f7aaf3d088a12a193/FS.pdf",
+   "date": "2026-10-15",
+   "note": "Current portion of bonds payable and bank loans only (due within 12m); no 13-24m schedule found in quarterly docs"
+  },
+  "floating_rate_share_of_debt": {
+   "value": null,
+   "unit": "pct",
+   "period": "as of 2026-09-30",
+   "source": "TSMC 3Q26 consolidated financial statements (FS.pdf)",
+   "url": "https://investor.tsmc.com/schinese/encrypt/files/encrypt_file/reports/2026-10/3a94d1034b9e6b22446b674f7aaf3d088a12a193/FS.pdf",
+   "date": "2026-10-15",
+   "note": "Not disclosed in quarterly FS/management report; TSMC debt is predominantly fixed-rate bonds (not verified)"
+  },
+  "total_assets": {
+   "value": 10052888,
+   "unit": "TWD_m",
+   "period": "as of 2026-09-30",
+   "source": "TSMC 3Q26 consolidated financial statements (FS.pdf)",
+   "url": "https://investor.tsmc.com/schinese/encrypt/files/encrypt_file/reports/2026-10/3a94d1034b9e6b22446b674f7aaf3d088a12a193/FS.pdf",
+   "date": "2026-10-15",
+   "note": ""
+  },
+  "ppe_net": {
+   "value": 4526488,
+   "unit": "TWD_m",
+   "period": "as of 2026-09-30",
+   "source": "TSMC 3Q26 consolidated financial statements (FS.pdf)",
+   "url": "https://investor.tsmc.com/schinese/encrypt/files/encrypt_file/reports/2026-10/3a94d1034b9e6b22446b674f7aaf3d088a12a193/FS.pdf",
+   "date": "2026-10-15",
+   "note": ""
+  },
+  "revenue_latest_quarter": {
+   "value": 1494243,
+   "unit": "TWD_m",
+   "period": "3Q26 (qtr ended 2026-09-30)",
+   "source": "TSMC 6-K 3Q26 earnings release",
+   "url": "https://www.sec.gov/Archives/edgar/data/0001046179/000104617926000726/a3q26e_withguidancexfinal.htm",
+   "date": "2026-10-15",
+   "note": "US$46.72bn"
+  },
+  "revenue_same_quarter_prior_year": {
+   "value": 989918,
+   "unit": "TWD_m",
+   "period": "3Q25",
+   "source": "TSMC 6-K 3Q26 earnings release",
+   "url": "https://www.sec.gov/Archives/edgar/data/0001046179/000104617926000726/a3q26e_withguidancexfinal.htm",
+   "date": "2026-10-15",
+   "note": ""
+  },
+  "revenue_ttm": {
+   "value": 4944817,
+   "unit": "TWD_m",
+   "period": "4Q25-3Q26",
+   "source": "Derived: 3Q26 1,494,243 + 2Q26 1,270,381 (primary) + 1Q26 1,134,103 + 4Q25 1,046,090 (stockanalysis, secondary)",
+   "url": "https://stockanalysis.com/quote/tpe/2330/financials/?p=quarterly",
+   "date": "2026-11-14",
+   "note": "derived sum"
+  },
+  "gross_margin_latest_quarter": {
+   "value": 66.4,
+   "unit": "pct",
+   "period": "3Q26 (qtr ended 2026-09-30)",
+   "source": "TSMC 6-K 3Q26 earnings release",
+   "url": "https://www.sec.gov/Archives/edgar/data/0001046179/000104617926000726/a3q26e_withguidancexfinal.htm",
+   "date": "2026-10-15",
+   "note": "gross profit NT$992,379m"
+  },
+  "operating_cash_flow_latest_quarter": {
+   "value": 919770,
+   "unit": "TWD_m",
+   "period": "3Q26 (qtr ended 2026-09-30)",
+   "source": "TSMC 3Q26 Management Report",
+   "url": "https://investor.tsmc.com/schinese/encrypt/files/encrypt_file/reports/2026-10/f83780000ddc0c3b48e57a87eab6814c4ab35058/3Q26%20ManagementReport.pdf",
+   "date": "2026-10-15",
+   "note": "NT$919.77bn; 9M26 = 2,402,117 (FS)"
+  },
+  "capex_latest_quarter": {
+   "value": 443210,
+   "unit": "TWD_m",
+   "period": "3Q26 (qtr ended 2026-09-30)",
+   "source": "TSMC 3Q26 Management Report",
+   "url": "https://investor.tsmc.com/schinese/encrypt/files/encrypt_file/reports/2026-10/f83780000ddc0c3b48e57a87eab6814c4ab35058/3Q26%20ManagementReport.pdf",
+   "date": "2026-10-15",
+   "note": "NT$443.21bn; FCF 476.56bn; 9M26 PP&E acquisitions 1,289,971 (FS)"
+  },
+  "operating_cash_flow_ttm": {
+   "value": 3127626,
+   "unit": "TWD_m",
+   "period": "4Q25-3Q26",
+   "source": "Derived: 9M26 2,402,117 (FS) + 4Q25 725,509 (stockanalysis, secondary)",
+   "url": "https://stockanalysis.com/quote/tpe/2330/financials/cash-flow-statement/?p=quarterly",
+   "date": "2026-11-14",
+   "note": "derived"
+  },
+  "capex_ttm": {
+   "value": 1646877,
+   "unit": "TWD_m",
+   "period": "4Q25-3Q26",
+   "source": "Derived: 9M26 1,289,971 (FS) + 4Q25 356,906 (stockanalysis, secondary)",
+   "url": "https://stockanalysis.com/quote/tpe/2330/financials/cash-flow-statement/?p=quarterly",
+   "date": "2026-11-14",
+   "note": "derived"
+  },
+  "employees": {
+   "value": 76907,
+   "unit": "count",
+   "period": "latest per data vendor",
+   "source": "stockanalysis.com quote page (secondary)",
+   "url": "https://stockanalysis.com/quote/tpe/2330/",
+   "date": "2026-11-06",
+   "note": "vendor figure, as-of date of headcount not shown; likely FY2025 annual"
+  },
+  "customer_concentration": {
+   "largest_customer_share": {
+    "value": 19,
+    "unit": "pct",
+    "period": "FY2025",
+    "source": "TrendForce News (secondary, citing press reports), 2026-03-02",
+    "url": "https://www.trendforce.com/news/?p=53784",
+    "date": "2026-03-02",
+    "note": "Nvidia reportedly 19% of 2025 revenue; not a TSMC disclosure. Taiwan News (2026-01-24) cites 13% for 4Q25 only."
+   },
+   "top5_share": {
+    "value": null,
+    "unit": "pct",
+    "period": "",
+    "source": "",
+    "url": "",
+    "date": "",
+    "note": "not found"
+   },
+   "top10_share": {
+    "value": null,
+    "unit": "pct",
+    "period": "",
+    "source": "",
+    "url": "",
+    "date": "",
+    "note": "not found; 20-F would disclose, not fetched"
+   },
+   "platform_mix": {
+    "value": 68,
+    "unit": "pct",
+    "period": "3Q26 (qtr ended 2026-09-30)",
+    "source": "TSMC 3Q26 Management Report",
+    "url": "https://investor.tsmc.com/schinese/encrypt/files/encrypt_file/reports/2026-10/f83780000ddc0c3b48e57a87eab6814c4ab35058/3Q26%20ManagementReport.pdf",
+    "date": "2026-10-15",
+    "note": "HPC 68% of net revenue; smartphone 21%; North America 79% of revenue by geography"
+   }
+  },
+  "market_cap": {
+   "value": 62110000,
+   "unit": "TWD_m",
+   "period": "2026-11-11 close",
+   "source": "Derived: Focus Taiwan close NT$2,395 x ~25,933m shares (implied from stockanalysis mcap 55.37T at NT$2,135)",
+   "url": "https://focustaiwan.tw/business/202611110018",
+   "date": "2026-11-11",
+   "note": "approx; stockanalysis showed 55.37T at 2026-11-06 price NT$2,135"
+  },
+  "share_price_current": {
+   "value": 2395.0,
+   "unit": "TWD",
+   "period": "2026-11-11 close",
+   "source": "Focus Taiwan (CNA)",
+   "url": "https://focustaiwan.tw/business/202611110018",
+   "date": "2026-11-11",
+   "note": "+4.81% on day"
+  },
+  "share_price_52w_high": {
+   "value": 2590.0,
+   "unit": "TWD",
+   "period": "52w to 2026-11-06",
+   "source": "stockanalysis.com quote page (secondary)",
+   "url": "https://stockanalysis.com/quote/tpe/2330/",
+   "date": "2026-11-06",
+   "note": "52w range 1,375-2,590 (likely intraday); highest close in history table 2,585 on 2026-10-06/07"
+  },
+  "equity_volatility": {
+   "value": 0.4142,
+   "unit": "annualized",
+   "period": "30-day",
+   "source": "alphaquery.com TSM (ADR) 30-day implied vol mean",
+   "url": "https://www.alphaquery.com/stock/TSM/volatility-option-statistics/30-day/iv-mean",
+   "date": "2026-11-13",
+   "note": "IMPLIED, 30-day, ADR options (not 1-year). Same page: 30-day historical close-to-close 0.6067. 1-year HV page failed to load. Beta 1.23 (stockanalysis)"
+  },
+  "fx_to_usd": {
+   "rate": 31.88,
+   "quote": "TWD per USD",
+   "source": "TSMC 3Q26 FS convenience translation (period-end)",
+   "url": "https://investor.tsmc.com/schinese/encrypt/files/encrypt_file/reports/2026-10/3a94d1034b9e6b22446b674f7aaf3d088a12a193/FS.pdf",
+   "date": "2026-09-30",
+   "note": "Q3 average 31.98 (mgmt report); 4Q26 guidance assumption 31.8"
+  }
+ },
+ {
+  "company": "SK hynix Inc.",
+  "ticker": "000660.KS",
+  "reporting_currency": "KRW",
+  "period_end": {
+   "value": null,
+   "unit": "date",
+   "period": "3Q26",
+   "source": "",
+   "url": "https://news.skhynix.com/en/q3-2026-business-results/",
+   "date": "2026-09-30",
+   "note": ""
+  },
+  "report_date": {
+   "value": null,
+   "unit": "date",
+   "period": "3Q26",
+   "source": "SK hynix newsroom: Q3 2026 business results (K-IFRS, unaudited)",
+   "url": "https://news.skhynix.com/en/q3-2026-business-results/",
+   "date": "2026-10-28",
+   "note": ""
+  },
+  "cash_and_st_investments": {
+   "value": 114500000,
+   "unit": "KRW_m",
+   "period": "as of 2026-09-30",
+   "source": "SK hynix newsroom: Q3 2026 business results (K-IFRS, unaudited)",
+   "url": "https://news.skhynix.com/en/q3-2026-business-results/",
+   "date": "2026-10-28",
+   "note": "'Cash and cash equivalents' 114.5tn won (company text; likely incl. short-term financial instruments). stockanalysis: 114,460,000"
+  },
+  "total_debt": {
+   "value": 15800000,
+   "unit": "KRW_m",
+   "period": "as of 2026-09-30",
+   "source": "SK hynix newsroom: Q3 2026 business results (K-IFRS, unaudited)",
+   "url": "https://news.skhynix.com/en/q3-2026-business-results/",
+   "date": "2026-10-28",
+   "note": "Borrowings 15.8tn won; net cash 98.7tn; debt-to-equity 5% (call). stockanalysis total debt 15,799,000 = ST 1,333,000 + current LTD 3,222,000 + LTD 11,244,000; leases not shown for Sep-26 (~2.5tn in prior qtrs)"
+  },
+  "debt_due_within_24m": {
+   "value": 4555000,
+   "unit": "KRW_m",
+   "period": "as of 2026-09-30",
+   "source": "stockanalysis.com 000660 quarterly (SECONDARY)",
+   "url": "https://stockanalysis.com/quote/krx/000660/financials/balance-sheet/?p=quarterly",
+   "date": "2026-11-14",
+   "note": "Short-term debt 1,333,000 + current portion of LTD 3,222,000 (12m only; no schedule found)"
+  },
+  "floating_rate_share_of_debt": {
+   "value": null,
+   "unit": "pct",
+   "period": "as of 2026-09-30",
+   "source": "",
+   "url": "",
+   "date": "",
+   "note": "Not found; would be in quarterly report (DART) notes, not fetched"
+  },
+  "total_assets": {
+   "value": 391800000,
+   "unit": "KRW_m",
+   "period": "as of 2026-09-30",
+   "source": "stockanalysis.com 000660 quarterly (SECONDARY)",
+   "url": "https://stockanalysis.com/quote/krx/000660/financials/balance-sheet/?p=quarterly",
+   "date": "2026-11-14",
+   "note": "Rounded vendor figure (preliminary); verify against DART quarterly report"
+  },
+  "ppe_net": {
+   "value": 97211000,
+   "unit": "KRW_m",
+   "period": "as of 2026-09-30",
+   "source": "stockanalysis.com 000660 quarterly (SECONDARY)",
+   "url": "https://stockanalysis.com/quote/krx/000660/financials/balance-sheet/?p=quarterly",
+   "date": "2026-11-14",
+   "note": "vendor figure"
+  },
+  "revenue_latest_quarter": {
+   "value": 104615500,
+   "unit": "KRW_m",
+   "period": "3Q26 (qtr ended 2026-09-30)",
+   "source": "SK hynix newsroom: Q3 2026 business results (K-IFRS, unaudited)",
+   "url": "https://news.skhynix.com/en/q3-2026-business-results/",
+   "date": "2026-10-28",
+   "note": "104,615.5bn KRW; OP 83,333.8bn (80%); NI 39,775.6bn"
+  },
+  "revenue_same_quarter_prior_year": {
+   "value": 24448900,
+   "unit": "KRW_m",
+   "period": "3Q25",
+   "source": "SK hynix newsroom: Q3 2026 business results (K-IFRS, unaudited)",
+   "url": "https://news.skhynix.com/en/q3-2026-business-results/",
+   "date": "2026-10-28",
+   "note": ""
+  },
+  "revenue_ttm": {
+   "value": 269337200,
+   "unit": "KRW_m",
+   "period": "4Q25-3Q26",
+   "source": "Derived: 3Q26 104,615.5bn + 2Q26 79,318.7bn (primary) + 1Q26 52,576.3bn + 4Q25 32,826.7bn (stockanalysis, secondary)",
+   "url": "https://stockanalysis.com/quote/krx/000660/financials/?p=quarterly",
+   "date": "2026-11-14",
+   "note": "derived"
+  },
+  "gross_margin_latest_quarter": {
+   "value": null,
+   "unit": "pct",
+   "period": "3Q26 (qtr ended 2026-09-30)",
+   "source": "",
+   "url": "",
+   "date": "",
+   "note": " Not in release; only operating margin 80% reported. 2Q26 gross margin 83.2% (stockanalysis)"
+  },
+  "operating_cash_flow_latest_quarter": {
+   "value": 54781000,
+   "unit": "KRW_m",
+   "period": "3Q26 (qtr ended 2026-09-30)",
+   "source": "stockanalysis.com 000660 quarterly (SECONDARY)",
+   "url": "https://stockanalysis.com/quote/krx/000660/financials/cash-flow-statement/?p=quarterly",
+   "date": "2026-11-14",
+   "note": "rounded vendor figure, secondary"
+  },
+  "capex_latest_quarter": {
+   "value": 12670000,
+   "unit": "KRW_m",
+   "period": "3Q26 (qtr ended 2026-09-30)",
+   "source": "stockanalysis.com 000660 quarterly (SECONDARY)",
+   "url": "https://stockanalysis.com/quote/krx/000660/financials/cash-flow-statement/?p=quarterly",
+   "date": "2026-11-14",
+   "note": "rounded vendor figure, secondary; company gave no capex figure. D&A 4.3tn (earnings call per stockhub.kr)"
+  },
+  "operating_cash_flow_ttm": {
+   "value": 167385237,
+   "unit": "KRW_m",
+   "period": "4Q25-3Q26",
+   "source": "Derived from stockanalysis quarterly OCF (54,781,000+65,412,382+26,330,119+20,861,736)",
+   "url": "https://stockanalysis.com/quote/krx/000660/financials/cash-flow-statement/?p=quarterly",
+   "date": "2026-11-14",
+   "note": "secondary, derived"
+  },
+  "capex_ttm": {
+   "value": 42869410,
+   "unit": "KRW_m",
+   "period": "4Q25-3Q26",
+   "source": "Derived from stockanalysis quarterly capex (12,670,000+10,671,433+7,657,403+11,870,574)",
+   "url": "https://stockanalysis.com/quote/krx/000660/financials/cash-flow-statement/?p=quarterly",
+   "date": "2026-11-14",
+   "note": "secondary, derived"
+  },
+  "employees": {
+   "value": 36042,
+   "unit": "count",
+   "period": "latest per data vendor",
+   "source": "stockanalysis.com quote page (secondary)",
+   "url": "https://stockanalysis.com/quote/krx/000660/",
+   "date": "2026-11-03",
+   "note": "headcount date not shown"
+  },
+  "customer_concentration": {
+   "largest_customer_share": {
+    "value": null,
+    "unit": "pct",
+    "period": "",
+    "source": "",
+    "url": "https://news.skhynix.co.kr/q3-2026-business-results/",
+    "date": "",
+    "note": "Not disclosed in release; LTAs with 14 major customers cover >50% of 2027-28 capacity"
+   },
+   "top5_share": {
+    "value": null,
+    "unit": "pct",
+    "period": "",
+    "source": "",
+    "url": "",
+    "date": "",
+    "note": "not found"
+   },
+   "top10_share": {
+    "value": null,
+    "unit": "pct",
+    "period": "",
+    "source": "",
+    "url": "",
+    "date": "",
+    "note": "not found"
+   }
+  },
+  "market_cap": {
+   "value": 883400000,
+   "unit": "KRW_m",
+   "period": "2026-11-10 close",
+   "source": "Derived: 1,212,000 x ~728.9m shares (implied from stockanalysis 1,021.14T at 1,401,000 on 2026-11-03)",
+   "url": "https://www.koreatimes.co.kr/economy/20261110/korean-stocks-surge-over-4-as-risk-appetite-returns",
+   "date": "2026-11-10",
+   "note": "approx; share count falling with buyback cancellations"
+  },
+  "share_price_current": {
+   "value": 1212000,
+   "unit": "KRW",
+   "period": "2026-11-10 close",
+   "source": "The Korea Times",
+   "url": "https://www.koreatimes.co.kr/economy/20261110/korean-stocks-surge-over-4-as-risk-appetite-returns",
+   "date": "2026-11-10",
+   "note": "Yahoo showed 1,269,000 intraday (undated, later); stockanalysis close 1,132,000 on 2026-11-06"
+  },
+  "share_price_52w_high": {
+   "value": 2987000,
+   "unit": "KRW",
+   "period": "52w",
+   "source": "stockanalysis.com and Yahoo Finance quote pages (secondary)",
+   "url": "https://stockanalysis.com/quote/krx/000660/",
+   "date": "2026-11-03",
+   "note": "SUSPECT: both vendors show 52w range 501,000-2,987,000 but stockanalysis history table's highest close is 1,868,000 (2026-09-21). Verify before use."
+  },
+  "equity_volatility": {
+   "value": null,
+   "unit": "annualized",
+   "period": "",
+   "source": "",
+   "url": "",
+   "date": "",
+   "note": "No free page found; beta 2.39 (stockanalysis/Yahoo)"
+  },
+  "fx_to_usd": {
+   "rate": 1337.5,
+   "quote": "KRW per USD",
+   "source": "The Korea Times market close report",
+   "url": "https://www.koreatimes.co.kr/economy/20261110/korean-stocks-surge-over-4-as-risk-appetite-returns",
+   "date": "2026-11-10",
+   "note": "spot close; Sep-30 period-end rate not collected"
+  }
+ },
+ {
+  "company": "SoftBank Group Corp.",
+  "ticker": "9984.T",
+  "reporting_currency": "JPY",
+  "period_end": {
+   "value": null,
+   "unit": "date",
+   "period": "Q2 FY2026 (Jul-Sep 2026)",
+   "source": "",
+   "url": "https://group.softbank/system/files/pdf/ir/financials/financial_reports/financial-report_q2fy2026_01_en.pdf",
+   "date": "2026-09-30",
+   "note": ""
+  },
+  "report_date": {
+   "value": null,
+   "unit": "date",
+   "period": "Q2 FY2026",
+   "source": "SoftBank Group Consolidated Financial Report, 6M ended 2026-09-30 (IFRS)",
+   "url": "https://group.softbank/system/files/pdf/ir/financials/financial_reports/financial-report_q2fy2026_01_en.pdf",
+   "date": "2026-11-10",
+   "note": ""
+  },
+  "cash_and_st_investments": {
+   "value": 7432165,
+   "unit": "JPY_m",
+   "period": "as of 2026-09-30",
+   "source": "SoftBank Group Consolidated Financial Report, 6M ended 2026-09-30 (IFRS)",
+   "url": "https://group.softbank/system/files/pdf/ir/financials/financial_reports/financial-report_q2fy2026_01_en.pdf",
+   "date": "2026-11-10",
+   "note": "Consolidated cash & cash equivalents. Datasheet consolidated 'cash position' 8.68tn yen (incl. other liquid assets)"
+  },
+  "total_debt": {
+   "value": 32591205,
+   "unit": "JPY_m",
+   "period": "as of 2026-09-30",
+   "source": "SoftBank Group Consolidated Financial Report, 6M ended 2026-09-30 (IFRS)",
+   "url": "https://group.softbank/system/files/pdf/ir/financials/financial_reports/financial-report_q2fy2026_01_en.pdf",
+   "date": "2026-11-10",
+   "note": "Consolidated interest-bearing debt current 5,770,931 + non-current 26,820,274; incl. lease liabilities 33,719,282 (excl. banking deposits 2,787,557). SBG bonds 11,101,006; SBG borrowings 3,540,295; financing subs 5,094,485; SVF2 2,950,551; SB Northstar 934,277"
+  },
+  "sbg_standalone_interest_bearing_debt": {
+   "value": 22500000,
+   "unit": "JPY_m",
+   "period": "as of 2026-09-30",
+   "source": "SBG Q2 FY2026 earnings presentation",
+   "url": "https://group.softbank/media/Project/sbg/sbg/pdf/ir/presentations/2026/earnings-presentation_q2fy2026_01_en.pdf",
+   "date": "2026-11-10",
+   "note": "~22.5tn yen gross (slide 79), incl. OpenAI-share loan and margin loans, excl. prepaid forwards"
+  },
+  "sbg_standalone_cash_position": {
+   "value": 5400000,
+   "unit": "JPY_m",
+   "period": "as of 2026-09-30",
+   "source": "SBG Q2 FY2026 earnings presentation",
+   "url": "https://group.softbank/media/Project/sbg/sbg/pdf/ir/presentations/2026/earnings-presentation_q2fy2026_01_en.pdf",
+   "date": "2026-11-10",
+   "note": "5.4tn (slide 79, standalone); key-indicator slide shows 5.0tn ($32B) - unresolved"
+  },
+  "sbg_standalone_net_debt": {
+   "value": 11300000,
+   "unit": "JPY_m",
+   "period": "as of 2026-09-30",
+   "source": "SBG Q2 FY2026 earnings datasheet",
+   "url": "https://group.softbank/media/Project/sbg/sbg/pdf/ir/presentations/2026/earnings-datasheet_q2fy2026_02.pdf",
+   "date": "2026-11-10",
+   "note": "Adjusted SBG stand-alone net interest-bearing debt (L) 11.30tn = consolidated net IBD 25.04 - self-financing entities 6.48 - other adj 7.25"
+  },
+  "ltv": {
+   "value": 15.9,
+   "unit": "pct",
+   "period": "as of 2026-09-30",
+   "source": "SBG Q2 FY2026 earnings datasheet / SBG Q2 FY2026 earnings presentation",
+   "url": "https://group.softbank/media/Project/sbg/sbg/pdf/ir/presentations/2026/earnings-datasheet_q2fy2026_02.pdf",
+   "date": "2026-11-10",
+   "note": "L/V = 11.30/71.14. Prior: 13.0% (Jun-26), 17.0% (Mar-26). Policy <25% normal, 35% cap"
+  },
+  "nav": {
+   "value": 59800000,
+   "unit": "JPY_m",
+   "period": "as of 2026-09-30",
+   "source": "SBG Q2 FY2026 earnings presentation",
+   "url": "https://group.softbank/media/Project/sbg/sbg/pdf/ir/presentations/2026/earnings-presentation_q2fy2026_01_en.pdf",
+   "date": "2026-11-10",
+   "note": "NAV 59.8tn ($380B); pro forma at Nov-9 prices 44.7tn ($282B)"
+  },
+  "debt_due_within_24m": {
+   "value": 5770931,
+   "unit": "JPY_m",
+   "period": "as of 2026-09-30",
+   "source": "SoftBank Group Consolidated Financial Report, 6M ended 2026-09-30 (IFRS)",
+   "url": "https://group.softbank/system/files/pdf/ir/financials/financial_reports/financial-report_q2fy2026_01_en.pdf",
+   "date": "2026-11-10",
+   "note": "Consolidated current IBD (12m). SBG standalone schedule (datasheet): FY2026 remainder '-', FY2027 (Apr27-Mar28) 1,906.7bn (bonds 516.5bn + term loans 1,390.2bn), FY2028 4,198.5bn. Presentation: bond redemptions next 2 yrs ~1.6tn. Column mapping from PDF extraction - verify"
+  },
+  "floating_rate_share_of_debt": {
+   "value": null,
+   "unit": "pct",
+   "period": "as of 2026-09-30",
+   "source": "",
+   "url": "",
+   "date": "",
+   "note": "Not found in report/presentation/datasheet"
+  },
+  "total_assets": {
+   "value": 69387194,
+   "unit": "JPY_m",
+   "period": "as of 2026-09-30",
+   "source": "SoftBank Group Consolidated Financial Report, 6M ended 2026-09-30 (IFRS)",
+   "url": "https://group.softbank/system/files/pdf/ir/financials/financial_reports/financial-report_q2fy2026_01_en.pdf",
+   "date": "2026-11-10",
+   "note": ""
+  },
+  "ppe_net": {
+   "value": 4503906,
+   "unit": "JPY_m",
+   "period": "as of 2026-09-30",
+   "source": "SoftBank Group Consolidated Financial Report, 6M ended 2026-09-30 (IFRS)",
+   "url": "https://group.softbank/system/files/pdf/ir/financials/financial_reports/financial-report_q2fy2026_01_en.pdf",
+   "date": "2026-11-10",
+   "note": ""
+  },
+  "revenue_latest_quarter": {
+   "value": 2215446,
+   "unit": "JPY_m",
+   "period": "3M Jul-Sep 2026",
+   "source": "SoftBank Group Consolidated Financial Report, 6M ended 2026-09-30 (IFRS)",
+   "url": "https://group.softbank/system/files/pdf/ir/financials/financial_reports/financial-report_q2fy2026_01_en.pdf",
+   "date": "2026-11-10",
+   "note": "6M FY2026: 4,235,037"
+  },
+  "revenue_same_quarter_prior_year": {
+   "value": 1916502,
+   "unit": "JPY_m",
+   "period": "3M Jul-Sep 2025",
+   "source": "SoftBank Group Consolidated Financial Report, 6M ended 2026-09-30 (IFRS)",
+   "url": "https://group.softbank/system/files/pdf/ir/financials/financial_reports/financial-report_q2fy2026_01_en.pdf",
+   "date": "2026-11-10",
+   "note": "6M FY2025: 3,736,843"
+  },
+  "revenue_ttm": {
+   "value": null,
+   "unit": "JPY_m",
+   "period": "",
+   "source": "",
+   "url": "",
+   "date": "",
+   "note": "Not computed: needs FY2025 full-year net sales, not fetched"
+  },
+  "gross_margin_latest_quarter": {
+   "value": 51.6,
+   "unit": "pct",
+   "period": "3M Jul-Sep 2026",
+   "source": "Derived from SoftBank Group Consolidated Financial Report, 6M ended 2026-09-30 (IFRS)",
+   "url": "https://group.softbank/system/files/pdf/ir/financials/financial_reports/financial-report_q2fy2026_01_en.pdf",
+   "date": "2026-11-10",
+   "note": "gross profit 1,143,423 / net sales 2,215,446 (consolidated, mostly SoftBank Corp telecom)"
+  },
+  "operating_cash_flow_latest_quarter": {
+   "value": null,
+   "unit": "JPY_m",
+   "period": "",
+   "source": "SoftBank Group Consolidated Financial Report, 6M ended 2026-09-30 (IFRS)",
+   "url": "https://group.softbank/system/files/pdf/ir/financials/financial_reports/financial-report_q2fy2026_01_en.pdf",
+   "date": "2026-11-10",
+   "note": "Quarter not given; 6M FY2026 OCF = -527,298 (6M FY2025 -119,902)"
+  },
+  "operating_cash_flow_6m": {
+   "value": -527298,
+   "unit": "JPY_m",
+   "period": "6M Apr-Sep 2026",
+   "source": "SoftBank Group Consolidated Financial Report, 6M ended 2026-09-30 (IFRS)",
+   "url": "https://group.softbank/system/files/pdf/ir/financials/financial_reports/financial-report_q2fy2026_01_en.pdf",
+   "date": "2026-11-10",
+   "note": ""
+  },
+  "capex_latest_quarter": {
+   "value": null,
+   "unit": "JPY_m",
+   "period": "",
+   "source": "SoftBank Group Consolidated Financial Report, 6M ended 2026-09-30 (IFRS)",
+   "url": "https://group.softbank/system/files/pdf/ir/financials/financial_reports/financial-report_q2fy2026_01_en.pdf",
+   "date": "2026-11-10",
+   "note": "Quarter not given; 6M FY2026 purchase of PP&E and intangibles = 2,117,609"
+  },
+  "capex_6m": {
+   "value": 2117609,
+   "unit": "JPY_m",
+   "period": "6M Apr-Sep 2026",
+   "source": "SoftBank Group Consolidated Financial Report, 6M ended 2026-09-30 (IFRS)",
+   "url": "https://group.softbank/system/files/pdf/ir/financials/financial_reports/financial-report_q2fy2026_01_en.pdf",
+   "date": "2026-11-10",
+   "note": "PP&E + intangibles combined"
+  },
+  "employees": {
+   "value": 73677,
+   "unit": "count",
+   "period": "latest per data vendor",
+   "source": "stockanalysis.com quote page (secondary)",
+   "url": "https://stockanalysis.com/quote/tyo/9984/",
+   "date": "2026-11-13",
+   "note": "consolidated; headcount date not shown"
+  },
+  "customer_concentration": {
+   "largest_customer_share": {
+    "value": null,
+    "unit": "pct",
+    "period": "",
+    "source": "",
+    "url": "",
+    "date": "",
+    "note": "Not applicable/not disclosed"
+   },
+   "top5_share": {
+    "value": null,
+    "unit": "pct",
+    "period": "",
+    "source": "",
+    "url": "",
+    "date": "",
+    "note": ""
+   },
+   "top10_share": {
+    "value": null,
+    "unit": "pct",
+    "period": "",
+    "source": "",
+    "url": "",
+    "date": "",
+    "note": ""
+   }
+  },
+  "holdings": {
+   "equity_value_of_holdings_total": {
+    "value": 71140000,
+    "unit": "JPY_m",
+    "period": "as of 2026-09-30",
+    "source": "SBG Q2 FY2026 earnings datasheet",
+    "url": "https://group.softbank/media/Project/sbg/sbg/pdf/ir/presentations/2026/earnings-datasheet_q2fy2026_02.pdf",
+    "date": "2026-11-10",
+    "note": "V in LTV calc"
+   },
+   "arm": {
+    "value": 42060000,
+    "unit": "JPY_m",
+    "period": "as of 2026-09-30",
+    "source": "SBG Q2 FY2026 earnings datasheet",
+    "url": "https://group.softbank/media/Project/sbg/sbg/pdf/ir/presentations/2026/earnings-datasheet_q2fy2026_02.pdf",
+    "date": "2026-11-10",
+    "note": "Arm within major listed shares 46.93tn (PDF extraction; verify vs xlsx datasheet)"
+   },
+   "softbank_corp": {
+    "value": 4620000,
+    "unit": "JPY_m",
+    "period": "as of 2026-09-30",
+    "source": "SBG Q2 FY2026 earnings datasheet",
+    "url": "https://group.softbank/media/Project/sbg/sbg/pdf/ir/presentations/2026/earnings-datasheet_q2fy2026_02.pdf",
+    "date": "2026-11-10",
+    "note": ""
+   },
+   "t_mobile": {
+    "value": 260000,
+    "unit": "JPY_m",
+    "period": "as of 2026-09-30",
+    "source": "SBG Q2 FY2026 earnings datasheet",
+    "url": "https://group.softbank/media/Project/sbg/sbg/pdf/ir/presentations/2026/earnings-datasheet_q2fy2026_02.pdf",
+    "date": "2026-11-10",
+    "note": ""
+   },
+   "svf1": {
+    "value": 3450000,
+    "unit": "JPY_m",
+    "period": "as of 2026-09-30",
+    "source": "SBG Q2 FY2026 earnings datasheet",
+    "url": "https://group.softbank/media/Project/sbg/sbg/pdf/ir/presentations/2026/earnings-datasheet_q2fy2026_02.pdf",
+    "date": "2026-11-10",
+    "note": ""
+   },
+   "svf2": {
+    "value": 20070000,
+    "unit": "JPY_m",
+    "period": "as of 2026-09-30",
+    "source": "SBG Q2 FY2026 earnings datasheet",
+    "url": "https://group.softbank/media/Project/sbg/sbg/pdf/ir/presentations/2026/earnings-datasheet_q2fy2026_02.pdf",
+    "date": "2026-11-10",
+    "note": "OpenAI likely held here (not confirmed)"
+   },
+   "latam": {
+    "value": 960000,
+    "unit": "JPY_m",
+    "period": "as of 2026-09-30",
+    "source": "SBG Q2 FY2026 earnings datasheet",
+    "url": "https://group.softbank/media/Project/sbg/sbg/pdf/ir/presentations/2026/earnings-datasheet_q2fy2026_02.pdf",
+    "date": "2026-11-10",
+    "note": ""
+   },
+   "others": {
+    "value": 6310000,
+    "unit": "JPY_m",
+    "period": "as of 2026-09-30",
+    "source": "SBG Q2 FY2026 earnings datasheet",
+    "url": "https://group.softbank/media/Project/sbg/sbg/pdf/ir/presentations/2026/earnings-datasheet_q2fy2026_02.pdf",
+    "date": "2026-11-10",
+    "note": ""
+   },
+   "openai_carrying_amount": {
+    "value": 15671500,
+    "unit": "JPY_m",
+    "period": "as of 2026-09-30",
+    "source": "SoftBank Group Consolidated Financial Report, 6M ended 2026-09-30 (IFRS)",
+    "url": "https://group.softbank/system/files/pdf/ir/financials/financial_reports/financial-report_q2fy2026_01_en.pdf",
+    "date": "2026-11-10",
+    "note": "Consolidated carrying amount of OpenAI shares, +2,946.0bn vs Mar-26. Cumulative investment $64.6B (~13% stake) as of 2026-10-01 (presentation)"
+   },
+   "investments_of_svf_fvtpl": {
+    "value": 26537958,
+    "unit": "JPY_m",
+    "period": "as of 2026-09-30",
+    "source": "SoftBank Group Consolidated Financial Report, 6M ended 2026-09-30 (IFRS)",
+    "url": "https://group.softbank/system/files/pdf/ir/financials/financial_reports/financial-report_q2fy2026_01_en.pdf",
+    "date": "2026-11-10",
+    "note": "consolidated"
+   }
+  },
+  "margin_loans": {
+   "arm_margin_loan_increase_q2": {
+    "value": 5000,
+    "unit": "USD_m",
+    "period": "Q2 FY2026",
+    "source": "SBG Q2 FY2026 earnings presentation",
+    "url": "https://group.softbank/media/Project/sbg/sbg/pdf/ir/presentations/2026/earnings-presentation_q2fy2026_01_en.pdf",
+    "date": "2026-11-10",
+    "note": "+$5.0B (~0.8tn yen) drawn in Q2; total outstanding not found"
+   },
+   "openai_share_loan": {
+    "value": 10000,
+    "unit": "USD_m",
+    "period": "Q2 FY2026",
+    "source": "SBG Q2 FY2026 earnings presentation",
+    "url": "https://group.softbank/media/Project/sbg/sbg/pdf/ir/presentations/2026/earnings-presentation_q2fy2026_01_en.pdf",
+    "date": "2026-11-10",
+    "note": "$10.0B (~1.6tn yen) loan using OpenAI shares, SBG-guaranteed, shares not pledged"
+   },
+   "sb_northstar_prime_brokerage": {
+    "value": 934277,
+    "unit": "JPY_m",
+    "period": "as of 2026-09-30",
+    "source": "SoftBank Group Consolidated Financial Report, 6M ended 2026-09-30 (IFRS)",
+    "url": "https://group.softbank/system/files/pdf/ir/financials/financial_reports/financial-report_q2fy2026_01_en.pdf",
+    "date": "2026-11-10",
+    "note": "SB Northstar borrowings"
+   },
+   "intel_prepaid_forward": {
+    "value": 7400,
+    "unit": "USD_m",
+    "period": "Aug 2026",
+    "source": "SBG Q2 FY2026 earnings presentation",
+    "url": "https://group.softbank/media/Project/sbg/sbg/pdf/ir/presentations/2026/earnings-presentation_q2fy2026_01_en.pdf",
+    "date": "2026-11-10",
+    "note": "prepaid forward raised Aug-2026"
+   },
+   "softbank_corp_margin_loan": {
+    "value": null,
+    "unit": "JPY_m",
+    "period": "",
+    "source": "",
+    "url": "",
+    "date": "",
+    "note": "amount not found"
+   },
+   "undrawn_commitment": {
+    "value": 511400,
+    "unit": "JPY_m",
+    "period": "as of 2026-09-30",
+    "source": "SBG Q2 FY2026 earnings presentation",
+    "url": "https://group.softbank/media/Project/sbg/sbg/pdf/ir/presentations/2026/earnings-presentation_q2fy2026_01_en.pdf",
+    "date": "2026-11-10",
+    "note": "undrawn borrowing capacity"
+   }
+  },
+  "market_cap": {
+   "value": 20220000,
+   "unit": "JPY_m",
+   "period": "2026-11-13",
+   "source": "stockanalysis.com quote page (secondary)",
+   "url": "https://stockanalysis.com/quote/tyo/9984/",
+   "date": "2026-11-13",
+   "note": ""
+  },
+  "share_price_current": {
+   "value": 3547.0,
+   "unit": "JPY",
+   "period": "2026-11-13 close",
+   "source": "stockanalysis.com quote page (secondary)",
+   "url": "https://stockanalysis.com/quote/tyo/9984/",
+   "date": "2026-11-13",
+   "note": "-5.11% on day; post 1:4 split basis"
+  },
+  "share_price_52w_high": {
+   "value": 9074.0,
+   "unit": "JPY",
+   "period": "52w",
+   "source": "stockanalysis.com and Yahoo Finance (secondary)",
+   "url": "https://stockanalysis.com/quote/tyo/9984/",
+   "date": "2026-11-13",
+   "note": "52w range 3,350-9,074 (Yahoo 3,365-9,074, stale page). Highest close in stockanalysis history table 6,810 (2026-09-09/10) - verify high"
+  },
+  "equity_volatility": {
+   "value": null,
+   "unit": "annualized",
+   "period": "",
+   "source": "",
+   "url": "",
+   "date": "",
+   "note": "No free page found; beta 0.99 (stockanalysis)"
+  },
+  "fx_to_usd": {
+   "rate": 158.34,
+   "quote": "JPY per USD",
+   "source": "SBG Q2 FY2026 earnings presentation (pro forma NAV rate, Nov 9 2026)",
+   "url": "https://group.softbank/media/Project/sbg/sbg/pdf/ir/presentations/2026/earnings-presentation_q2fy2026_01_en.pdf",
+   "date": "2026-11-09",
+   "note": "Sep-30 implied ~157.4 (NAV 59.8tn = $380B)"
+  }
+ }
+]

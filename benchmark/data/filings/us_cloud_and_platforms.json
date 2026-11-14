@@ -1,0 +1,900 @@
+[
+  {
+    "company": "CoreWeave",
+    "ticker": "CRWV",
+    "period_end": {
+      "value": "2026-09-30",
+      "unit": "date",
+      "period": "Q3 2026 (3m to 2026-09-30)",
+      "source": "CoreWeave IR press release: CoreWeave Reports Strong Third Quarter 2026 Results",
+      "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Third-Quarter-2026-Results/default.aspx",
+      "date": "2026-11-10",
+      "note": ""
+    },
+    "report_date": {
+      "value": "2026-11-10",
+      "unit": "date",
+      "period": "Q3 2026 (3m to 2026-09-30)",
+      "source": "CoreWeave IR press release: CoreWeave Reports Strong Third Quarter 2026 Results",
+      "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Third-Quarter-2026-Results/default.aspx",
+      "date": "2026-11-10",
+      "note": "Earnings release date; 10-Q filing date not captured"
+    },
+    "cash_and_st_investments": {
+      "value": 4184,
+      "unit": "USD_m",
+      "period": "as of 2026-09-30",
+      "source": "CoreWeave IR press release: CoreWeave Reports Strong Third Quarter 2026 Results",
+      "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Third-Quarter-2026-Results/default.aspx",
+      "date": "2026-11-10",
+      "note": "Cash & equivalents 4,122 + marketable securities 62. Excludes restricted cash 1,405 current + 877 non-current (2,282)."
+    },
+    "total_debt": {
+      "value": 46873,
+      "unit": "USD_m",
+      "period": "as of 2026-09-30",
+      "source": "CoreWeave IR press release: CoreWeave Reports Strong Third Quarter 2026 Results",
+      "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Third-Quarter-2026-Results/default.aspx",
+      "date": "2026-11-10",
+      "note": "Sum of balance-sheet lines: recourse debt current 9,183 + non-current 32,417; non-recourse debt current 1,389 + non-current 3,884. EXCLUDES finance lease liabilities (296 current + 353 non-current = 649) and operating leases."
+    },
+    "debt_due_within_24m": {
+      "value": 10572,
+      "unit": "USD_m",
+      "period": "as of 2026-09-30",
+      "source": "CoreWeave IR press release: CoreWeave Reports Strong Third Quarter 2026 Results",
+      "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Third-Quarter-2026-Results/default.aspx",
+      "date": "2026-11-10",
+      "note": "Current portion only (recourse 9,183 + non-recourse 1,389). Year-by-year maturity table (Note 10) could not be read: WebFetch output of the 10-Q truncated before the debt note. True 24m figure is higher."
+    },
+    "floating_rate_share_of_debt": {
+      "value": null,
+      "unit": "fraction",
+      "period": "as of 2026-09-30",
+      "source": "CoreWeave Form 10-Q Q3 2026 (SEC EDGAR)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001769628/000176962826000465/crwv-20260930.htm",
+      "date": "2026-11-10",
+      "note": "Not captured: debt note unreadable via fetch. 10-Q shows interest-rate swaps designated as cash-flow hedges, notional 6,787 (vs 319 at 2025-12-31), which implies some variable-rate debt being hedged, but amount not confirmed."
+    },
+    "total_assets": {
+      "value": 91481,
+      "unit": "USD_m",
+      "period": "as of 2026-09-30",
+      "source": "CoreWeave IR press release: CoreWeave Reports Strong Third Quarter 2026 Results",
+      "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Third-Quarter-2026-Results/default.aspx",
+      "date": "2026-11-10",
+      "note": ""
+    },
+    "ppe_net": {
+      "value": 56778,
+      "unit": "USD_m",
+      "period": "as of 2026-09-30",
+      "source": "CoreWeave IR press release: CoreWeave Reports Strong Third Quarter 2026 Results",
+      "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Third-Quarter-2026-Results/default.aspx",
+      "date": "2026-11-10",
+      "note": "Property and equipment, net. Operating lease ROU assets 18,922 reported separately (not included)."
+    },
+    "revenue_latest_quarter": {
+      "value": 3661,
+      "unit": "USD_m",
+      "period": "Q3 2026 (3m to 2026-09-30)",
+      "source": "CoreWeave IR press release: CoreWeave Reports Strong Third Quarter 2026 Results",
+      "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Third-Quarter-2026-Results/default.aspx",
+      "date": "2026-11-10",
+      "note": ""
+    },
+    "revenue_same_quarter_prior_year": {
+      "value": 1365,
+      "unit": "USD_m",
+      "period": "Q3 2025",
+      "source": "CoreWeave IR press release: CoreWeave Reports Strong Third Quarter 2026 Results",
+      "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Third-Quarter-2026-Results/default.aspx",
+      "date": "2026-11-10",
+      "note": "YoY growth ~168%"
+    },
+    "revenue_ttm": {
+      "value": 9886,
+      "unit": "USD_m",
+      "period": "4Q to 2026-09-30",
+      "source": "CoreWeave IR press release: CoreWeave Reports Strong Third Quarter 2026 Results; CoreWeave press release: Q4 and FY2025 Results (Business Wire)",
+      "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Third-Quarter-2026-Results/default.aspx ; https://www.businesswire.com/news/home/20260226281661/en/CoreWeave-Reports-Strong-Fourth-Quarter-and-Fiscal-Year-2025-Results",
+      "date": "2026-11-10",
+      "note": "Derived: 9M 2026 revenue 8,314 + Q4 2025 revenue 1,572."
+    },
+    "gross_margin_latest_quarter": {
+      "value": 0.6769,
+      "unit": "fraction",
+      "period": "Q3 2026 (3m to 2026-09-30)",
+      "source": "CoreWeave IR press release: CoreWeave Reports Strong Third Quarter 2026 Results",
+      "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Third-Quarter-2026-Results/default.aspx",
+      "date": "2026-11-10",
+      "note": "Computed: (revenue 3,661 - cost of revenue 1,183)/revenue. Company does not report gross profit. CoreWeave's cost of revenue line appears to exclude most depreciation (carried in technology & infrastructure), so this overstates an all-in gross margin; Q3 operating income was 207 (5.7% margin)."
+    },
+    "operating_cash_flow_quarter": {
+      "value": 1975,
+      "unit": "USD_m",
+      "period": "Q3 2026 (3m to 2026-09-30)",
+      "source": "CoreWeave IR press release: CoreWeave Reports Strong Third Quarter 2026 Results",
+      "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Third-Quarter-2026-Results/default.aspx",
+      "date": "2026-11-10",
+      "note": ""
+    },
+    "capex_quarter": {
+      "value": 9441,
+      "unit": "USD_m",
+      "period": "Q3 2026 (3m to 2026-09-30)",
+      "source": "CoreWeave IR press release: CoreWeave Reports Strong Third Quarter 2026 Results",
+      "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Third-Quarter-2026-Results/default.aspx",
+      "date": "2026-11-10",
+      "note": "Purchases of property and equipment incl. capitalized internal-use software. FCF Q3 = 1,975 - 9,441 = -7,466."
+    },
+    "operating_cash_flow_9m": {
+      "value": 5638,
+      "unit": "USD_m",
+      "period": "9M 2026",
+      "source": "CoreWeave IR press release: CoreWeave Reports Strong Third Quarter 2026 Results",
+      "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Third-Quarter-2026-Results/default.aspx",
+      "date": "2026-11-10",
+      "note": "TTM not computed (Q4 2025 cash-flow not fetched)"
+    },
+    "capex_9m": {
+      "value": 23558,
+      "unit": "USD_m",
+      "period": "9M 2026",
+      "source": "CoreWeave IR press release: CoreWeave Reports Strong Third Quarter 2026 Results",
+      "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Third-Quarter-2026-Results/default.aspx",
+      "date": "2026-11-10",
+      "note": "FY2026 capex guidance 37,000-39,000"
+    },
+    "employees": {
+      "value": 2189,
+      "unit": "count",
+      "period": "latest disclosed (likely 10-K, as of 2025-12-31)",
+      "source": "stockanalysis.com (SECONDARY) statistics page",
+      "url": "https://stockanalysis.com/stocks/crwv/statistics/",
+      "date": "2026-11-08",
+      "note": "Not in Q3 press release or readable 10-Q portion; secondary figure, date of count unverified."
+    },
+    "largest_customer_share": {
+      "value": 0.3,
+      "unit": "fraction_of_revenue",
+      "period": "Q3 2026 (3m to 2026-09-30)",
+      "source": "CoreWeave Form 10-Q Q3 2026 (SEC EDGAR)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001769628/000176962826000465/crwv-20260930.htm",
+      "date": "2026-11-10",
+      "note": "Customer B 30% of Q3 2026 revenue; Customer A 24%. For 9M 2026: Customer A 33%, Customer B 26%. Customers unnamed in the 10-Q. AR concentration: A 18%, B 33%, C 12%, D 14%."
+    },
+    "top5_customer_share": {
+      "value": null,
+      "unit": "fraction_of_revenue",
+      "period": "Q3 2026 (3m to 2026-09-30)",
+      "source": "CoreWeave Form 10-Q Q3 2026 (SEC EDGAR)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001769628/000176962826000465/crwv-20260930.htm",
+      "date": "2026-11-10",
+      "note": "Not disclosed; top-2 = 54% of Q3 revenue (24% + 30%)."
+    },
+    "rpo_backlog": {
+      "value": 132300,
+      "unit": "USD_m",
+      "period": "as of 2026-09-30",
+      "source": "CoreWeave Form 10-Q Q3 2026 (SEC EDGAR)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001769628/000176962826000465/crwv-20260930.htm",
+      "date": "2026-11-10",
+      "note": "10-Q unsatisfied RPO $132.3bn (press release says backlog ~$132.5bn). 36% expected within 24 months to 2028-09-30, 38% in months 25-48, remainder months 49-86."
+    },
+    "market_cap": {
+      "value": 25590,
+      "unit": "USD_m",
+      "period": "close 2026-11-06",
+      "source": "stockanalysis.com (SECONDARY) quote page",
+      "url": "https://stockanalysis.com/stocks/crwv/",
+      "date": "2026-11-06",
+      "note": "Page appeared stale (close of Nov 6). Shares outstanding 551.54m per same page. At the Nov 10 close of 48.73, implied cap ~26,876."
+    },
+    "share_price_current": {
+      "value": 48.73,
+      "unit": "USD",
+      "period": "close 2026-11-10",
+      "source": "heygotrade.com news (SECONDARY)",
+      "url": "https://www.heygotrade.com/en/news/coreweave-crwv-stock-news-november-11-2026/",
+      "date": "2026-11-10",
+      "note": "stockanalysis.com showed 46.40 at Nov 6 close. Nov 13 close not found."
+    },
+    "share_price_52w_high": {
+      "value": 138.25,
+      "unit": "USD",
+      "period": "52 weeks to Nov 2026",
+      "source": "stockanalysis.com (SECONDARY) quote page",
+      "url": "https://stockanalysis.com/stocks/crwv/",
+      "date": "2026-11-06",
+      "note": "Also confirmed by heygotrade article. 52w low 40.58. Drawdown at 48.73 = -64.8%."
+    },
+    "equity_vol_historical": {
+      "value": 1.0195,
+      "unit": "annualized_fraction",
+      "period": "180-day close-to-close HV, as of 2026-11-13",
+      "source": "alphaquery.com (SECONDARY)",
+      "url": "https://www.alphaquery.com/stock/CRWV/volatility-option-statistics/180-day/historical-volatility",
+      "date": "2026-11-13",
+      "note": "180-day historical (1-year not shown free). 30-day HV 1.3528."
+    },
+    "equity_vol_implied": {
+      "value": 0.9683,
+      "unit": "annualized_fraction",
+      "period": "30-day IV mean, as of 2026-11-13",
+      "source": "alphaquery.com (SECONDARY)",
+      "url": "https://www.alphaquery.com/stock/CRWV/volatility-option-statistics",
+      "date": "2026-11-13",
+      "note": "30-day implied only; longer tenors not shown free."
+    }
+  },
+  {
+    "company": "Oracle",
+    "ticker": "ORCL",
+    "period_end": {
+      "value": "2026-08-31",
+      "unit": "date",
+      "period": "Q1 FY2027 (3m to 2026-08-31)",
+      "source": "Oracle IR press release / 8-K tables: Q1 FY2027 results",
+      "url": "https://s23.q4cdn.com/440135859/files/content_files/1q27-pressrelease-September_FINAL.pdf",
+      "date": "2026-09-10",
+      "note": ""
+    },
+    "report_date": {
+      "value": "2026-09-10",
+      "unit": "date",
+      "period": "Q1 FY2027 (3m to 2026-08-31)",
+      "source": "Oracle IR press release / 8-K tables: Q1 FY2027 results",
+      "url": "https://s23.q4cdn.com/440135859/files/content_files/1q27-pressrelease-September_FINAL.pdf",
+      "date": "2026-09-10",
+      "note": "Earnings release; 10-Q filed 2026-09-11 per longbridge.com (secondary). Next report (Q2 FY27, Nov 30 quarter) due ~mid-Dec 2026."
+    },
+    "cash_and_st_investments": {
+      "value": 37077,
+      "unit": "USD_m",
+      "period": "as of 2026-08-31",
+      "source": "Oracle IR press release / 8-K tables: Q1 FY2027 results",
+      "url": "https://s23.q4cdn.com/440135859/files/content_files/1q27-pressrelease-September_FINAL.pdf",
+      "date": "2026-09-10",
+      "note": "Cash & equivalents 36,369 + marketable securities 708."
+    },
+    "total_debt": {
+      "value": 125337,
+      "unit": "USD_m",
+      "period": "as of 2026-08-31",
+      "source": "Oracle IR press release / 8-K tables: Q1 FY2027 results",
+      "url": "https://s23.q4cdn.com/440135859/files/content_files/1q27-pressrelease-September_FINAL.pdf",
+      "date": "2026-09-10",
+      "note": "Notes payable and other borrowings: current 7,625 + non-current 117,712 (summed). Finance lease liabilities not included (reported within other liabilities; Aug-2025 10-Q showed 4,017 a year earlier; current figure not captured). Operating leases excluded."
+    },
+    "debt_due_within_24m": {
+      "value": 7625,
+      "unit": "USD_m",
+      "period": "as of 2026-08-31",
+      "source": "Oracle IR press release / 8-K tables: Q1 FY2027 results",
+      "url": "https://s23.q4cdn.com/440135859/files/content_files/1q27-pressrelease-September_FINAL.pdf",
+      "date": "2026-09-10",
+      "note": "Current portion only; FY27 Q1 10-Q maturity table not located (primary 10-Q PDF for Aug-2026 not found; only Aug-2025 10-Q surfaced)."
+    },
+    "floating_rate_share_of_debt": {
+      "value": null,
+      "unit": "fraction",
+      "period": "as of 2026-08-31",
+      "source": "n/a",
+      "url": "",
+      "date": "2026-09-10",
+      "note": "Not found: Q1 FY27 10-Q debt note not retrieved."
+    },
+    "total_assets": {
+      "value": 303259,
+      "unit": "USD_m",
+      "period": "as of 2026-08-31",
+      "source": "Oracle IR press release / 8-K tables: Q1 FY2027 results",
+      "url": "https://s23.q4cdn.com/440135859/files/content_files/1q27-pressrelease-September_FINAL.pdf",
+      "date": "2026-09-10",
+      "note": ""
+    },
+    "ppe_net": {
+      "value": 127845,
+      "unit": "USD_m",
+      "period": "as of 2026-08-31",
+      "source": "Oracle IR press release / 8-K tables: Q1 FY2027 results",
+      "url": "https://s23.q4cdn.com/440135859/files/content_files/1q27-pressrelease-September_FINAL.pdf",
+      "date": "2026-09-10",
+      "note": "Property, plant and equipment, net as reported; whether finance-lease ROU is inside not confirmed."
+    },
+    "revenue_latest_quarter": {
+      "value": 19345,
+      "unit": "USD_m",
+      "period": "Q1 FY2027 (3m to 2026-08-31)",
+      "source": "Oracle IR press release / 8-K tables: Q1 FY2027 results",
+      "url": "https://s23.q4cdn.com/440135859/files/content_files/1q27-pressrelease-September_FINAL.pdf",
+      "date": "2026-09-10",
+      "note": ""
+    },
+    "revenue_same_quarter_prior_year": {
+      "value": 14926,
+      "unit": "USD_m",
+      "period": "Q1 FY2026",
+      "source": "Oracle IR press release / 8-K tables: Q1 FY2027 results",
+      "url": "https://s23.q4cdn.com/440135859/files/content_files/1q27-pressrelease-September_FINAL.pdf",
+      "date": "2026-09-10",
+      "note": "YoY +30%"
+    },
+    "revenue_ttm": {
+      "value": 71776,
+      "unit": "USD_m",
+      "period": "4Q to 2026-08-31",
+      "source": "Oracle IR press release / 8-K tables: Q1 FY2027 results",
+      "url": "https://investor.oracle.com/investor-news/news-details/2026/Oracle-Announces-Q1-Results-Driven-by-Triple-Digit-Growth-in-Cloud-Infrastructure-Revenues/default.aspx",
+      "date": "2026-09-10",
+      "note": "Derived: FY2026 revenue 67,357 - Q1 FY26 14,926 + Q1 FY27 19,345."
+    },
+    "gross_margin_latest_quarter": {
+      "value": 0.6003,
+      "unit": "fraction",
+      "period": "Q1 FY2027 (3m to 2026-08-31)",
+      "source": "Oracle IR press release / 8-K tables: Q1 FY2027 results",
+      "url": "https://s23.q4cdn.com/440135859/files/content_files/1q27-pressrelease-September_FINAL.pdf",
+      "date": "2026-09-10",
+      "note": "Computed; Oracle does not report gross profit. Cost lines used: cloud & software 6,400 + hardware 281 + services 1,052 = 7,733. Excludes amortization of intangibles and S&M/R&D. Operating margin 35% (op income 6,728)."
+    },
+    "operating_cash_flow_quarter": {
+      "value": 23103,
+      "unit": "USD_m",
+      "period": "Q1 FY2027 (3m to 2026-08-31)",
+      "source": "Oracle IR press release / 8-K tables: Q1 FY2027 results",
+      "url": "https://s23.q4cdn.com/440135859/files/content_files/1q27-pressrelease-September_FINAL.pdf",
+      "date": "2026-09-10",
+      "note": "Elevated; release cites customer prepayments."
+    },
+    "capex_quarter": {
+      "value": 28499,
+      "unit": "USD_m",
+      "period": "Q1 FY2027 (3m to 2026-08-31)",
+      "source": "Oracle IR press release / 8-K tables: Q1 FY2027 results",
+      "url": "https://s23.q4cdn.com/440135859/files/content_files/1q27-pressrelease-September_FINAL.pdf",
+      "date": "2026-09-10",
+      "note": "FCF Q1 = -5,396 (company table). Company says net capex outlay 18.0bn after short-term financing and customer prepayments."
+    },
+    "operating_cash_flow_ttm": {
+      "value": 46940,
+      "unit": "USD_m",
+      "period": "4Q to 2026-08-31",
+      "source": "Oracle IR press release / 8-K tables: Q1 FY2027 results",
+      "url": "https://s23.q4cdn.com/440135859/files/content_files/1q27-pressrelease-September_FINAL.pdf",
+      "date": "2026-09-10",
+      "note": "Sum of quarterly OCF from company FCF table: 2,066 + 7,151 + 14,620 + 23,103."
+    },
+    "capex_ttm": {
+      "value": 75660,
+      "unit": "USD_m",
+      "period": "4Q to 2026-08-31",
+      "source": "Oracle IR press release / 8-K tables: Q1 FY2027 results",
+      "url": "https://s23.q4cdn.com/440135859/files/content_files/1q27-pressrelease-September_FINAL.pdf",
+      "date": "2026-09-10",
+      "note": "Sum 12,033 + 18,635 + 16,493 + 28,499; TTM FCF = -28,720."
+    },
+    "employees": {
+      "value": 141000,
+      "unit": "count",
+      "period": "latest disclosed (likely 10-K, as of 2026-05-31)",
+      "source": "stockanalysis.com (SECONDARY) statistics page",
+      "url": "https://stockanalysis.com/stocks/orcl/statistics/",
+      "date": "2026-11-07",
+      "note": "Secondary; date of count unverified."
+    },
+    "largest_customer_share": {
+      "value": null,
+      "unit": "fraction_of_revenue",
+      "period": "Q1 FY2027 (3m to 2026-08-31)",
+      "source": "Oracle IR press release / 8-K tables: Q1 FY2027 results",
+      "url": "https://investor.oracle.com/investor-news/news-details/2026/Oracle-Announces-Q1-Results-Driven-by-Triple-Digit-Growth-in-Cloud-Infrastructure-Revenues/default.aspx",
+      "date": "2026-09-10",
+      "note": "Not disclosed in release; RPO concentration (large AI contracts) not quantified in sources read."
+    },
+    "top5_customer_share": {
+      "value": null,
+      "unit": "fraction_of_revenue",
+      "period": "Q1 FY2027 (3m to 2026-08-31)",
+      "source": "Oracle IR press release / 8-K tables: Q1 FY2027 results",
+      "url": "https://investor.oracle.com/investor-news/news-details/2026/Oracle-Announces-Q1-Results-Driven-by-Triple-Digit-Growth-in-Cloud-Infrastructure-Revenues/default.aspx",
+      "date": "2026-09-10",
+      "note": "Not disclosed."
+    },
+    "rpo_backlog": {
+      "value": 664000,
+      "unit": "USD_m",
+      "period": "as of 2026-08-31",
+      "source": "Oracle IR press release Q1 FY2027",
+      "url": "https://investor.oracle.com/investor-news/news-details/2026/Oracle-Announces-Q1-Results-Driven-by-Triple-Digit-Growth-in-Cloud-Infrastructure-Revenues/default.aspx",
+      "date": "2026-09-10",
+      "note": "RPO $664bn, +$209bn YoY. Share recognized in next 12 months not disclosed in release (Aug-2025 10-Q said ~10%)."
+    },
+    "market_cap": {
+      "value": 361970,
+      "unit": "USD_m",
+      "period": "close 2026-11-06",
+      "source": "stockanalysis.com (SECONDARY) quote page",
+      "url": "https://stockanalysis.com/stocks/orcl/",
+      "date": "2026-11-06",
+      "note": "Page appeared stale (Nov 6 close 116.10); shares 3.12bn. At Nov 10 close 117.98, implied ~368,100."
+    },
+    "share_price_current": {
+      "value": 117.98,
+      "unit": "USD",
+      "period": "close 2026-11-10",
+      "source": "heygotrade.com news (SECONDARY)",
+      "url": "https://www.heygotrade.com/id/news/saham-oracle-orcl-turun-11-november-2026/",
+      "date": "2026-11-10",
+      "note": "Nov 13 close not found."
+    },
+    "share_price_52w_high": {
+      "value": 250.25,
+      "unit": "USD",
+      "period": "52 weeks to Nov 2026",
+      "source": "stockanalysis.com (SECONDARY) quote page",
+      "url": "https://stockanalysis.com/stocks/orcl/",
+      "date": "2026-11-06",
+      "note": "52w low 109.21. Drawdown at 117.98 = -52.9%."
+    },
+    "equity_vol_historical": {
+      "value": 0.6389,
+      "unit": "annualized_fraction",
+      "period": "180-day close-to-close HV, as of 2026-11-13",
+      "source": "alphaquery.com (SECONDARY)",
+      "url": "https://www.alphaquery.com/stock/ORCL/volatility-option-statistics/180-day/historical-volatility",
+      "date": "2026-11-13",
+      "note": "30-day HV 0.7544. Beta (5Y) 1.78 per stockanalysis."
+    },
+    "equity_vol_implied": {
+      "value": 0.6298,
+      "unit": "annualized_fraction",
+      "period": "30-day IV mean, as of 2026-11-13",
+      "source": "alphaquery.com (SECONDARY)",
+      "url": "https://www.alphaquery.com/stock/ORCL/volatility-option-statistics",
+      "date": "2026-11-13",
+      "note": ""
+    }
+  },
+  {
+    "company": "Meta Platforms",
+    "ticker": "META",
+    "period_end": {
+      "value": "2026-09-30",
+      "unit": "date",
+      "period": "Q3 2026 (3m to 2026-09-30)",
+      "source": "Meta IR press release: Meta Reports Third Quarter 2026 Results",
+      "url": "https://s21.q4cdn.com/399680738/files/doc_news/Meta-Reports-Third-Quarter-2026-Results-2026.pdf",
+      "date": "2026-10-21",
+      "note": ""
+    },
+    "report_date": {
+      "value": "2026-10-21",
+      "unit": "date",
+      "period": "Q3 2026 (3m to 2026-09-30)",
+      "source": "Meta IR press release: Meta Reports Third Quarter 2026 Results",
+      "url": "https://s21.q4cdn.com/399680738/files/doc_news/Meta-Reports-Third-Quarter-2026-Results-2026.pdf",
+      "date": "2026-10-21",
+      "note": "Earnings release date; 10-Q filing date not captured."
+    },
+    "cash_and_st_investments": {
+      "value": 82449,
+      "unit": "USD_m",
+      "period": "as of 2026-09-30",
+      "source": "Meta IR press release: Meta Reports Third Quarter 2026 Results",
+      "url": "https://s21.q4cdn.com/399680738/files/doc_news/Meta-Reports-Third-Quarter-2026-Results-2026.pdf",
+      "date": "2026-10-21",
+      "note": "Cash & equivalents 11,222 + marketable securities 71,227. Excludes restricted cash equivalents ~12,830 (incl. 10,800 escrow for infrastructure purchase agreements)."
+    },
+    "total_debt": {
+      "value": 83669,
+      "unit": "USD_m",
+      "period": "as of 2026-09-30",
+      "source": "Meta Form 10-Q Q3 2026 (SEC EDGAR)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001326801/000162828026066773/meta-20260930.htm",
+      "date": "2026-10-21",
+      "note": "Long-term debt non-current 80,922 + current 2,747 (carrying; face 84,000 less 331 discount/costs). All listed as fixed-rate senior unsecured notes. EXCLUDES finance lease liabilities (not captured) and operating leases (2,522 + 28,651). Off-balance-sheet: data-center ventures (Louisiana, Texas) residual value guarantees max 41,493; total max loss exposure 68,404."
+    },
+    "debt_due_within_24m": {
+      "value": 4247,
+      "unit": "USD_m",
+      "period": "as of 2026-09-30",
+      "source": "Meta Form 10-Q Q3 2026 (SEC EDGAR)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001326801/000162828026066773/meta-20260930.htm",
+      "date": "2026-10-21",
+      "note": "Current portion 2,747 (2027 maturity 2,750) + 2028 maturities 1,500 (upper bound: some 2028 notes may fall after 2028-09-30). Remainder-2026 maturities: none."
+    },
+    "floating_rate_share_of_debt": {
+      "value": 0.0,
+      "unit": "fraction",
+      "period": "as of 2026-09-30",
+      "source": "Meta Form 10-Q Q3 2026 (SEC EDGAR)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001326801/000162828026066773/meta-20260930.htm",
+      "date": "2026-10-21",
+      "note": "10-Q debt note lists only fixed-rate senior notes (2022, 2023, 2024, Nov-2025, May-2026 series); no CP or FRNs mentioned. Treat as ~0."
+    },
+    "total_assets": {
+      "value": 478836,
+      "unit": "USD_m",
+      "period": "as of 2026-09-30",
+      "source": "Meta IR press release: Meta Reports Third Quarter 2026 Results",
+      "url": "https://s21.q4cdn.com/399680738/files/doc_news/Meta-Reports-Third-Quarter-2026-Results-2026.pdf",
+      "date": "2026-10-21",
+      "note": ""
+    },
+    "ppe_net": {
+      "value": 253222,
+      "unit": "USD_m",
+      "period": "as of 2026-09-30",
+      "source": "Meta Form 10-Q Q3 2026 (SEC EDGAR)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001326801/000162828026066773/meta-20260930.htm",
+      "date": "2026-10-21",
+      "note": "Property and equipment, net; per 10-Q XBRL tag this INCLUDES finance-lease ROU assets (gross finance-lease ROU 11,704)."
+    },
+    "revenue_latest_quarter": {
+      "value": 64601,
+      "unit": "USD_m",
+      "period": "Q3 2026 (3m to 2026-09-30)",
+      "source": "Meta IR press release: Meta Reports Third Quarter 2026 Results",
+      "url": "https://s21.q4cdn.com/399680738/files/doc_news/Meta-Reports-Third-Quarter-2026-Results-2026.pdf",
+      "date": "2026-10-21",
+      "note": ""
+    },
+    "revenue_same_quarter_prior_year": {
+      "value": 51242,
+      "unit": "USD_m",
+      "period": "Q3 2025",
+      "source": "Meta IR press release: Meta Reports Third Quarter 2026 Results",
+      "url": "https://s21.q4cdn.com/399680738/files/doc_news/Meta-Reports-Third-Quarter-2026-Results-2026.pdf",
+      "date": "2026-10-21",
+      "note": "YoY +26%"
+    },
+    "revenue_ttm": {
+      "value": 241605,
+      "unit": "USD_m",
+      "period": "4Q to 2026-09-30",
+      "source": "Meta Form 10-Q Q3 2026 (SEC EDGAR); Meta Q4 2025 press release",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001326801/000162828026066773/meta-20260930.htm ; https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Fourth-Quarter-and-Full-Year-2025-Results/default.aspx",
+      "date": "2026-10-21",
+      "note": "Derived: 9M 2026 revenue 181,712 + Q4 2025 revenue 59,893."
+    },
+    "gross_margin_latest_quarter": {
+      "value": 0.7931,
+      "unit": "fraction",
+      "period": "Q3 2026 (3m to 2026-09-30)",
+      "source": "Meta IR press release: Meta Reports Third Quarter 2026 Results",
+      "url": "https://s21.q4cdn.com/399680738/files/doc_news/Meta-Reports-Third-Quarter-2026-Results-2026.pdf",
+      "date": "2026-10-21",
+      "note": "Computed from cost of revenue 13,369; Meta does not report gross profit."
+    },
+    "operating_cash_flow_quarter": {
+      "value": 32786,
+      "unit": "USD_m",
+      "period": "Q3 2026 (3m to 2026-09-30)",
+      "source": "Meta IR press release: Meta Reports Third Quarter 2026 Results",
+      "url": "https://s21.q4cdn.com/399680738/files/doc_news/Meta-Reports-Third-Quarter-2026-Results-2026.pdf",
+      "date": "2026-10-21",
+      "note": ""
+    },
+    "capex_quarter": {
+      "value": 33942,
+      "unit": "USD_m",
+      "period": "Q3 2026 (3m to 2026-09-30)",
+      "source": "Meta IR press release: Meta Reports Third Quarter 2026 Results",
+      "url": "https://s21.q4cdn.com/399680738/files/doc_news/Meta-Reports-Third-Quarter-2026-Results-2026.pdf",
+      "date": "2026-10-21",
+      "note": "Purchases of property and equipment. Plus finance-lease principal 964. Company FCF Q3 = -2,120. FY2026 capex guidance (incl. finance-lease principal) 135-145bn."
+    },
+    "employees": {
+      "value": 66775,
+      "unit": "count",
+      "period": "as of 2026-09-30",
+      "source": "Meta IR press release: Meta Reports Third Quarter 2026 Results",
+      "url": "https://s21.q4cdn.com/399680738/files/doc_news/Meta-Reports-Third-Quarter-2026-Results-2026.pdf",
+      "date": "2026-10-21",
+      "note": ""
+    },
+    "largest_customer_share": {
+      "value": null,
+      "unit": "fraction_of_revenue",
+      "period": "Q3 2026 (3m to 2026-09-30)",
+      "source": "Meta Form 10-Q Q3 2026 (SEC EDGAR)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001326801/000162828026066773/meta-20260930.htm",
+      "date": "2026-10-21",
+      "note": "No concentration disclosure (advertising revenue, diffuse). Not applicable."
+    },
+    "top5_customer_share": {
+      "value": null,
+      "unit": "fraction_of_revenue",
+      "period": "Q3 2026 (3m to 2026-09-30)",
+      "source": "Meta Form 10-Q Q3 2026 (SEC EDGAR)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001326801/000162828026066773/meta-20260930.htm",
+      "date": "2026-10-21",
+      "note": "Not disclosed."
+    },
+    "rpo_backlog": {
+      "value": null,
+      "unit": "USD_m",
+      "period": "as of 2026-09-30",
+      "source": "Meta Form 10-Q Q3 2026 (SEC EDGAR)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001326801/000162828026066773/meta-20260930.htm",
+      "date": "2026-10-21",
+      "note": "Not disclosed/not applicable. Note: leases not yet commenced ~355,730 (commitment, not backlog)."
+    },
+    "market_cap": {
+      "value": 1640000,
+      "unit": "USD_m",
+      "period": "close 2026-11-13",
+      "source": "stockanalysis.com (SECONDARY) statistics page",
+      "url": "https://stockanalysis.com/stocks/meta/statistics/",
+      "date": "2026-11-14",
+      "note": "Rounded $1.64T as shown."
+    },
+    "share_price_current": {
+      "value": 641.69,
+      "unit": "USD",
+      "period": "close 2026-11-13",
+      "source": "stockanalysis.com (SECONDARY) statistics page",
+      "url": "https://stockanalysis.com/stocks/meta/statistics/",
+      "date": "2026-11-13",
+      "note": ""
+    },
+    "share_price_52w_high": {
+      "value": 779.82,
+      "unit": "USD",
+      "period": "52 weeks to 2026-11-13",
+      "source": "stockanalysis.com (SECONDARY) quote page",
+      "url": "https://stockanalysis.com/stocks/meta/",
+      "date": "2026-11-13",
+      "note": "52w low 520.26. Drawdown = -17.7%."
+    },
+    "equity_vol_historical": {
+      "value": 0.4555,
+      "unit": "annualized_fraction",
+      "period": "180-day close-to-close HV, as of 2026-11-13",
+      "source": "alphaquery.com (SECONDARY)",
+      "url": "https://www.alphaquery.com/stock/META/volatility-option-statistics/180-day/historical-volatility",
+      "date": "2026-11-13",
+      "note": "30-day HV 0.4098."
+    },
+    "equity_vol_implied": {
+      "value": 0.3926,
+      "unit": "annualized_fraction",
+      "period": "30-day IV mean, as of 2026-11-13",
+      "source": "alphaquery.com (SECONDARY)",
+      "url": "https://www.alphaquery.com/stock/META/volatility-option-statistics",
+      "date": "2026-11-13",
+      "note": ""
+    }
+  },
+  {
+    "company": "Amazon",
+    "ticker": "AMZN",
+    "period_end": {
+      "value": "2026-09-30",
+      "unit": "date",
+      "period": "Q3 2026 (3m to 2026-09-30)",
+      "source": "Amazon IR press release: Amazon.com Announces Third Quarter Results",
+      "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/",
+      "date": "2026-10-29",
+      "note": ""
+    },
+    "report_date": {
+      "value": "2026-10-29",
+      "unit": "date",
+      "period": "Q3 2026 (3m to 2026-09-30)",
+      "source": "Amazon IR press release: Amazon.com Announces Third Quarter Results",
+      "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/",
+      "date": "2026-10-29",
+      "note": "10-Q filed 2026-10-30."
+    },
+    "cash_and_st_investments": {
+      "value": 114226,
+      "unit": "USD_m",
+      "period": "as of 2026-09-30",
+      "source": "Amazon IR press release: Amazon.com Announces Third Quarter Results",
+      "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/",
+      "date": "2026-10-29",
+      "note": "Cash & equivalents 55,783 + marketable securities 58,443."
+    },
+    "total_debt": {
+      "value": 180332,
+      "unit": "USD_m",
+      "period": "as of 2026-09-30",
+      "source": "Amazon Form 10-Q Q3 2026 (filed 2026-10-30, via Amazon IR/SEC filings)",
+      "url": "https://d18rn0p25nwr6d.cloudfront.net/CIK-0001018724/ee4fffc7-7dfe-40b1-917e-12baa11eb95f.pdf",
+      "date": "2026-10-30",
+      "note": "Long-term debt 173,125 + current portion 6,827 (face 180,887) + other short-term credit-facility borrowings 380; no commercial paper outstanding. EXCLUDES finance lease liabilities 14,495 (current 1,866) and operating leases. With finance leases: 194,827."
+    },
+    "debt_due_within_24m": {
+      "value": 7207,
+      "unit": "USD_m",
+      "period": "as of 2026-09-30",
+      "source": "Amazon Form 10-Q Q3 2026 (filed 2026-10-30, via Amazon IR/SEC filings)",
+      "url": "https://d18rn0p25nwr6d.cloudfront.net/CIK-0001018724/ee4fffc7-7dfe-40b1-917e-12baa11eb95f.pdf",
+      "date": "2026-10-30",
+      "note": "Current portion of LTD 6,827 + short-term borrowings 380. Principal-only maturities by year not given (commitments table combines principal+interest: rem-2026 1,413; 2027 16,566; 2028 19,567)."
+    },
+    "floating_rate_share_of_debt": {
+      "value": null,
+      "unit": "fraction",
+      "period": "as of 2026-09-30",
+      "source": "Amazon Form 10-Q Q3 2026 (filed 2026-10-30, via Amazon IR/SEC filings)",
+      "url": "https://d18rn0p25nwr6d.cloudfront.net/CIK-0001018724/ee4fffc7-7dfe-40b1-917e-12baa11eb95f.pdf",
+      "date": "2026-10-30",
+      "note": "Not stated as a share. FRNs: USD 2,800 (due 2028/2029) + USD 750 (due 2029) + EUR 1,800m (due 2028). USD FRNs alone = 3,550 = ~2.0% of face 180,887; EUR FRN adds roughly 1pp more (FX conversion not done)."
+    },
+    "total_assets": {
+      "value": 1243390,
+      "unit": "USD_m",
+      "period": "as of 2026-09-30",
+      "source": "Amazon IR press release: Amazon.com Announces Third Quarter Results",
+      "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/",
+      "date": "2026-10-29",
+      "note": ""
+    },
+    "ppe_net": {
+      "value": 508862,
+      "unit": "USD_m",
+      "period": "as of 2026-09-30",
+      "source": "Amazon IR press release: Amazon.com Announces Third Quarter Results",
+      "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/",
+      "date": "2026-10-29",
+      "note": "Property and equipment, net (Amazon includes finance-lease assets in PP&E)."
+    },
+    "revenue_latest_quarter": {
+      "value": 201944,
+      "unit": "USD_m",
+      "period": "Q3 2026 (3m to 2026-09-30)",
+      "source": "Amazon IR press release: Amazon.com Announces Third Quarter Results",
+      "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/",
+      "date": "2026-10-29",
+      "note": ""
+    },
+    "revenue_same_quarter_prior_year": {
+      "value": 180169,
+      "unit": "USD_m",
+      "period": "Q3 2025",
+      "source": "Amazon IR press release: Amazon.com Announces Third Quarter Results",
+      "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/",
+      "date": "2026-10-29",
+      "note": "YoY +12.1%"
+    },
+    "revenue_ttm": {
+      "value": 797455,
+      "unit": "USD_m",
+      "period": "TTM to 2026-09-30",
+      "source": "Amazon IR press release: Amazon.com Announces Third Quarter Results",
+      "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/",
+      "date": "2026-10-29",
+      "note": ""
+    },
+    "gross_margin_latest_quarter": {
+      "value": 0.5317,
+      "unit": "fraction",
+      "period": "Q3 2026 (3m to 2026-09-30)",
+      "source": "Amazon IR press release: Amazon.com Announces Third Quarter Results",
+      "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/",
+      "date": "2026-10-29",
+      "note": "Computed as 1 - cost of sales 94,573 / net sales; Amazon reports no gross profit and puts fulfillment/tech costs below cost of sales. Operating margin 13.9%."
+    },
+    "operating_cash_flow_quarter": {
+      "value": 42422,
+      "unit": "USD_m",
+      "period": "Q3 2026 (3m to 2026-09-30)",
+      "source": "Amazon IR press release: Amazon.com Announces Third Quarter Results",
+      "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/",
+      "date": "2026-10-29",
+      "note": ""
+    },
+    "capex_quarter": {
+      "value": 75878,
+      "unit": "USD_m",
+      "period": "Q3 2026 (3m to 2026-09-30)",
+      "source": "Amazon IR press release: Amazon.com Announces Third Quarter Results",
+      "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/",
+      "date": "2026-10-29",
+      "note": "Purchases of P&E 77,259 net of proceeds/incentives 1,381 (derived)."
+    },
+    "operating_cash_flow_ttm": {
+      "value": 168300,
+      "unit": "USD_m",
+      "period": "TTM",
+      "source": "Amazon IR press release: Amazon.com Announces Third Quarter Results",
+      "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/",
+      "date": "2026-10-29",
+      "note": ""
+    },
+    "capex_ttm": {
+      "value": 210657,
+      "unit": "USD_m",
+      "period": "TTM",
+      "source": "Amazon IR press release: Amazon.com Announces Third Quarter Results",
+      "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/",
+      "date": "2026-10-29",
+      "note": "Net of proceeds and incentives. Company TTM FCF = -42,357. Finance-lease principal TTM 1,681."
+    },
+    "employees": {
+      "value": 1638000,
+      "unit": "count",
+      "period": "as of 2026-09-30",
+      "source": "Amazon IR press release: Amazon.com Announces Third Quarter Results",
+      "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/",
+      "date": "2026-10-29",
+      "note": "Per press release extraction; stockanalysis.com shows 1,576,000 (older count)."
+    },
+    "largest_customer_share": {
+      "value": null,
+      "unit": "fraction_of_revenue",
+      "period": "Q3 2026 (3m to 2026-09-30)",
+      "source": "Amazon Form 10-Q Q3 2026 (filed 2026-10-30, via Amazon IR/SEC filings)",
+      "url": "https://d18rn0p25nwr6d.cloudfront.net/CIK-0001018724/ee4fffc7-7dfe-40b1-917e-12baa11eb95f.pdf",
+      "date": "2026-10-30",
+      "note": "No concentration disclosure; not applicable."
+    },
+    "top5_customer_share": {
+      "value": null,
+      "unit": "fraction_of_revenue",
+      "period": "Q3 2026 (3m to 2026-09-30)",
+      "source": "Amazon Form 10-Q Q3 2026 (filed 2026-10-30, via Amazon IR/SEC filings)",
+      "url": "https://d18rn0p25nwr6d.cloudfront.net/CIK-0001018724/ee4fffc7-7dfe-40b1-917e-12baa11eb95f.pdf",
+      "date": "2026-10-30",
+      "note": "Not disclosed."
+    },
+    "rpo_backlog": {
+      "value": 578000,
+      "unit": "USD_m",
+      "period": "as of 2026-09-30",
+      "source": "Amazon Form 10-Q Q3 2026 (filed 2026-10-30, via Amazon IR/SEC filings)",
+      "url": "https://d18rn0p25nwr6d.cloudfront.net/CIK-0001018724/ee4fffc7-7dfe-40b1-917e-12baa11eb95f.pdf",
+      "date": "2026-10-30",
+      "note": "AWS commitments not yet recognized (contracts >1yr) ~$578bn, weighted-average remaining life 6.1 years."
+    },
+    "market_cap": {
+      "value": 2880000,
+      "unit": "USD_m",
+      "period": "close 2026-11-13",
+      "source": "stockanalysis.com (SECONDARY) statistics page",
+      "url": "https://stockanalysis.com/stocks/amzn/statistics/",
+      "date": "2026-11-14",
+      "note": "Rounded $2.88T; shares 10.81bn."
+    },
+    "share_price_current": {
+      "value": 266.66,
+      "unit": "USD",
+      "period": "close 2026-11-13",
+      "source": "stockanalysis.com (SECONDARY) statistics page",
+      "url": "https://stockanalysis.com/stocks/amzn/statistics/",
+      "date": "2026-11-13",
+      "note": ""
+    },
+    "share_price_52w_high": {
+      "value": 287.2,
+      "unit": "USD",
+      "period": "52 weeks to 2026-11-13",
+      "source": "stockanalysis.com (SECONDARY) quote page",
+      "url": "https://stockanalysis.com/stocks/amzn/",
+      "date": "2026-11-13",
+      "note": "52w low 196.00. Drawdown = -7.2%."
+    },
+    "equity_vol_historical": {
+      "value": 0.3743,
+      "unit": "annualized_fraction",
+      "period": "180-day close-to-close HV, as of 2026-11-13",
+      "source": "alphaquery.com (SECONDARY)",
+      "url": "https://www.alphaquery.com/stock/AMZN/volatility-option-statistics/180-day/historical-volatility",
+      "date": "2026-11-13",
+      "note": "30-day HV 0.4040."
+    },
+    "equity_vol_implied": {
+      "value": 0.3306,
+      "unit": "annualized_fraction",
+      "period": "30-day IV mean, as of 2026-11-13",
+      "source": "alphaquery.com (SECONDARY)",
+      "url": "https://www.alphaquery.com/stock/AMZN/volatility-option-statistics",
+      "date": "2026-11-13",
+      "note": ""
+    }
+  }
+]
