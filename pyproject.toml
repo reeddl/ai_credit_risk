@@ -1,0 +1,13 @@
+[project]
+name = "ai-pd"
+version = "0.1.0"
+description = "Transparent default probability model for AI companies"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.26", "pandas>=2.1"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["ai_pd"]
