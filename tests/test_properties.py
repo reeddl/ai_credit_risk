@@ -77,9 +77,9 @@ class ScorecardPropertyTest(unittest.TestCase):
         self.assertTrue(np.allclose(new[segs != "neocloud"], base[segs != "neocloud"]))
 
     def test_scores_bounded_by_prior_and_weights(self):
-        # The most any company can move from its prior is sum(|w|) * 2 log-odds.
-        span = 2 * sum(f["weight"] for f in CFG.features.values())
+        # The most any company can move from its prior is lambda * sum(|w|) * 2 log-odds.
         for seg, spec in CFG.segments.items():
+            span = 2 * spec["weight_scale"] * sum(f["weight"] for f in CFG.features.values())
             lo = inv_logit(logit(spec["prior_pd_1y"]) - span)
             hi = inv_logit(logit(spec["prior_pd_1y"]) + span)
             segs = pd.Series([seg, seg])
@@ -87,6 +87,23 @@ class ScorecardPropertyTest(unittest.TestCase):
             out = score_pd(segs, scores, CFG)["pd_1y"]
             self.assertAlmostEqual(out[0], lo, places=12)
             self.assertAlmostEqual(out[1], hi, places=12)
+
+    def test_weight_scale_touches_only_its_segment_and_keeps_order(self):
+        segs = pd.Series(self.rng.choice(self.segs, N_DRAWS))
+        scores = self._random_scores(N_DRAWS)
+        base = score_pd(segs, scores, CFG)
+        cfg = CFG.copy()
+        cfg.segments["chip_designer"]["weight_scale"] *= 0.5
+        new = score_pd(segs, scores, cfg)
+        chip = segs == "chip_designer"
+        self.assertTrue(np.allclose(new["pd_1y"][~chip], base["pd_1y"][~chip]))
+        np.testing.assert_allclose(new["logodds_features"][chip], base["logodds_features"][chip] * 0.5, atol=1e-12)
+        # Within the segment, the ordering of companies is unchanged.
+        b, n = base["pd_1y"][chip].to_numpy(), new["pd_1y"][chip].to_numpy()
+        self.assertTrue(np.array_equal(np.argsort(b, kind="stable"), np.argsort(n, kind="stable")))
+        # Shrinking the scale pulls every company toward the prior.
+        prior = CFG.segments["chip_designer"]["prior_pd_1y"]
+        self.assertTrue((np.abs(logit(n) - logit(prior)) <= np.abs(logit(b) - logit(prior)) + 1e-12).all())
 
     def test_three_year_pd_monotone_in_one_year(self):
         p = np.sort(self.rng.uniform(0, 0.99, N_DRAWS))
@@ -319,6 +336,7 @@ class ConfigValidationTest(unittest.TestCase):
 
     def test_rejects_prior_outside_unit_interval(self):
         self._bad(lambda r: r["segments"]["power"].__setitem__("prior_pd_1y", 1.2))
+        self._bad(lambda r: r["segments"]["power"].__setitem__("weight_scale", 0.0))
 
     def test_rejects_unordered_bins(self):
         self._bad(lambda r: r["features"]["runway"].__setitem__("bins", [6, 12, 24, 36]))
