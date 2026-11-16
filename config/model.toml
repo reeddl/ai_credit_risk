@@ -31,6 +31,8 @@ down_rounds_count = true
 # gamma_* is the segment's extra log-odds shift per unit of scenario
 # severity, for effects the company features don't capture (contagion,
 # sentiment). Set a gamma to 0 to rely on feature re-scoring alone.
+# weight_scale (default 1) multiplies every feature weight for the segment,
+# so it sets how far scores can move a company from the segment prior.
 # ---------------------------------------------------------------------------
 
 [segments.closed_model]
@@ -92,6 +94,8 @@ gamma_rates_up = 0.4
 [segments.chip_designer]
 name = "Chip designers"
 prior_pd_1y = 0.03
+# Proposed Nov 16, 2026 from the CDS benchmark (benchmark/results/weight_proposal.md).
+weight_scale = 0.45
 gamma_compute_glut = 0.4
 gamma_demand_stall = 0.4
 gamma_funding_freeze = 0.3
@@ -100,6 +104,8 @@ gamma_rates_up = 0.1
 [segments.fab_equipment]
 name = "Fabs, wafers, equipment, memory"
 prior_pd_1y = 0.02
+# Proposed Nov 16, 2026 from the CDS benchmark (benchmark/results/weight_proposal.md).
+weight_scale = 0.45
 gamma_compute_glut = 0.4
 gamma_demand_stall = 0.3
 gamma_funding_freeze = 0.1

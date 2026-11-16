@@ -100,7 +100,7 @@ floor for the model PD, not a target. Ranking is measured with Spearman and
 Kendall correlations and a permutation p-value; level with the model / CDS
 PD ratio and the slope of model log-odds on CDS log-odds.
 
-**Results (latest quotes).**
+**Results (latest quotes, version 1 weights).**
 
 | Sample | n | Spearman | Permutation p | Median model / RN PD | Log-odds slope |
 | --- | --- | --- | --- | --- | --- |
@@ -148,7 +148,53 @@ only the current portion, and some volatilities are 30-day implied.
 (52-week high here), recovery rate (40%), the risk-neutral to physical
 ratios, and the segment for hyperscalers and holding companies.
 
+### 6.2 Proposed weight scale for chip and fab segments (November 16, 2026)
+
+Section 6.1 found chip and fab PDs below the credit floor. Each segment can
+now carry a `weight_scale` that multiplies every feature weight, so
+logit(PD) = logit(prior) + lambda_seg x sum_k w_k z_k + gamma x s. It
+changes how far scores move a company from its segment prior without
+changing the order of companies inside the segment.
+
+`benchmark/propose_weights.py` fits lambda by least squares so that each
+traded chip and fab name lands in the middle (in log-odds) of the band from
+the rough physical CDS PD (floor) to the risk-neutral CDS PD (ceiling),
+with priors held fixed. The fit is 0.45 (0.43 for chip designers and 0.46
+for fab and equipment on their own); any value from 0.25 to 0.65 puts all
+six names in the band. The proposal sets 0.45 for both segments, which is
+the same as cutting every weight to 45% of its value for them (compute
+sensitivity 0.40 to 0.18, runway and funding dependence 0.30 to 0.135, and
+so on). Priors stay at 3% and 2%.
+
+| Name | Floor | Ceiling | Model now | Model, scale 0.45 |
+| --- | --- | --- | --- | --- |
+| Nvidia | 0.46% | 2.29% | 0.18% | 0.85% |
+| Intel | 0.41% | 2.04% | 0.34% | 0.90% |
+| Broadcom | 0.41% | 2.01% | 0.15% | 0.78% |
+| AMD | 0.31% | 1.55% | 0.18% | 0.85% |
+| SK Hynix | 0.12% | 0.96% | 0.04% | 0.33% |
+| TSMC | 0.12% | 0.93% | 0.05% | 0.39% |
+
+Across all 12 names Spearman moves from 0.77 to 0.78 on the latest quotes
+(0.91 to 0.88 for the nine with a fitting segment) and from 0.62 to 0.56 on
+the summer quotes. The log-odds slope falls from 1.74 to 1.22.
+
+Moving the priors instead would need 13.9% (chip) and 10.1% (fab), which
+would make an average chip designer riskier than an average neocloud (8%),
+and would keep fab PDs about 9 times apart from Intel to SK Hynix where
+CDS put them about 2 times apart.
+
+Caveats: six names, placeholder risk-premium ratios, and two known feature
+problems (collateral ignoring cash, compute sensitivity penalising chip
+sellers) that push Nvidia and Broadcom up today. Fixing those would lower
+their PDs and call for a refit.
+
 ## 7. Parameter log
 
 All parameters live in `config/model.toml`. Each should gain a source, date
 and owner before results are used.
+
+| Parameter | Value | Source | Date | Status |
+| --- | --- | --- | --- | --- |
+| `segments.chip_designer.weight_scale` | 0.45 | CDS benchmark fit, section 6.2 | 2026-11-16 | Proposed |
+| `segments.fab_equipment.weight_scale` | 0.45 | CDS benchmark fit, section 6.2 | 2026-11-16 | Proposed |

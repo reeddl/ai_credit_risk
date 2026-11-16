@@ -15,20 +15,20 @@ risk-premium ratio (see `ai_pd/market_implied.py`); treat that column as rough.
 | CoreWeave | neocloud (good) | 1155 | 2026-11-06 | 17.51% | 12.04% | 15.55% | 17.75% | 0.9x |
 | SoftBank Group | gpu_lessor (poor) | 424 | 2026-10-15 | 6.82% | 3.47% | 1.99% | 3.71% | 0.3x |
 | Oracle | neocloud (approximate) | 305 | 2026-11-06 | 4.96% | 2.51% | 2.55% | 4.50% | 0.5x |
-| NVIDIA | chip_designer (good) | 139 | 2026-11-06 | 2.29% | 0.46% | 0.18% | 0.00% | 0.1x |
-| Intel | fab_equipment (approximate) | 123.5 | 2026-10-30 | 2.04% | 0.41% | 0.34% | 5.27% | 0.2x |
-| Broadcom | chip_designer (approximate) | 122 | 2026-08-22 | 2.01% | 0.41% | 0.15% | 0.00% | 0.1x |
+| NVIDIA | chip_designer (good) | 139 | 2026-11-06 | 2.29% | 0.46% | 0.85% | 0.00% | 0.4x |
+| Intel | fab_equipment (approximate) | 123.5 | 2026-10-30 | 2.04% | 0.41% | 0.90% | 5.27% | 0.4x |
+| Broadcom | chip_designer (approximate) | 122 | 2026-08-22 | 2.01% | 0.41% | 0.78% | 0.00% | 0.4x |
 | Meta Platforms | closed_model (poor) | 108 | 2026-11-01 | 1.78% | 0.36% | 0.11% | 0.00% | 0.1x |
-| Advanced Micro Devices | chip_designer (good) | 94 | 2026-08-31 | 1.55% | 0.31% | 0.18% | 0.08% | 0.1x |
+| Advanced Micro Devices | chip_designer (good) | 94 | 2026-08-31 | 1.55% | 0.31% | 0.85% | 0.08% | 0.5x |
 | Corning | networking (approximate) | 88 | 2026-08-31 | 1.46% | 0.29% | 0.18% | 1.60% | 0.1x |
 | Amazon | neocloud (poor) | 65 | 2026-08-31 | 1.08% | 0.14% | 0.78% | 0.00% | 0.7x |
-| SK Hynix | fab_equipment (good) | 58 | 2026-08-31 | 0.96% | 0.12% | 0.04% | 0.04% | 0.0x |
-| TSMC | fab_equipment (good) | 56 | 2026-06-30 | 0.93% | 0.12% | 0.05% | 0.00% | 0.1x |
+| SK Hynix | fab_equipment (good) | 58 | 2026-08-31 | 0.96% | 0.12% | 0.33% | 0.04% | 0.3x |
+| TSMC | fab_equipment (good) | 56 | 2026-06-30 | 0.93% | 0.12% | 0.39% | 0.00% | 0.4x |
 
 | Sample | n | Spearman (model vs CDS) | Kendall | Permutation p | Spearman (Merton vs CDS) | Median model / RN PD | Log-odds slope |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| All names | 12 | 0.77 | 0.60 | 0.004 | 0.66 | 0.12x | 1.74 |
-| Good or approximate segment fit | 9 | 0.91 | 0.76 | 0.002 | 0.63 | 0.11x | 1.97 |
+| All names | 12 | 0.78 | 0.60 | 0.004 | 0.66 | 0.40x | 1.22 |
+| Good or approximate segment fit | 9 | 0.88 | 0.70 | 0.003 | 0.63 | 0.42x | 1.32 |
 
 Log-odds slope: model log-odds regressed on CDS log-odds. 1 = same spread of risk as the market;
 above 1 = the model separates safe and risky names more sharply than CDS do.
@@ -37,11 +37,11 @@ Segment gaps (log-odds, model minus CDS). Positive means the model is more pessi
 
 | Segment | Names | Prior PD | Mean model PD | Mean CDS PD (RN) | Gap vs RN | Gap vs physical | Prior implied by credit floor |
 | --- | --- | --- | --- | --- | --- | --- | --- |
+| fab_equipment | Intel, SK Hynix, TSMC | 2.00% | 0.54% | 1.31% | -0.92 | +1.00 | 0.74% |
+| chip_designer | NVIDIA, Broadcom, Advanced Micro Devices | 3.00% | 0.83% | 1.95% | -0.86 | +0.76 | 1.43% |
 | neocloud | CoreWeave, Oracle, Amazon | 8.00% | 6.29% | 7.85% | -0.38 | +0.69 | 4.17% |
 | networking | Corning | 3.00% | 0.18% | 1.46% | -2.11 | -0.50 | 4.83% |
 | gpu_lessor | SoftBank Group | 5.00% | 1.99% | 6.82% | -1.28 | -0.57 | 8.51% |
-| fab_equipment | Intel, SK Hynix, TSMC | 2.00% | 0.14% | 1.31% | -2.67 | -0.74 | 4.09% |
-| chip_designer | NVIDIA, Broadcom, Advanced Micro Devices | 3.00% | 0.17% | 1.95% | -2.46 | -0.85 | 6.73% |
 | closed_model | Meta Platforms | 6.00% | 0.11% | 1.78% | -2.79 | -1.18 | 17.15% |
 
 ## Snapshot: summer_2026 (quotes 2026-06-01 to 2026-08-31, latest per company)
@@ -51,20 +51,20 @@ Segment gaps (log-odds, model minus CDS). Positive means the model is more pessi
 | CoreWeave | neocloud (good) | 452 | 2026-06-11 | 7.26% | 3.70% | 15.55% | 17.75% | 2.1x |
 | SoftBank Group | gpu_lessor (poor) | 366 | 2026-07-31 | 5.92% | 3.00% | 1.99% | 3.71% | 0.3x |
 | Oracle | neocloud (approximate) | 189 | 2026-07-17 | 3.10% | 1.04% | 2.55% | 4.50% | 0.8x |
-| Broadcom | chip_designer (approximate) | 122 | 2026-08-22 | 2.01% | 0.41% | 0.15% | 0.00% | 0.1x |
+| Broadcom | chip_designer (approximate) | 122 | 2026-08-22 | 2.01% | 0.41% | 0.78% | 0.00% | 0.4x |
 | Meta Platforms | closed_model (poor) | 94 | 2026-07-31 | 1.55% | 0.31% | 0.11% | 0.00% | 0.1x |
-| Advanced Micro Devices | chip_designer (good) | 94 | 2026-08-31 | 1.55% | 0.31% | 0.18% | 0.08% | 0.1x |
+| Advanced Micro Devices | chip_designer (good) | 94 | 2026-08-31 | 1.55% | 0.31% | 0.85% | 0.08% | 0.5x |
 | Corning | networking (approximate) | 88 | 2026-08-31 | 1.46% | 0.29% | 0.18% | 1.60% | 0.1x |
-| NVIDIA | chip_designer (good) | 82 | 2026-08-31 | 1.36% | 0.27% | 0.18% | 0.00% | 0.1x |
-| Intel | fab_equipment (approximate) | 81 | 2026-07-31 | 1.34% | 0.27% | 0.34% | 5.27% | 0.3x |
+| NVIDIA | chip_designer (good) | 82 | 2026-08-31 | 1.36% | 0.27% | 0.85% | 0.00% | 0.6x |
+| Intel | fab_equipment (approximate) | 81 | 2026-07-31 | 1.34% | 0.27% | 0.90% | 5.27% | 0.7x |
 | Amazon | neocloud (poor) | 65 | 2026-08-31 | 1.08% | 0.14% | 0.78% | 0.00% | 0.7x |
-| SK Hynix | fab_equipment (good) | 58 | 2026-08-31 | 0.96% | 0.12% | 0.04% | 0.04% | 0.0x |
-| TSMC | fab_equipment (good) | 56 | 2026-06-30 | 0.93% | 0.12% | 0.05% | 0.00% | 0.1x |
+| SK Hynix | fab_equipment (good) | 58 | 2026-08-31 | 0.96% | 0.12% | 0.33% | 0.04% | 0.3x |
+| TSMC | fab_equipment (good) | 56 | 2026-06-30 | 0.93% | 0.12% | 0.39% | 0.00% | 0.4x |
 
 | Sample | n | Spearman (model vs CDS) | Kendall | Permutation p | Spearman (Merton vs CDS) | Median model / RN PD | Log-odds slope |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| All names | 12 | 0.62 | 0.37 | 0.035 | 0.57 | 0.13x | 2.23 |
-| Good or approximate segment fit | 9 | 0.66 | 0.42 | 0.057 | 0.52 | 0.12x | 2.82 |
+| All names | 12 | 0.56 | 0.40 | 0.065 | 0.57 | 0.49x | 1.49 |
+| Good or approximate segment fit | 9 | 0.60 | 0.42 | 0.091 | 0.52 | 0.55x | 1.85 |
 
 Log-odds slope: model log-odds regressed on CDS log-odds. 1 = same spread of risk as the market;
 above 1 = the model separates safe and risky names more sharply than CDS do.
@@ -74,8 +74,8 @@ Segment gaps (log-odds, model minus CDS). Positive means the model is more pessi
 | Segment | Names | Prior PD | Mean model PD | Mean CDS PD (RN) | Gap vs RN | Gap vs physical | Prior implied by credit floor |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | neocloud | CoreWeave, Oracle, Amazon | 8.00% | 6.29% | 3.81% | +0.11 | +1.41 | 2.07% |
+| fab_equipment | Intel, SK Hynix, TSMC | 2.00% | 0.54% | 1.08% | -0.78 | +1.14 | 0.65% |
+| chip_designer | Broadcom, Advanced Micro Devices, NVIDIA | 3.00% | 0.83% | 1.64% | -0.68 | +0.93 | 1.20% |
 | gpu_lessor | SoftBank Group | 5.00% | 1.99% | 5.92% | -1.13 | -0.42 | 7.41% |
 | networking | Corning | 3.00% | 0.18% | 1.46% | -2.11 | -0.50 | 4.83% |
-| fab_equipment | Intel, SK Hynix, TSMC | 2.00% | 0.14% | 1.08% | -2.52 | -0.60 | 3.58% |
-| chip_designer | Broadcom, Advanced Micro Devices, NVIDIA | 3.00% | 0.17% | 1.64% | -2.29 | -0.67 | 5.70% |
 | closed_model | Meta Platforms | 6.00% | 0.11% | 1.55% | -2.65 | -1.04 | 15.26% |

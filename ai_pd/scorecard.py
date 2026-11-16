@@ -1,9 +1,12 @@
 """Segment prior plus feature scores, combined on the log-odds scale.
 
-    logit(PD_i) = logit(PD_seg(i)) + sum_k w_k * z_ik + gamma_seg(i) * s
+    logit(PD_i) = logit(PD_seg(i)) + lambda_seg(i) * sum_k w_k * z_ik + gamma_seg(i) * s
 
 z_ik = score_ik - 3, so a company scoring 3 on every feature keeps its
-segment prior. s is the scenario severity (0 in the base case).
+segment prior. lambda_seg is the segment's weight scale (1 unless the config
+says otherwise): it shrinks or stretches how far feature scores move a
+segment's PDs away from its prior. s is the scenario severity (0 in the base
+case).
 """
 
 from __future__ import annotations
@@ -36,11 +39,21 @@ def segment_prior_logodds(segments: pd.Series, cfg: ModelConfig) -> pd.Series:
     return pd.Series(logit(priors), index=segments.index)
 
 
-def feature_contribution(scores: pd.DataFrame, cfg: ModelConfig) -> pd.DataFrame:
-    """Log-odds contribution of each feature (w_k * z_ik)."""
+def segment_weight_scale(segments: pd.Series, cfg: ModelConfig) -> pd.Series:
+    return segments.map(lambda s: cfg.segments[s].get("weight_scale", 1.0)).astype(float)
+
+
+def feature_contribution(
+    scores: pd.DataFrame, cfg: ModelConfig, segments: pd.Series | None = None
+) -> pd.DataFrame:
+    """Log-odds contribution of each feature (lambda_seg * w_k * z_ik).
+
+    Without segments the segment weight scale is left out (lambda = 1).
+    """
+    scale = 1.0 if segments is None else segment_weight_scale(segments, cfg)
     contrib = pd.DataFrame(index=scores.index)
     for feat_id, feat in cfg.features.items():
-        contrib[feat_id] = feat["weight"] * (scores[feat_id] - 3.0)
+        contrib[feat_id] = feat["weight"] * (scores[feat_id] - 3.0) * scale
     return contrib
 
 
@@ -62,7 +75,7 @@ def score_pd(
 ) -> pd.DataFrame:
     """1-year and 3-year PD with the log-odds pieces kept for explanation."""
     prior = segment_prior_logodds(segments, cfg)
-    contrib = feature_contribution(scores, cfg)
+    contrib = feature_contribution(scores, cfg, segments)
     shock = scenario_term(segments, severities or {}, cfg)
     total = prior + contrib.sum(axis=1) + shock
     pd_1y = inv_logit(total)

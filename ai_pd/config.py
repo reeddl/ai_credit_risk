@@ -60,6 +60,9 @@ def validate(cfg: ModelConfig) -> None:
             raise ValueError(f"segment {seg_id}: prior_pd_1y must be in (0, 1), got {pd}")
         for driver in SCENARIO_DRIVERS:
             seg.setdefault(f"gamma_{driver}", 0.0)
+        scale = seg.setdefault("weight_scale", 1.0)
+        if not 0 < scale <= 2:
+            raise ValueError(f"segment {seg_id}: weight_scale must be in (0, 2], got {scale}")
 
     for feat_id, feat in cfg.features.items():
         if feat["direction"] not in DIRECTIONS:

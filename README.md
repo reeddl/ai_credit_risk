@@ -37,8 +37,11 @@ equity, so shutdowns and deep markdowns are how most of their failures show up.
    time to show which assumptions move PDs most.
 
 ```latex
-\operatorname{logit}(PD_i) = \operatorname{logit}(PD_{seg(i)}) + \sum_k w_k (score_{ik} - 3) + \gamma_{seg(i)} \cdot s
+\operatorname{logit}(PD_i) = \operatorname{logit}(PD_{seg(i)}) + \lambda_{seg(i)} \sum_k w_k (score_{ik} - 3) + \gamma_{seg(i)} \cdot s
 ```
+
+`\lambda` is a per-segment weight scale (1 by default; 0.45 proposed for chip
+designers and fabs, see section 6.2 of the model document).
 
 ## Run it
 
@@ -62,7 +65,9 @@ PDs implied by their 5-year credit default swap spreads. Inputs come from
 the latest public filings, with a source row per figure in
 `benchmark/data/companies_sources.csv`; to rebuild them run
 `python benchmark/build_inputs.py`. Results land in `benchmark/results/`
-(the committed copy is from November 14, 2026). See section 6 of
+(the committed copy is from November 16, 2026). `python
+benchmark/propose_weights.py` refits the chip and fab weight scale and writes
+`benchmark/results/weight_proposal.md`. See section 6 of
 `docs/model_document.md` for findings and caveats.
 
 ## Layout
