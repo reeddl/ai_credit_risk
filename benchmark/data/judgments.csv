@@ -1,0 +1,170 @@
+company_id,field,value,note
+coreweave,revenue_stage,recurring,multi-year take-or-pay compute contracts
+coreweave,margin_path_score,3,adjusted margins strong but heavy depreciation and interest; path to GAAP profit unproven
+coreweave,moat_score,4,GPU capacity is largely interchangeable; edge is speed to deploy and contracts
+coreweave,compute_cost_share,0.0,seller of compute; GPU cost sits in capex and depreciation
+coreweave,compute_revenue_share,1.0,all revenue is GPU cloud rental
+coreweave,backlog_cover,0.8,revenue backlog is several times annual revenue; most near-term revenue is contracted
+coreweave,gpu_asset_share,0.85,most PP&E is GPU servers and networking
+coreweave,liquidation_haircut,0.55,used GPUs and leasehold data center fit-outs lose value fast in a glut
+coreweave,funding_dependence,0.8,capex far above operating cash flow; build-out funded by new debt
+coreweave,ig_customer_share,0.5,Microsoft and Meta are investment grade; OpenAI and smaller labs are not
+coreweave,circular_revenue_share,0.15,Nvidia is an investor and supplier and has agreed to buy unused capacity
+coreweave,floating_debt_share,0.6,delayed-draw term loans are floating; senior notes fixed (judgment unless filing gives it)
+coreweave,equity_vol,1.0,high-beta recent IPO
+oracle,revenue_stage,recurring,support and cloud subscriptions
+oracle,margin_path_score,3,cloud infrastructure growth dilutes margins and depreciation is rising
+oracle,moat_score,2,database and enterprise applications are entrenched
+oracle,compute_cost_share,0.05,buys GPUs as capex; little compute bought as opex
+oracle,compute_revenue_share,0.3,cloud infrastructure share of revenue is growing fast (judgment from segment trend)
+oracle,backlog_cover,0.8,remaining performance obligations are many times annual revenue
+oracle,gpu_asset_share,0.6,recent PP&E growth is mostly AI data center capacity
+oracle,liquidation_haircut,0.4,mix of owned data centers and GPU equipment
+oracle,funding_dependence,0.6,free cash flow negative; capex funded with bonds and loans
+oracle,ig_customer_share,0.5,OpenAI is a large contracted customer and is not rated investment grade
+oracle,circular_revenue_share,0.1,OpenAI contracts tied to the Stargate joint venture
+oracle,floating_debt_share,0.1,mostly fixed-rate bonds
+oracle,top5_customer_share,0.3,cloud backlog concentrated in a few AI customers; total revenue is diversified (judgment)
+oracle,equity_vol,0.55,large cap with recent AI-driven swings
+nvidia,revenue_stage,recurring,repeat product sales
+nvidia,margin_path_score,1,gross margins above 70% and stable
+nvidia,moat_score,1,CUDA software ecosystem and leading accelerators
+nvidia,compute_cost_share,0.0,does not buy compute as a cost of revenue
+nvidia,compute_revenue_share,0.9,data center accelerators are most of revenue
+nvidia,backlog_cover,0.5,large purchase commitments from hyperscalers; not all contracted
+nvidia,gpu_asset_share,0.1,some GPUs held for its own cloud and leaseback deals
+nvidia,liquidation_haircut,0.5,generic for PP&E
+nvidia,funding_dependence,0.0,strongly cash generative
+nvidia,ig_customer_share,0.6,hyperscalers are investment grade; neoclouds and labs are not
+nvidia,circular_revenue_share,0.15,invests in customers (OpenAI and neoclouds) that buy its chips
+nvidia,floating_debt_share,0.0,fixed-rate notes
+nvidia,equity_vol,0.5,
+amd,revenue_stage,recurring,repeat product sales
+amd,margin_path_score,2,gross margin around 50% and improving with data center mix
+amd,moat_score,2,strong number two in CPUs and accelerators
+amd,compute_cost_share,0.0,
+amd,compute_revenue_share,0.5,data center segment is about half of revenue
+amd,backlog_cover,0.3,
+amd,gpu_asset_share,0.0,
+amd,liquidation_haircut,0.5,generic for PP&E
+amd,funding_dependence,0.05,cash generative
+amd,ig_customer_share,0.5,
+amd,circular_revenue_share,0.1,OpenAI supply deal comes with warrants for AMD shares
+amd,floating_debt_share,0.0,fixed-rate notes
+amd,equity_vol,0.55,
+broadcom,revenue_stage,recurring,chips plus VMware subscriptions
+broadcom,margin_path_score,2,high and stable margins
+broadcom,moat_score,2,custom AI accelerators and networking leadership; VMware lock-in
+broadcom,compute_cost_share,0.0,
+broadcom,compute_revenue_share,0.5,AI semiconductors are a large and growing share
+broadcom,backlog_cover,0.5,reports a large AI order backlog
+broadcom,gpu_asset_share,0.0,
+broadcom,liquidation_haircut,0.5,generic
+broadcom,funding_dependence,0.05,cash generative; debt from the VMware deal
+broadcom,ig_customer_share,0.7,customers are mostly hyperscalers
+broadcom,circular_revenue_share,0.05,reported backstops for customers' AI chip financing
+broadcom,floating_debt_share,0.2,term loans from the VMware deal (judgment)
+broadcom,equity_vol,0.45,
+intel,revenue_stage,recurring,repeat product sales
+intel,margin_path_score,4,losses and a costly foundry build-out
+intel,moat_score,3,x86 franchise eroding; foundry unproven
+intel,compute_cost_share,0.0,
+intel,compute_revenue_share,0.3,data center and AI share of revenue
+intel,backlog_cover,0.3,
+intel,gpu_asset_share,0.0,
+intel,liquidation_haircut,0.6,fabs are specialised and expensive to repurpose
+intel,funding_dependence,0.4,negative free cash flow; equity from the US government and strategic investors
+intel,ig_customer_share,0.6,PC makers and hyperscalers
+intel,circular_revenue_share,0.05,
+intel,floating_debt_share,0.05,mostly fixed-rate notes
+intel,equity_vol,0.55,
+tsmc,revenue_stage,recurring,
+tsmc,margin_path_score,1,gross margin near 60% and rising
+tsmc,moat_score,1,sole supplier of the most advanced nodes
+tsmc,compute_cost_share,0.0,
+tsmc,compute_revenue_share,0.6,high-performance computing share of revenue
+tsmc,backlog_cover,0.4,
+tsmc,gpu_asset_share,0.0,
+tsmc,liquidation_haircut,0.5,fabs are specialised but strategic
+tsmc,funding_dependence,0.0,capex funded from operating cash flow
+tsmc,ig_customer_share,0.6,
+tsmc,circular_revenue_share,0.0,
+tsmc,floating_debt_share,0.0,fixed-rate bonds
+tsmc,equity_vol,0.35,
+sk_hynix,revenue_stage,recurring,
+sk_hynix,margin_path_score,2,HBM lifts margins; memory is cyclical
+sk_hynix,moat_score,2,leading HBM supplier
+sk_hynix,compute_cost_share,0.0,
+sk_hynix,compute_revenue_share,0.5,HBM and server memory share
+sk_hynix,backlog_cover,0.5,HBM supply contracted a year ahead
+sk_hynix,gpu_asset_share,0.0,
+sk_hynix,liquidation_haircut,0.5,
+sk_hynix,funding_dependence,0.05,cash generative in the upcycle
+sk_hynix,ig_customer_share,0.6,
+sk_hynix,circular_revenue_share,0.0,
+sk_hynix,floating_debt_share,0.3,Korean bank loans often floating (judgment)
+sk_hynix,top5_customer_share,0.6,Nvidia is the dominant HBM buyer (judgment; not disclosed by name)
+sk_hynix,equity_vol,0.5,
+corning,revenue_stage,recurring,
+corning,margin_path_score,2,margins recovering with optical demand
+corning,moat_score,2,leading optical fiber and specialty glass maker
+corning,compute_cost_share,0.0,
+corning,compute_revenue_share,0.2,optical communications for data centers
+corning,backlog_cover,0.3,multi-year fiber supply deals with hyperscalers
+corning,gpu_asset_share,0.0,
+corning,liquidation_haircut,0.5,
+corning,funding_dependence,0.1,
+corning,ig_customer_share,0.6,
+corning,circular_revenue_share,0.0,
+corning,floating_debt_share,0.05,
+corning,top5_customer_share,0.3,judgment; 10-K names no customer above 10% except display panel makers
+corning,equity_vol,0.35,
+meta,revenue_stage,recurring,advertising
+meta,margin_path_score,2,high operating margin under pressure from AI capex and depreciation
+meta,moat_score,1,dominant social platforms
+meta,compute_cost_share,0.1,some cloud capacity rented as opex; most compute is capex
+meta,compute_revenue_share,0.0,does not sell compute
+meta,backlog_cover,0.0,
+meta,gpu_asset_share,0.5,recent PP&E growth is mostly AI servers and data centers
+meta,liquidation_haircut,0.4,
+meta,funding_dependence,0.2,capex near operating cash flow; bonds and data center joint ventures fill the gap
+meta,ig_customer_share,0.4,millions of advertisers
+meta,circular_revenue_share,0.0,
+meta,floating_debt_share,0.0,fixed-rate bonds
+meta,top5_customer_share,0.05,no customer is material
+meta,equity_vol,0.4,
+amazon,revenue_stage,recurring,
+amazon,margin_path_score,2,AWS and advertising lift margins
+amazon,moat_score,1,scale in retail and cloud
+amazon,compute_cost_share,0.05,
+amazon,compute_revenue_share,0.17,AWS share of total revenue
+amazon,backlog_cover,0.6,AWS backlog of contracted commitments
+amazon,gpu_asset_share,0.3,
+amazon,liquidation_haircut,0.4,
+amazon,funding_dependence,0.1,
+amazon,ig_customer_share,0.4,
+amazon,circular_revenue_share,0.02,Anthropic is an investee and AWS customer
+amazon,floating_debt_share,0.05,
+amazon,top5_customer_share,0.02,no customer is material
+amazon,equity_vol,0.35,
+softbank,revenue_stage,recurring,SoftBank Corp telecom and Arm royalties
+softbank,margin_path_score,3,earnings swing with investment marks
+softbank,moat_score,3,holding company; value lies in stakes
+softbank,compute_cost_share,0.0,
+softbank,compute_revenue_share,0.05,
+softbank,backlog_cover,0.0,
+softbank,gpu_asset_share,0.1,
+softbank,liquidation_haircut,0.4,listed stakes can be sold or pledged
+softbank,funding_dependence,0.6,"OpenAI and data center commitments rely on bridge loans, margin loans and asset sales"
+softbank,ig_customer_share,0.5,
+softbank,circular_revenue_share,0.05,
+softbank,floating_debt_share,0.3,judgment
+softbank,top5_customer_share,0.05,
+softbank,equity_vol,0.6,
+coreweave,top5_customer_share,0.75,10-Q Q3 2026: two customers were 30% and 24% of quarterly revenue (54%); top five not disclosed
+nvidia,top5_customer_share,0.5,10-Q Q2 FY27: one direct customer was 16% of revenue and several indirect customers exceed 10%; top five not disclosed
+amd,top5_customer_share,0.4,10% customer note not read; judgment
+broadcom,top5_customer_share,0.4,10-K FY2025: top five end customers about 40% of net revenue
+intel,top5_customer_share,0.5,FY2025: three largest customers 43% of revenue (secondary source citing the 10-K); top five somewhat higher
+tsmc,top5_customer_share,0.6,judgment pending filing figure; Apple and Nvidia are each large shares
+sk_hynix,gross_margin,0.8,not in the 3Q26 release; 2Q26 gross margin was 83.2% (stockanalysis) and 3Q26 operating margin 80%

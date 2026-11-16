@@ -1,0 +1,967 @@
+[
+ {
+  "company": "NVIDIA",
+  "ticker": "NVDA",
+  "period_end": {
+   "value": "2026-07-26",
+   "unit": "date",
+   "period": "Q2 FY2027 (qtr ended 2026-07-26)",
+   "source": "NVIDIA 8-K Ex.99.1, Q2 FY2027 results release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000073/q2fy27pr.htm",
+   "date": "2026-08-26",
+   "note": "Q3 FY2027 not yet reported as of 2026-11-14"
+  },
+  "report_date": {
+   "value": "2026-08-26",
+   "unit": "date",
+   "period": "Q2 FY2027 (qtr ended 2026-07-26)",
+   "source": "NVIDIA 8-K Ex.99.1, Q2 FY2027 results release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000073/q2fy27pr.htm",
+   "date": "2026-08-26",
+   "note": ""
+  },
+  "cash_and_st_investments": {
+   "value": 56586,
+   "unit": "USD_m",
+   "period": "Q2 FY2027 (qtr ended 2026-07-26)",
+   "source": "NVIDIA 8-K Ex.99.1, Q2 FY2027 results release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000073/q2fy27pr.htm",
+   "date": "2026-08-26",
+   "note": "Cash & equivalents 22,443 + marketable debt securities 34,143. Excludes marketable equity securities 42,783 (incl. equity = 99,369)."
+  },
+  "total_debt": {
+   "value": 33366,
+   "unit": "USD_m",
+   "period": "Q2 FY2027 (qtr ended 2026-07-26)",
+   "source": "NVIDIA 10-Q Q2 FY2027 (mirror of SEC filing at opencapital.sh, secondary host)",
+   "url": "https://www.opencapital.sh/filings/0001045810-26-000075.md",
+   "date": "2026-08-26",
+   "note": "Net carrying amount: short-term 1,000 + long-term 32,366; principal 33,500. No commercial paper outstanding ($25bn program)."
+  },
+  "debt_due_within_24m": {
+   "value": 1000,
+   "unit": "USD_m",
+   "period": "Q2 FY2027 (qtr ended 2026-07-26)",
+   "source": "NVIDIA 10-Q Q2 FY2027 (mirror of SEC filing at opencapital.sh, secondary host)",
+   "url": "https://www.opencapital.sh/filings/0001045810-26-000075.md",
+   "date": "2026-08-26",
+   "note": "Current portion only (3.20% notes due 2026). Next maturities: 2028 notes 4,750 (4.25% and 1.55%); calendar-year maturity table, months not extracted, so part may fall within 24m of 2026-07-26."
+  },
+  "floating_rate_share_of_debt": {
+   "value": 0.0,
+   "unit": "fraction",
+   "period": "Q2 FY2027 (qtr ended 2026-07-26)",
+   "source": "NVIDIA 10-Q Q2 FY2027 (mirror of SEC filing at opencapital.sh, secondary host)",
+   "url": "https://www.opencapital.sh/filings/0001045810-26-000075.md",
+   "date": "2026-08-26",
+   "note": "All notes listed carry fixed coupons; no floating-rate notes in debt table."
+  },
+  "total_assets": {
+   "value": 320272,
+   "unit": "USD_m",
+   "period": "Q2 FY2027 (qtr ended 2026-07-26)",
+   "source": "NVIDIA 8-K Ex.99.1, Q2 FY2027 results release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000073/q2fy27pr.htm",
+   "date": "2026-08-26",
+   "note": ""
+  },
+  "ppe_net": {
+   "value": 14285,
+   "unit": "USD_m",
+   "period": "Q2 FY2027 (qtr ended 2026-07-26)",
+   "source": "NVIDIA 8-K Ex.99.1, Q2 FY2027 results release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000073/q2fy27pr.htm",
+   "date": "2026-08-26",
+   "note": ""
+  },
+  "revenue_latest_quarter": {
+   "value": 96221,
+   "unit": "USD_m",
+   "period": "Q2 FY2027 (qtr ended 2026-07-26)",
+   "source": "NVIDIA 8-K Ex.99.1, Q2 FY2027 results release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000073/q2fy27pr.htm",
+   "date": "2026-08-26",
+   "note": ""
+  },
+  "revenue_same_quarter_prior_year": {
+   "value": 46743,
+   "unit": "USD_m",
+   "period": "Q2 FY2026",
+   "source": "NVIDIA 8-K Ex.99.1, Q2 FY2027 results release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000073/q2fy27pr.htm",
+   "date": "2026-08-26",
+   "note": ""
+  },
+  "revenue_ttm": {
+   "value": 302970,
+   "unit": "USD_m",
+   "period": "TTM to 2026-07-26",
+   "source": "NVIDIA 8-K Ex.99.1, Q2 FY2027 results release (SEC EDGAR) + NVIDIA Q4 FY2026 release",
+   "url": "https://seekingalpha.com/pr/20414347",
+   "date": "2026-08-26",
+   "note": "Derived: H1 FY27 177,837 + (FY26 215,938 - H1 FY26 90,805)."
+  },
+  "gross_margin_latest_quarter": {
+   "value": 75.0,
+   "unit": "percent",
+   "period": "Q2 FY2027 (qtr ended 2026-07-26)",
+   "source": "NVIDIA 8-K Ex.99.1, Q2 FY2027 results release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000073/q2fy27pr.htm",
+   "date": "2026-08-26",
+   "note": "GAAP"
+  },
+  "operating_cash_flow_latest_quarter": {
+   "value": 24077,
+   "unit": "USD_m",
+   "period": "Q2 FY2027 (qtr ended 2026-07-26)",
+   "source": "NVIDIA 8-K Ex.99.1, Q2 FY2027 results release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000073/q2fy27pr.htm",
+   "date": "2026-08-26",
+   "note": "Six months: 74,421"
+  },
+  "capex_latest_quarter": {
+   "value": 2677,
+   "unit": "USD_m",
+   "period": "Q2 FY2027 (qtr ended 2026-07-26)",
+   "source": "NVIDIA 8-K Ex.99.1, Q2 FY2027 results release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000073/q2fy27pr.htm",
+   "date": "2026-08-26",
+   "note": "Purchases of PP&E and intangible assets; six months 4,434. FCF Q2 21,341."
+  },
+  "employees": {
+   "value": 42000,
+   "unit": "count",
+   "period": "latest 10-K (FY2026, ~Jan 2026) per aggregator",
+   "source": "stockanalysis.com (secondary) NVDA statistics",
+   "url": "https://stockanalysis.com/stocks/nvda/statistics/",
+   "date": "2026-11-08",
+   "note": "Not verified against primary 10-K."
+  },
+  "customer_concentration": {
+   "value": 16,
+   "unit": "percent_of_revenue",
+   "period": "Q2 FY2027 (qtr ended 2026-07-26)",
+   "source": "NVIDIA 10-Q Q2 FY2027 (mirror of SEC filing at opencapital.sh, secondary host)",
+   "url": "https://www.opencapital.sh/filings/0001045810-26-000075.md",
+   "date": "2026-08-26",
+   "note": "One direct customer = 16% of Q2 revenue (Compute & Networking). Indirect customers >=10% exist but no %s given. Top-5 share not disclosed."
+  },
+  "backlog_rpo": {
+   "value": 3200,
+   "unit": "USD_m",
+   "period": "as of 2026-07-26",
+   "source": "NVIDIA 10-Q Q2 FY2027 (mirror of SEC filing at opencapital.sh, secondary host)",
+   "url": "https://www.opencapital.sh/filings/0001045810-26-000075.md",
+   "date": "2026-08-26",
+   "note": "RPO on contracts >1yr ~$3.2bn (~39% within 12m); deferred revenue 6,412. Supply/capacity purchase commitments $279bn (not backlog)."
+  },
+  "market_cap": {
+   "value": 3930000,
+   "unit": "USD_m",
+   "period": "2026-11-13 intraday (2:26 PM EST)",
+   "source": "stockanalysis.com (secondary) NVDA quote page",
+   "url": "https://stockanalysis.com/stocks/nvda",
+   "date": "2026-11-13",
+   "note": "3.93T. Statistics page showed 4.51T at 2026-11-06 close ($186.64)."
+  },
+  "share_price_current": {
+   "value": 162.56,
+   "unit": "USD/share",
+   "period": "2026-11-13 intraday",
+   "source": "stockanalysis.com (secondary)",
+   "url": "https://stockanalysis.com/stocks/nvda",
+   "date": "2026-11-13",
+   "note": ""
+  },
+  "share_price_52w_high": {
+   "value": 243.37,
+   "unit": "USD/share",
+   "period": "52 weeks to 2026-11-13",
+   "source": "stockanalysis.com (secondary)",
+   "url": "https://stockanalysis.com/stocks/nvda",
+   "date": "2026-11-13",
+   "note": "52w range 148.80-243.37; marketchameleon (2026-10-28) also 243.37."
+  },
+  "equity_volatility": {
+   "value": 41.0,
+   "unit": "percent_annualized",
+   "period": "IV30 as of 2026-10-28",
+   "source": "marketchameleon.com (secondary) NVDA summary",
+   "url": "https://marketchameleon.com/Overview/NVDA/Summary",
+   "date": "2026-10-28",
+   "note": "30-day IMPLIED vol (not 1y historical). 5y beta 2.25 (stockanalysis)."
+  }
+ },
+ {
+  "company": "Advanced Micro Devices",
+  "ticker": "AMD",
+  "period_end": {
+   "value": "2026-09-26",
+   "unit": "date",
+   "period": "Q3 2026 (qtr ended 2026-09-26)",
+   "source": "AMD 8-K Ex.99.1, Q3 2026 results release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000002488/000000248826000188/q32026991.htm",
+   "date": "2026-11-03",
+   "note": ""
+  },
+  "report_date": {
+   "value": "2026-11-03",
+   "unit": "date",
+   "period": "Q3 2026 (qtr ended 2026-09-26)",
+   "source": "AMD 8-K Ex.99.1, Q3 2026 results release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000002488/000000248826000188/q32026991.htm",
+   "date": "2026-11-03",
+   "note": ""
+  },
+  "cash_and_st_investments": {
+   "value": 15776,
+   "unit": "USD_m",
+   "period": "Q3 2026 (qtr ended 2026-09-26)",
+   "source": "AMD 8-K Ex.99.1, Q3 2026 results release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000002488/000000248826000188/q32026991.htm",
+   "date": "2026-11-03",
+   "note": "Cash 7,404 + short-term investments 8,372"
+  },
+  "total_debt": {
+   "value": 7079,
+   "unit": "USD_m",
+   "period": "Q3 2026 (qtr ended 2026-09-26)",
+   "source": "AMD 8-K Ex.99.1, Q3 2026 results release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000002488/000000248826000188/q32026991.htm",
+   "date": "2026-11-03",
+   "note": "All long-term; current portion nil (874 at 2025-12-27). Q3 issued 4,726 net of debt/CP, repaid 875. CP balance at qtr end not extracted."
+  },
+  "debt_due_within_24m": {
+   "value": 0,
+   "unit": "USD_m",
+   "period": "Q3 2026 (qtr ended 2026-09-26)",
+   "source": "AMD 8-K Ex.99.1, Q3 2026 results release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000002488/000000248826000188/q32026991.htm",
+   "date": "2026-11-03",
+   "note": "Current portion only = 0. Maturity table not extracted; 10-Q tags list 4.212% notes due 2026 and 4.319% due 2028 (amounts not obtained)."
+  },
+  "floating_rate_share_of_debt": {
+   "value": null,
+   "unit": "fraction",
+   "period": "Q3 2026 (qtr ended 2026-09-26)",
+   "source": "AMD 10-Q Q3 2026 (AMD IR)",
+   "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000191/amd-20260926.htm",
+   "date": "2026-11-03",
+   "note": "Not found in 10-Q text read."
+  },
+  "total_assets": {
+   "value": 94812,
+   "unit": "USD_m",
+   "period": "Q3 2026 (qtr ended 2026-09-26)",
+   "source": "AMD 8-K Ex.99.1, Q3 2026 results release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000002488/000000248826000188/q32026991.htm",
+   "date": "2026-11-03",
+   "note": ""
+  },
+  "ppe_net": {
+   "value": 3929,
+   "unit": "USD_m",
+   "period": "Q3 2026 (qtr ended 2026-09-26)",
+   "source": "AMD 8-K Ex.99.1, Q3 2026 results release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000002488/000000248826000188/q32026991.htm",
+   "date": "2026-11-03",
+   "note": ""
+  },
+  "revenue_latest_quarter": {
+   "value": 13377,
+   "unit": "USD_m",
+   "period": "Q3 2026 (qtr ended 2026-09-26)",
+   "source": "AMD 8-K Ex.99.1, Q3 2026 results release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000002488/000000248826000188/q32026991.htm",
+   "date": "2026-11-03",
+   "note": ""
+  },
+  "revenue_same_quarter_prior_year": {
+   "value": 9246,
+   "unit": "USD_m",
+   "period": "Q3 2025",
+   "source": "AMD 8-K Ex.99.1, Q3 2026 results release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000002488/000000248826000188/q32026991.htm",
+   "date": "2026-11-03",
+   "note": ""
+  },
+  "revenue_ttm": {
+   "value": 45436,
+   "unit": "USD_m",
+   "period": "TTM to 2026-09-26",
+   "source": "AMD 8-K Ex.99.1, Q3 2026 results release (SEC EDGAR) + AMD Q4/FY2025 release",
+   "url": "https://ir.amd.com/news-events/press-releases/detail/1276/",
+   "date": "2026-11-03",
+   "note": "Derived: 9M2026 35,166 + Q4 2025 10,270."
+  },
+  "gross_margin_latest_quarter": {
+   "value": 54,
+   "unit": "percent",
+   "period": "Q3 2026 (qtr ended 2026-09-26)",
+   "source": "AMD 8-K Ex.99.1, Q3 2026 results release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000002488/000000248826000188/q32026991.htm",
+   "date": "2026-11-03",
+   "note": "GAAP 54% as reported (7,210/13,377 = 53.9%)"
+  },
+  "operating_cash_flow_latest_quarter": {
+   "value": 1202,
+   "unit": "USD_m",
+   "period": "Q3 2026 (qtr ended 2026-09-26)",
+   "source": "AMD 8-K Ex.99.1, Q3 2026 results release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000002488/000000248826000188/q32026991.htm",
+   "date": "2026-11-03",
+   "note": "9M2026: 6,523"
+  },
+  "capex_latest_quarter": {
+   "value": 648,
+   "unit": "USD_m",
+   "period": "Q3 2026 (qtr ended 2026-09-26)",
+   "source": "AMD 8-K Ex.99.1, Q3 2026 results release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000002488/000000248826000188/q32026991.htm",
+   "date": "2026-11-03",
+   "note": "9M2026: 1,845. Q3 FCF 554."
+  },
+  "employees": {
+   "value": 31000,
+   "unit": "count",
+   "period": "latest 10-K per aggregator",
+   "source": "stockanalysis.com (secondary) AMD statistics",
+   "url": "https://stockanalysis.com/stocks/amd/statistics/",
+   "date": "2026-11-07",
+   "note": "Not verified against primary 10-K."
+  },
+  "customer_concentration": {
+   "value": null,
+   "unit": "percent_of_revenue",
+   "period": "Q3 2026 (qtr ended 2026-09-26)",
+   "source": "AMD 10-Q Q3 2026 (AMD IR)",
+   "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000191/amd-20260926.htm",
+   "date": "2026-11-03",
+   "note": "10%-customer note not reached in 10-Q text read (truncated segment note)."
+  },
+  "backlog_rpo": {
+   "value": 246,
+   "unit": "USD_m",
+   "period": "as of 2026-09-26",
+   "source": "AMD 10-Q Q3 2026 (AMD IR)",
+   "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000191/amd-20260926.htm",
+   "date": "2026-11-03",
+   "note": "RPO 246, of which 180 within 12 months."
+  },
+  "market_cap": {
+   "value": 875900,
+   "unit": "USD_m",
+   "period": "2026-11-13 close",
+   "source": "stockanalysis.com (secondary) AMD quote page",
+   "url": "https://stockanalysis.com/stocks/amd/",
+   "date": "2026-11-13",
+   "note": "875.90B"
+  },
+  "share_price_current": {
+   "value": 534.06,
+   "unit": "USD/share",
+   "period": "2026-11-13 close",
+   "source": "stockanalysis.com (secondary)",
+   "url": "https://stockanalysis.com/stocks/amd/",
+   "date": "2026-11-13",
+   "note": "Down 8.75% on the day"
+  },
+  "share_price_52w_high": {
+   "value": 658.52,
+   "unit": "USD/share",
+   "period": "52 weeks to 2026-11-13",
+   "source": "stockanalysis.com (secondary)",
+   "url": "https://stockanalysis.com/stocks/amd/",
+   "date": "2026-11-13",
+   "note": "Range 188.22-658.52 (same on marketchameleon)"
+  },
+  "equity_volatility": {
+   "value": 59.3,
+   "unit": "percent_annualized",
+   "period": "IV30 as of 2026-10-26",
+   "source": "marketchameleon.com (secondary) AMD summary",
+   "url": "https://marketchameleon.com/Overview/AMD/Summary",
+   "date": "2026-10-26",
+   "note": "30-day IMPLIED vol. 5y beta 2.54."
+  }
+ },
+ {
+  "company": "Broadcom",
+  "ticker": "AVGO",
+  "period_end": {
+   "value": "2026-08-02",
+   "unit": "date",
+   "period": "Q3 FY2026 (qtr ended 2026-08-02)",
+   "source": "Broadcom 8-K Ex.99, Q3 FY2026 results release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0001730168/000173016826000076/avgo-08022026x8kxex99.htm",
+   "date": "2026-09-02",
+   "note": "Q4 FY2026 (ends ~Nov 1 2026) not yet reported"
+  },
+  "report_date": {
+   "value": "2026-09-02",
+   "unit": "date",
+   "period": "Q3 FY2026 (qtr ended 2026-08-02)",
+   "source": "Broadcom 8-K Ex.99, Q3 FY2026 results release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0001730168/000173016826000076/avgo-08022026x8kxex99.htm",
+   "date": "2026-09-02",
+   "note": ""
+  },
+  "cash_and_st_investments": {
+   "value": 23975,
+   "unit": "USD_m",
+   "period": "Q3 FY2026 (qtr ended 2026-08-02)",
+   "source": "Broadcom 8-K Ex.99, Q3 FY2026 results release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0001730168/000173016826000076/avgo-08022026x8kxex99.htm",
+   "date": "2026-09-02",
+   "note": "Cash & equivalents only; no separate short-term investments line."
+  },
+  "total_debt": {
+   "value": 59419,
+   "unit": "USD_m",
+   "period": "Q3 FY2026 (qtr ended 2026-08-02)",
+   "source": "Broadcom 8-K Ex.99, Q3 FY2026 results release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0001730168/000173016826000076/avgo-08022026x8kxex99.htm",
+   "date": "2026-09-02",
+   "note": "Short-term debt 2,252 + long-term debt 57,167 (carrying). Long-term down from 61,984 at 2025-11-02; Q3 debt repayments 5,628."
+  },
+  "debt_due_within_24m": {
+   "value": 2252,
+   "unit": "USD_m",
+   "period": "Q3 FY2026 (qtr ended 2026-08-02)",
+   "source": "Broadcom 10-Q Q3 FY2026 (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0001730168/000173016826000080/avgo-20260802.htm",
+   "date": "2026-09-02",
+   "note": "Current portion (= Sept 2026 notes 752 + VMware Aug 2026 notes 1,500). 10-Q XBRL tranche list also shows Jan 2028 777 and Feb 2028 750 (within 24m) and VMware Aug 2028 750 (at ~24m): ~3,779-4,529 total if added. Tranche list read was partial."
+  },
+  "floating_rate_share_of_debt": {
+   "value": null,
+   "unit": "fraction",
+   "period": "Q3 FY2026 (qtr ended 2026-08-02)",
+   "source": "Broadcom 10-Q Q3 FY2026 (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0001730168/000173016826000080/avgo-20260802.htm",
+   "date": "2026-09-02",
+   "note": "No term loans/floating debt seen in the portion read; all listed tranches fixed-coupon senior notes. Likely ~0 but not confirmed."
+  },
+  "total_assets": {
+   "value": 188148,
+   "unit": "USD_m",
+   "period": "Q3 FY2026 (qtr ended 2026-08-02)",
+   "source": "Broadcom 8-K Ex.99, Q3 FY2026 results release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0001730168/000173016826000076/avgo-08022026x8kxex99.htm",
+   "date": "2026-09-02",
+   "note": ""
+  },
+  "ppe_net": {
+   "value": 3144,
+   "unit": "USD_m",
+   "period": "Q3 FY2026 (qtr ended 2026-08-02)",
+   "source": "Broadcom 8-K Ex.99, Q3 FY2026 results release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0001730168/000173016826000076/avgo-08022026x8kxex99.htm",
+   "date": "2026-09-02",
+   "note": ""
+  },
+  "revenue_latest_quarter": {
+   "value": 29591,
+   "unit": "USD_m",
+   "period": "Q3 FY2026 (qtr ended 2026-08-02)",
+   "source": "Broadcom 8-K Ex.99, Q3 FY2026 results release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0001730168/000173016826000076/avgo-08022026x8kxex99.htm",
+   "date": "2026-09-02",
+   "note": ""
+  },
+  "revenue_same_quarter_prior_year": {
+   "value": 15952,
+   "unit": "USD_m",
+   "period": "Q3 FY2025",
+   "source": "Broadcom 8-K Ex.99, Q3 FY2026 results release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0001730168/000173016826000076/avgo-08022026x8kxex99.htm",
+   "date": "2026-09-02",
+   "note": ""
+  },
+  "revenue_ttm": {
+   "value": 89104,
+   "unit": "USD_m",
+   "period": "TTM to 2026-08-02",
+   "source": "Broadcom 8-K Ex.99, Q3 FY2026 results release (SEC EDGAR) + Q4 FY2025 release",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000116/avgo-11022025x8kxex99.htm",
+   "date": "2026-09-02",
+   "note": "Derived: 9M FY26 71,089 + Q4 FY25 18,015."
+  },
+  "gross_margin_latest_quarter": {
+   "value": 69.1,
+   "unit": "percent",
+   "period": "Q3 FY2026 (qtr ended 2026-08-02)",
+   "source": "Broadcom 8-K Ex.99, Q3 FY2026 results release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0001730168/000173016826000076/avgo-08022026x8kxex99.htm",
+   "date": "2026-09-02",
+   "note": "Derived from GAAP gross margin $20,456 / revenue 29,591."
+  },
+  "operating_cash_flow_latest_quarter": {
+   "value": 14197,
+   "unit": "USD_m",
+   "period": "Q3 FY2026 (qtr ended 2026-08-02)",
+   "source": "Broadcom 8-K Ex.99, Q3 FY2026 results release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0001730168/000173016826000076/avgo-08022026x8kxex99.htm",
+   "date": "2026-09-02",
+   "note": "9M FY26: 32,950"
+  },
+  "capex_latest_quarter": {
+   "value": 532,
+   "unit": "USD_m",
+   "period": "Q3 FY2026 (qtr ended 2026-08-02)",
+   "source": "Broadcom 8-K Ex.99, Q3 FY2026 results release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0001730168/000173016826000076/avgo-08022026x8kxex99.htm",
+   "date": "2026-09-02",
+   "note": "9M FY26: 1,013. Q3 FCF 13,665."
+  },
+  "employees": {
+   "value": 33000,
+   "unit": "count",
+   "period": "as of 2025-11-02",
+   "source": "Broadcom 10-K FY2025 (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000121/avgo-20251102.htm",
+   "date": "2025-12",
+   "note": "Approx. 33,000"
+  },
+  "customer_concentration": {
+   "value": 40,
+   "unit": "percent_of_revenue",
+   "period": "FY2025",
+   "source": "Broadcom 10-K FY2025 (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000121/avgo-20251102.htm",
+   "date": "2025-12",
+   "note": "Top five end customers ~40% of net revenue (FY2025 and FY2024); distributors 48%. No single-customer % in text read. Not updated in Q3 FY26 10-Q text read."
+  },
+  "backlog_rpo": {
+   "value": 179200,
+   "unit": "USD_m",
+   "period": "as of 2026-08-02",
+   "source": "Broadcom 10-Q Q3 FY2026 (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0001730168/000173016826000080/avgo-20260802.htm",
+   "date": "2026-09-02",
+   "note": "RPO ~$179.2bn; ~25% expected within 12 months."
+  },
+  "market_cap": {
+   "value": 1660000,
+   "unit": "USD_m",
+   "period": "2026-11-13 close",
+   "source": "stockanalysis.com (secondary) AVGO quote page",
+   "url": "https://stockanalysis.com/stocks/avgo/?ksid=3031576619",
+   "date": "2026-11-13",
+   "note": "1.66T"
+  },
+  "share_price_current": {
+   "value": 347.01,
+   "unit": "USD/share",
+   "period": "2026-11-13 close",
+   "source": "stockanalysis.com (secondary)",
+   "url": "https://stockanalysis.com/stocks/avgo/?ksid=3031576619",
+   "date": "2026-11-13",
+   "note": ""
+  },
+  "share_price_52w_high": {
+   "value": 495.0,
+   "unit": "USD/share",
+   "period": "52 weeks to 2026-11-13",
+   "source": "stockanalysis.com (secondary)",
+   "url": "https://stockanalysis.com/stocks/avgo/?ksid=3031576619",
+   "date": "2026-11-13",
+   "note": "Range 289.77-495.00"
+  },
+  "equity_volatility": {
+   "value": 39.5,
+   "unit": "percent_annualized",
+   "period": "IV30 as of 2026-10-26",
+   "source": "marketchameleon.com (secondary) AVGO summary",
+   "url": "https://marketchameleon.com/Overview/AVGO/Summary",
+   "date": "2026-10-26",
+   "note": "30-day IMPLIED vol."
+  }
+ },
+ {
+  "company": "Intel",
+  "ticker": "INTC",
+  "period_end": {
+   "value": "2026-09-26",
+   "unit": "date",
+   "period": "Q3 2026 (qtr ended 2026-09-26)",
+   "source": "Intel 8-K Ex.99.1, Q3 2026 earnings release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000050863/000005086326000188/q326earningsrelease.htm",
+   "date": "2026-10-29",
+   "note": ""
+  },
+  "report_date": {
+   "value": "2026-10-29",
+   "unit": "date",
+   "period": "Q3 2026 (qtr ended 2026-09-26)",
+   "source": "Intel 8-K Ex.99.1, Q3 2026 earnings release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000050863/000005086326000188/q326earningsrelease.htm",
+   "date": "2026-10-29",
+   "note": ""
+  },
+  "cash_and_st_investments": {
+   "value": 54005,
+   "unit": "USD_m",
+   "period": "Q3 2026 (qtr ended 2026-09-26)",
+   "source": "Intel 8-K Ex.99.1, Q3 2026 earnings release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000050863/000005086326000188/q326earningsrelease.htm",
+   "date": "2026-10-29",
+   "note": "Cash 21,846 + short-term investments 32,159. Trading assets not separately shown. Aug 2026 equity offering ~$22.6bn net."
+  },
+  "total_debt": {
+   "value": 50134,
+   "unit": "USD_m",
+   "period": "Q3 2026 (qtr ended 2026-09-26)",
+   "source": "Intel 8-K Ex.99.1, Q3 2026 earnings release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000050863/000005086326000188/q326earningsrelease.htm",
+   "date": "2026-10-29",
+   "note": "Short-term debt 3,817 + long-term debt 46,317"
+  },
+  "debt_due_within_24m": {
+   "value": 3817,
+   "unit": "USD_m",
+   "period": "Q3 2026 (qtr ended 2026-09-26)",
+   "source": "Intel 8-K Ex.99.1, Q3 2026 earnings release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000050863/000005086326000188/q326earningsrelease.htm",
+   "date": "2026-10-29",
+   "note": "Short-term debt only; maturity schedule not obtained (10-K PDF fetch failed)."
+  },
+  "floating_rate_share_of_debt": {
+   "value": null,
+   "unit": "fraction",
+   "period": "Q3 2026 (qtr ended 2026-09-26)",
+   "source": "Intel 10-Q Q3 2026 (Intel IR PDF)",
+   "url": "https://www.intc.com/filings-reports/all-sec-filings/content/0000050863-26-000191/0000050863-26-000191.pdf",
+   "date": "2026-10-29",
+   "note": "Not found in 10-Q text read."
+  },
+  "total_assets": {
+   "value": 228574,
+   "unit": "USD_m",
+   "period": "Q3 2026 (qtr ended 2026-09-26)",
+   "source": "Intel 8-K Ex.99.1, Q3 2026 earnings release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000050863/000005086326000188/q326earningsrelease.htm",
+   "date": "2026-10-29",
+   "note": ""
+  },
+  "ppe_net": {
+   "value": 105314,
+   "unit": "USD_m",
+   "period": "Q3 2026 (qtr ended 2026-09-26)",
+   "source": "Intel 8-K Ex.99.1, Q3 2026 earnings release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000050863/000005086326000188/q326earningsrelease.htm",
+   "date": "2026-10-29",
+   "note": ""
+  },
+  "revenue_latest_quarter": {
+   "value": 16513,
+   "unit": "USD_m",
+   "period": "Q3 2026 (qtr ended 2026-09-26)",
+   "source": "Intel 8-K Ex.99.1, Q3 2026 earnings release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000050863/000005086326000188/q326earningsrelease.htm",
+   "date": "2026-10-29",
+   "note": ""
+  },
+  "revenue_same_quarter_prior_year": {
+   "value": 13653,
+   "unit": "USD_m",
+   "period": "Q3 2025",
+   "source": "Intel 8-K Ex.99.1, Q3 2026 earnings release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000050863/000005086326000188/q326earningsrelease.htm",
+   "date": "2026-10-29",
+   "note": ""
+  },
+  "revenue_ttm": {
+   "value": 59892,
+   "unit": "USD_m",
+   "period": "TTM to 2026-09-26",
+   "source": "Intel 10-Q Q3 2026 (Intel IR PDF) + Intel Q4/FY2025 release",
+   "url": "https://www.intc.com/news-events/press-releases/detail/1759",
+   "date": "2026-10-29",
+   "note": "Derived: 9M2026 46,218 + Q4 2025 13,674."
+  },
+  "gross_margin_latest_quarter": {
+   "value": 43.0,
+   "unit": "percent",
+   "period": "Q3 2026 (qtr ended 2026-09-26)",
+   "source": "Intel 8-K Ex.99.1, Q3 2026 earnings release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000050863/000005086326000188/q326earningsrelease.htm",
+   "date": "2026-10-29",
+   "note": "GAAP"
+  },
+  "operating_cash_flow_latest_quarter": {
+   "value": 5082,
+   "unit": "USD_m",
+   "period": "Q3 2026 (qtr ended 2026-09-26)",
+   "source": "Intel 8-K Ex.99.1, Q3 2026 earnings release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000050863/000005086326000188/q326earningsrelease.htm",
+   "date": "2026-10-29",
+   "note": "9M2026: 13,184"
+  },
+  "capex_latest_quarter": {
+   "value": 4219,
+   "unit": "USD_m",
+   "period": "Q3 2026 (qtr ended 2026-09-26)",
+   "source": "Intel 8-K Ex.99.1, Q3 2026 earnings release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000050863/000005086326000188/q326earningsrelease.htm",
+   "date": "2026-10-29",
+   "note": "Gross capex (additions to PP&E). Net partner contributions 847; adjusted FCF 1,639. 9M investing PP&E additions 10,216."
+  },
+  "employees": {
+   "value": 81100,
+   "unit": "count",
+   "period": "as of 2026-09-26",
+   "source": "Intel 8-K Ex.99.1, Q3 2026 earnings release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000050863/000005086326000188/q326earningsrelease.htm",
+   "date": "2026-10-29",
+   "note": "Intel 76.5k + Mobileye/other 4.6k. stockanalysis shows 85,100 (older)."
+  },
+  "customer_concentration": {
+   "value": 43,
+   "unit": "percent_of_revenue",
+   "period": "FY2025",
+   "source": "sec-api.io analysis citing Intel FY2025 10-K Note 3 (secondary)",
+   "url": "https://sec-api.io/insights/intel-intc-q3-2026-earnings-sec-filing-analysis",
+   "date": "2026-11-01",
+   "note": "Three largest customers 43% of FY2025 revenue (19%, 12%, 12%); 45% in FY2024. Primary 10-K PDF fetch failed."
+  },
+  "backlog_rpo": {
+   "value": null,
+   "unit": "USD_m",
+   "period": "Q3 2026 (qtr ended 2026-09-26)",
+   "source": "Intel 10-Q Q3 2026 (Intel IR PDF)",
+   "url": "https://www.intc.com/filings-reports/all-sec-filings/content/0000050863-26-000191/0000050863-26-000191.pdf",
+   "date": "2026-10-29",
+   "note": "Not found in 10-Q text read."
+  },
+  "market_cap": {
+   "value": 299130,
+   "unit": "USD_m",
+   "period": "2026-11-06 close",
+   "source": "stockanalysis.com (secondary) INTC quote page",
+   "url": "https://stockanalysis.com/stocks/intc",
+   "date": "2026-11-06",
+   "note": "299.13B; marketchameleon 309.7B at 2026-11-04"
+  },
+  "share_price_current": {
+   "value": 56.28,
+   "unit": "USD/share",
+   "period": "2026-11-06 close",
+   "source": "stockanalysis.com (secondary)",
+   "url": "https://stockanalysis.com/stocks/intc",
+   "date": "2026-11-06",
+   "note": "Most recent obtained; 58.27 on 2026-11-04 (marketchameleon)"
+  },
+  "share_price_52w_high": {
+   "value": 142.35,
+   "unit": "USD/share",
+   "period": "52 weeks to ~2026-11-06",
+   "source": "stockanalysis.com (secondary)",
+   "url": "https://stockanalysis.com/stocks/intc",
+   "date": "2026-11-06",
+   "note": "Range 32.89-142.35, same on marketchameleon. Large drawdown; verify."
+  },
+  "equity_volatility": {
+   "value": 63.6,
+   "unit": "percent_annualized",
+   "period": "IV30 as of 2026-11-04",
+   "source": "marketchameleon.com (secondary) INTC summary",
+   "url": "https://marketchameleon.com/Overview/INTC/Summary",
+   "date": "2026-11-04",
+   "note": "30-day IMPLIED vol."
+  }
+ },
+ {
+  "company": "Corning",
+  "ticker": "GLW",
+  "period_end": {
+   "value": "2026-09-30",
+   "unit": "date",
+   "period": "Q3 2026 (qtr ended 2026-09-30)",
+   "source": "Corning 8-K Ex.99, Q3 2026 earnings release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000024741/000002474126000273/glw-20261027xex99xq32026.htm",
+   "date": "2026-10-27",
+   "note": ""
+  },
+  "report_date": {
+   "value": "2026-10-27",
+   "unit": "date",
+   "period": "Q3 2026 (qtr ended 2026-09-30)",
+   "source": "Corning 8-K Ex.99, Q3 2026 earnings release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000024741/000002474126000273/glw-20261027xex99xq32026.htm",
+   "date": "2026-10-27",
+   "note": ""
+  },
+  "cash_and_st_investments": {
+   "value": 2537,
+   "unit": "USD_m",
+   "period": "Q3 2026 (qtr ended 2026-09-30)",
+   "source": "Corning 8-K Ex.99, Q3 2026 earnings release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000024741/000002474126000273/glw-20261027xex99xq32026.htm",
+   "date": "2026-10-27",
+   "note": "Cash & equivalents; no short-term investments line reported."
+  },
+  "total_debt": {
+   "value": 8200,
+   "unit": "USD_m",
+   "period": "Q3 2026 (qtr ended 2026-09-30)",
+   "source": "Corning 8-K Ex.99, Q3 2026 earnings release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000024741/000002474126000273/glw-20261027xex99xq32026.htm",
+   "date": "2026-10-27",
+   "note": "Current portion of LTD & short-term borrowings 933 + long-term debt 7,267"
+  },
+  "debt_due_within_24m": {
+   "value": 933,
+   "unit": "USD_m",
+   "period": "Q3 2026 (qtr ended 2026-09-30)",
+   "source": "Corning 8-K Ex.99, Q3 2026 earnings release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000024741/000002474126000273/glw-20261027xex99xq32026.htm",
+   "date": "2026-10-27",
+   "note": "Current portion + ST borrowings only; maturity table not obtained from 10-K."
+  },
+  "floating_rate_share_of_debt": {
+   "value": null,
+   "unit": "fraction",
+   "period": "Q3 2026 (qtr ended 2026-09-30)",
+   "source": "Corning 2025 Form 10-K (corning.com)",
+   "url": "https://www.corning.com/media/worldwide/global/documents/corning_10-k_2025.pdf",
+   "date": "2026-10-27",
+   "note": "Not found in 10-K text read."
+  },
+  "total_assets": {
+   "value": 34126,
+   "unit": "USD_m",
+   "period": "Q3 2026 (qtr ended 2026-09-30)",
+   "source": "Corning 8-K Ex.99, Q3 2026 earnings release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000024741/000002474126000273/glw-20261027xex99xq32026.htm",
+   "date": "2026-10-27",
+   "note": ""
+  },
+  "ppe_net": {
+   "value": 15517,
+   "unit": "USD_m",
+   "period": "Q3 2026 (qtr ended 2026-09-30)",
+   "source": "Corning 8-K Ex.99, Q3 2026 earnings release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000024741/000002474126000273/glw-20261027xex99xq32026.htm",
+   "date": "2026-10-27",
+   "note": ""
+  },
+  "revenue_latest_quarter": {
+   "value": 4855,
+   "unit": "USD_m",
+   "period": "Q3 2026 (qtr ended 2026-09-30)",
+   "source": "Corning 8-K Ex.99, Q3 2026 earnings release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000024741/000002474126000273/glw-20261027xex99xq32026.htm",
+   "date": "2026-10-27",
+   "note": "GAAP net sales (core sales differ)"
+  },
+  "revenue_same_quarter_prior_year": {
+   "value": 4100,
+   "unit": "USD_m",
+   "period": "Q3 2025",
+   "source": "Corning 8-K Ex.99, Q3 2026 earnings release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000024741/000002474126000273/glw-20261027xex99xq32026.htm",
+   "date": "2026-10-27",
+   "note": ""
+  },
+  "revenue_ttm": {
+   "value": 17719,
+   "unit": "USD_m",
+   "period": "TTM to 2026-09-30",
+   "source": "Corning 8-K Ex.99, Q3 2026 earnings release (SEC EDGAR) + Corning 2025 Form 10-K (corning.com)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000024741/000002474126000273/glw-20261027xex99xq32026.htm",
+   "date": "2026-10-27",
+   "note": "Derived: FY2025 15,629 + 9M2026 13,504 - 9M2025 11,414."
+  },
+  "gross_margin_latest_quarter": {
+   "value": 37.3,
+   "unit": "percent",
+   "period": "Q3 2026 (qtr ended 2026-09-30)",
+   "source": "Corning 8-K Ex.99, Q3 2026 earnings release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000024741/000002474126000273/glw-20261027xex99xq32026.htm",
+   "date": "2026-10-27",
+   "note": "GAAP gross margin $1,810"
+  },
+  "operating_cash_flow_latest_quarter": {
+   "value": 1061,
+   "unit": "USD_m",
+   "period": "Q3 2026 (qtr ended 2026-09-30)",
+   "source": "Corning 8-K Ex.99, Q3 2026 earnings release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000024741/000002474126000273/glw-20261027xex99xq32026.htm",
+   "date": "2026-10-27",
+   "note": "9M2026: 3,140"
+  },
+  "capex_latest_quarter": {
+   "value": 545,
+   "unit": "USD_m",
+   "period": "Q3 2026 (qtr ended 2026-09-30)",
+   "source": "Corning 8-K Ex.99, Q3 2026 earnings release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000024741/000002474126000273/glw-20261027xex99xq32026.htm",
+   "date": "2026-10-27",
+   "note": "9M2026: 1,299. Adjusted FCF Q3 661, 9M 2,272."
+  },
+  "employees": {
+   "value": 67200,
+   "unit": "count",
+   "period": "2025 10-K (as-of date not stated, ~Dec 31 2025)",
+   "source": "Corning 2025 Form 10-K (corning.com)",
+   "url": "https://www.corning.com/media/worldwide/global/documents/corning_10-k_2025.pdf",
+   "date": "2026-02-12",
+   "note": "Approx. 67,200 full- and part-time in 44 countries"
+  },
+  "customer_concentration": {
+   "value": null,
+   "unit": "percent_of_revenue",
+   "period": "FY2025",
+   "source": "Corning 2025 Form 10-K (corning.com)",
+   "url": "https://www.corning.com/media/worldwide/global/documents/corning_10-k_2025.pdf",
+   "date": "2026-02-12",
+   "note": "No consolidated 10% customer found. Segment-level: Optical Comms 2 customers 28% of segment sales; Display 3 = 59%; Specialty Materials 2 = 43%; Automotive 3 = 61%; Life Sciences 2 = 45%."
+  },
+  "backlog_rpo": {
+   "value": null,
+   "unit": "USD_m",
+   "period": "Q3 2026 (qtr ended 2026-09-30)",
+   "source": "Corning 8-K Ex.99, Q3 2026 earnings release (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000024741/000002474126000273/glw-20261027xex99xq32026.htm",
+   "date": "2026-10-27",
+   "note": "Not disclosed in release; 10-K text read did not show it."
+  },
+  "market_cap": {
+   "value": 98300,
+   "unit": "USD_m",
+   "period": "2026-11-13 close",
+   "source": "marketchameleon.com (secondary) GLW summary",
+   "url": "https://marketchameleon.com/Overview/GLW/Summary",
+   "date": "2026-11-13",
+   "note": "$98.3bn; stockanalysis 91.42B at 2026-11-06 close ($106.13)"
+  },
+  "share_price_current": {
+   "value": 114.08,
+   "unit": "USD/share",
+   "period": "2026-11-13 close",
+   "source": "marketchameleon.com (secondary)",
+   "url": "https://marketchameleon.com/Overview/GLW/Summary",
+   "date": "2026-11-13",
+   "note": ""
+  },
+  "share_price_52w_high": {
+   "value": 271.78,
+   "unit": "USD/share",
+   "period": "52 weeks to 2026-11-13",
+   "source": "marketchameleon.com (secondary)",
+   "url": "https://marketchameleon.com/Overview/GLW/Summary",
+   "date": "2026-11-13",
+   "note": "Range 77.39-271.78 (same on stockanalysis). High looks inconsistent with Oct prices ~$124-128 and Apr-May 2026 52w-high headlines (~$196); possible data error, verify."
+  },
+  "equity_volatility": {
+   "value": 64.5,
+   "unit": "percent_annualized",
+   "period": "IV30 as of 2026-11-13",
+   "source": "marketchameleon.com (secondary) GLW summary",
+   "url": "https://marketchameleon.com/Overview/GLW/Summary",
+   "date": "2026-11-13",
+   "note": "30-day IMPLIED vol. 5y beta 1.12."
+  }
+ }
+]

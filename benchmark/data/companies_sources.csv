@@ -1,0 +1,313 @@
+company_id,field,value,kind,source,url,date,note
+tsmc,cash,126003136762.86073,filing,TSMC 3Q26 Management Report,https://investor.tsmc.com/schinese/encrypt/files/encrypt_file/reports/2026-10/f83780000ddc0c3b48e57a87eab6814c4ab35058/3Q26%20ManagementReport.pdf,2026-10-15,"'Cash & marketable securities' NT$4,016.98bn. FS: cash & equivalents 3,621,894 + investments in marketable financial instruments (current) 395,085 = 4,016,979"
+tsmc,debt,32358218318.69511,filing,TSMC 3Q26 Management Report,https://investor.tsmc.com/schinese/encrypt/files/encrypt_file/reports/2026-10/f83780000ddc0c3b48e57a87eab6814c4ab35058/3Q26%20ManagementReport.pdf,2026-10-15,"'Interest-bearing debts' NT$1,031.58bn. FS: current portion of bonds & bank loans 213,198; bonds payable non-current 770,315; remainder (~48bn) long-term bank loans (not split in FS summary)"
+tsmc,debt_due_24m,6687515683.814304,filing,TSMC 3Q26 consolidated financial statements (FS.pdf),https://investor.tsmc.com/schinese/encrypt/files/encrypt_file/reports/2026-10/3a94d1034b9e6b22446b674f7aaf3d088a12a193/FS.pdf,2026-10-15,Current portion of bonds payable and bank loans only (due within 12m); no 13-24m schedule found in quarterly docs
+tsmc,total_assets,315335257214.5546,filing,TSMC 3Q26 consolidated financial statements (FS.pdf),https://investor.tsmc.com/schinese/encrypt/files/encrypt_file/reports/2026-10/3a94d1034b9e6b22446b674f7aaf3d088a12a193/FS.pdf,2026-10-15,
+tsmc,hard_assets,141985194479.29736,filing,TSMC 3Q26 consolidated financial statements (FS.pdf),https://investor.tsmc.com/schinese/encrypt/files/encrypt_file/reports/2026-10/3a94d1034b9e6b22446b674f7aaf3d088a12a193/FS.pdf,2026-10-15,
+tsmc,employees,76907.0,filing,stockanalysis.com quote page (secondary),https://stockanalysis.com/quote/tpe/2330/,2026-11-06,"vendor figure, as-of date of headcount not shown; likely FY2025 annual"
+tsmc,gross_margin,0.664,filing,TSMC 6-K 3Q26 earnings release,https://www.sec.gov/Archives/edgar/data/0001046179/000104617926000726/a3q26e_withguidancexfinal.htm,2026-10-15,"gross profit NT$992,379m"
+tsmc,revenue_annual,155107183186.95108,filing,"Derived: 3Q26 1,494,243 + 2Q26 1,270,381 (primary) + 1Q26 1,134,103 + 4Q25 1,046,090 (stockanalysis, secondary)",https://stockanalysis.com/quote/tpe/2330/financials/?p=quarterly,2026-11-14,derived sum
+tsmc,revenue_growth,0.5094613897312708,derived,TSMC 6-K 3Q26 earnings release | TSMC 6-K 3Q26 earnings release,https://www.sec.gov/Archives/edgar/data/0001046179/000104617926000726/a3q26e_withguidancexfinal.htm | https://www.sec.gov/Archives/edgar/data/0001046179/000104617926000726/a3q26e_withguidancexfinal.htm,2026-10-15 | 2026-10-15,latest quarter vs same quarter a year earlier
+tsmc,monthly_net_burn,-4982852363.028023,derived,TSMC 3Q26 Management Report | TSMC 3Q26 Management Report,https://investor.tsmc.com/schinese/encrypt/files/encrypt_file/reports/2026-10/f83780000ddc0c3b48e57a87eab6814c4ab35058/3Q26%20ManagementReport.pdf | https://investor.tsmc.com/schinese/encrypt/files/encrypt_file/reports/2026-10/f83780000ddc0c3b48e57a87eab6814c4ab35058/3Q26%20ManagementReport.pdf,2026-10-15 | 2026-10-15,"-(operating cash flow - capex) / 3, latest quarter"
+tsmc,equity_value_now,1948243412797.9927,market,"Derived: Focus Taiwan close NT$2,395 x ~25,933m shares (implied from stockanalysis mcap 55.37T at NT$2,135)",https://focustaiwan.tw/business/202611110018,2026-11-11,"approx; stockanalysis showed 55.37T at 2026-11-06 price NT$2,135"
+tsmc,equity_value_ref,2106868659351.4827,derived,"Derived: Focus Taiwan close NT$2,395 x ~25,933m shares (implied from stockanalysis mcap 55.37T at NT$2,135) | Focus Taiwan (CNA) | stockanalysis.com quote page (secondary)",https://focustaiwan.tw/business/202611110018 | https://focustaiwan.tw/business/202611110018 | https://stockanalysis.com/quote/tpe/2330/,2026-11-11 | 2026-11-11 | 2026-11-06,market cap x 52-week high / current price
+tsmc,floating_debt_share,0.0,judgment,,,,fixed-rate bonds
+tsmc,equity_vol,0.4142,market,alphaquery.com TSM (ADR) 30-day implied vol mean,https://www.alphaquery.com/stock/TSM/volatility-option-statistics/30-day/iv-mean,2026-11-13,"IMPLIED, 30-day, ADR options (not 1-year). Same page: 30-day historical close-to-close 0.6067. 1-year HV page failed to load. Beta 1.23 (stockanalysis)"
+tsmc,top5_customer_share,0.6,judgment,,,,judgment pending filing figure; Apple and Nvidia are each large shares
+tsmc,margin_path_score,1.0,judgment,,,,gross margin near 60% and rising
+tsmc,moat_score,1.0,judgment,,,,sole supplier of the most advanced nodes
+tsmc,compute_cost_share,0.0,judgment,,,,judgment
+tsmc,compute_revenue_share,0.6,judgment,,,,high-performance computing share of revenue
+tsmc,backlog_cover,0.4,judgment,,,,judgment
+tsmc,gpu_asset_share,0.0,judgment,,,,judgment
+tsmc,liquidation_haircut,0.5,judgment,,,,fabs are specialised but strategic
+tsmc,funding_dependence,0.0,judgment,,,,capex funded from operating cash flow
+tsmc,ig_customer_share,0.6,judgment,,,,judgment
+tsmc,circular_revenue_share,0.0,judgment,,,,judgment
+tsmc,revenue_stage,recurring,judgment,,,,judgment
+sk_hynix,cash,85607476635.514,filing,"SK hynix newsroom: Q3 2026 business results (K-IFRS, unaudited)",https://news.skhynix.com/en/q3-2026-business-results/,2026-10-28,"'Cash and cash equivalents' 114.5tn won (company text; likely incl. short-term financial instruments). stockanalysis: 114,460,000"
+sk_hynix,debt,11813084112.149532,filing,"SK hynix newsroom: Q3 2026 business results (K-IFRS, unaudited)",https://news.skhynix.com/en/q3-2026-business-results/,2026-10-28,"Borrowings 15.8tn won; net cash 98.7tn; debt-to-equity 5% (call). stockanalysis total debt 15,799,000 = ST 1,333,000 + current LTD 3,222,000 + LTD 11,244,000; leases not shown for Sep-26 (~2.5tn in prior qtrs)"
+sk_hynix,debt_due_24m,3405607476.635514,filing,stockanalysis.com 000660 quarterly (SECONDARY),https://stockanalysis.com/quote/krx/000660/financials/balance-sheet/?p=quarterly,2026-11-14,"Short-term debt 1,333,000 + current portion of LTD 3,222,000 (12m only; no schedule found)"
+sk_hynix,total_assets,292934579439.2523,filing,stockanalysis.com 000660 quarterly (SECONDARY),https://stockanalysis.com/quote/krx/000660/financials/balance-sheet/?p=quarterly,2026-11-14,Rounded vendor figure (preliminary); verify against DART quarterly report
+sk_hynix,hard_assets,72681121495.3271,filing,stockanalysis.com 000660 quarterly (SECONDARY),https://stockanalysis.com/quote/krx/000660/financials/balance-sheet/?p=quarterly,2026-11-14,vendor figure
+sk_hynix,employees,36042.0,filing,stockanalysis.com quote page (secondary),https://stockanalysis.com/quote/krx/000660/,2026-11-03,headcount date not shown
+sk_hynix,gross_margin,0.8,judgment,,,,not in the 3Q26 release; 2Q26 gross margin was 83.2% (stockanalysis) and 3Q26 operating margin 80%
+sk_hynix,revenue_annual,201373607476.6355,filing,"Derived: 3Q26 104,615.5bn + 2Q26 79,318.7bn (primary) + 1Q26 52,576.3bn + 4Q25 32,826.7bn (stockanalysis, secondary)",https://stockanalysis.com/quote/krx/000660/financials/?p=quarterly,2026-11-14,derived
+sk_hynix,revenue_growth,3.278945065013149,derived,"SK hynix newsroom: Q3 2026 business results (K-IFRS, unaudited) | SK hynix newsroom: Q3 2026 business results (K-IFRS, unaudited)",https://news.skhynix.com/en/q3-2026-business-results/ | https://news.skhynix.com/en/q3-2026-business-results/,2026-10-28 | 2026-10-28,latest quarter vs same quarter a year earlier
+sk_hynix,monthly_net_burn,-10494953271.028038,derived,stockanalysis.com 000660 quarterly (SECONDARY) | stockanalysis.com 000660 quarterly (SECONDARY),https://stockanalysis.com/quote/krx/000660/financials/cash-flow-statement/?p=quarterly | https://stockanalysis.com/quote/krx/000660/financials/cash-flow-statement/?p=quarterly,2026-11-14 | 2026-11-14,"-(operating cash flow - capex) / 3, latest quarter"
+sk_hynix,equity_value_now,660485981308.4111,market,"Derived: 1,212,000 x ~728.9m shares (implied from stockanalysis 1,021.14T at 1,401,000 on 2026-11-03)",https://www.koreatimes.co.kr/economy/20261110/korean-stocks-surge-over-4-as-risk-appetite-returns,2026-11-10,approx; share count falling with buyback cancellations
+sk_hynix,equity_value_ref,1017976743468.7394,derived,"Derived: 1,212,000 x ~728.9m shares (implied from stockanalysis 1,021.14T at 1,401,000 on 2026-11-03) | The Korea Times | stockanalysis.com and Yahoo Finance quote pages (secondary)",https://www.koreatimes.co.kr/economy/20261110/korean-stocks-surge-over-4-as-risk-appetite-returns | https://www.koreatimes.co.kr/economy/20261110/korean-stocks-surge-over-4-as-risk-appetite-returns | https://stockanalysis.com/quote/krx/000660/,2026-11-10 | 2026-11-10 | 2026-11-03,"market cap x 52-week high / current price; vendor 52-week high 2,987,000 not in the price history; using highest close 1,868,000 (2026-09-21, stockanalysis history)"
+sk_hynix,floating_debt_share,0.3,judgment,,,,Korean bank loans often floating (judgment)
+sk_hynix,equity_vol,0.5,judgment,,,,judgment
+sk_hynix,top5_customer_share,0.6,judgment,,,,Nvidia is the dominant HBM buyer (judgment; not disclosed by name)
+sk_hynix,margin_path_score,2.0,judgment,,,,HBM lifts margins; memory is cyclical
+sk_hynix,moat_score,2.0,judgment,,,,leading HBM supplier
+sk_hynix,compute_cost_share,0.0,judgment,,,,judgment
+sk_hynix,compute_revenue_share,0.5,judgment,,,,HBM and server memory share
+sk_hynix,backlog_cover,0.5,judgment,,,,HBM supply contracted a year ahead
+sk_hynix,gpu_asset_share,0.0,judgment,,,,judgment
+sk_hynix,liquidation_haircut,0.5,judgment,,,,judgment
+sk_hynix,funding_dependence,0.05,judgment,,,,cash generative in the upcycle
+sk_hynix,ig_customer_share,0.6,judgment,,,,judgment
+sk_hynix,circular_revenue_share,0.0,judgment,,,,judgment
+sk_hynix,revenue_stage,recurring,judgment,,,,judgment
+softbank,cash,46938013136.289,filing,"SoftBank Group Consolidated Financial Report, 6M ended 2026-09-30 (IFRS)",https://group.softbank/system/files/pdf/ir/financials/financial_reports/financial-report_q2fy2026_01_en.pdf,2026-11-10,Consolidated cash & cash equivalents. Datasheet consolidated 'cash position' 8.68tn yen (incl. other liquid assets)
+softbank,debt,205830522925.35052,filing,"SoftBank Group Consolidated Financial Report, 6M ended 2026-09-30 (IFRS)",https://group.softbank/system/files/pdf/ir/financials/financial_reports/financial-report_q2fy2026_01_en.pdf,2026-11-10,"Consolidated interest-bearing debt current 5,770,931 + non-current 26,820,274; incl. lease liabilities 33,719,282 (excl. banking deposits 2,787,557). SBG bonds 11,101,006; SBG borrowings 3,540,295; financing subs 5,094,485; SVF2 2,950,551; SB Northstar 934,277"
+softbank,debt_due_24m,36446450675.761024,filing,"SoftBank Group Consolidated Financial Report, 6M ended 2026-09-30 (IFRS)",https://group.softbank/system/files/pdf/ir/financials/financial_reports/financial-report_q2fy2026_01_en.pdf,2026-11-10,"Consolidated current IBD (12m). SBG standalone schedule (datasheet): FY2026 remainder '-', FY2027 (Apr27-Mar28) 1,906.7bn (bonds 516.5bn + term loans 1,390.2bn), FY2028 4,198.5bn. Presentation: bond redemptions next 2 yrs ~1.6tn. Column mapping from PDF extraction - verify"
+softbank,total_assets,438216458254.3893,filing,"SoftBank Group Consolidated Financial Report, 6M ended 2026-09-30 (IFRS)",https://group.softbank/system/files/pdf/ir/financials/financial_reports/financial-report_q2fy2026_01_en.pdf,2026-11-10,
+softbank,hard_assets,28444524441.076168,filing,"SoftBank Group Consolidated Financial Report, 6M ended 2026-09-30 (IFRS)",https://group.softbank/system/files/pdf/ir/financials/financial_reports/financial-report_q2fy2026_01_en.pdf,2026-11-10,
+softbank,employees,73677.0,filing,stockanalysis.com quote page (secondary),https://stockanalysis.com/quote/tyo/9984/,2026-11-13,consolidated; headcount date not shown
+softbank,gross_margin,0.516,filing,"Derived from SoftBank Group Consolidated Financial Report, 6M ended 2026-09-30 (IFRS)",https://group.softbank/system/files/pdf/ir/financials/financial_reports/financial-report_q2fy2026_01_en.pdf,2026-11-10,"gross profit 1,143,423 / net sales 2,215,446 (consolidated, mostly SoftBank Corp telecom)"
+softbank,revenue_annual,55966805608.18492,derived,"SoftBank Group Consolidated Financial Report, 6M ended 2026-09-30 (IFRS)",https://group.softbank/system/files/pdf/ir/financials/financial_reports/financial-report_q2fy2026_01_en.pdf,2026-11-10,4 x latest quarter
+softbank,revenue_growth,0.1559841836846505,derived,"SoftBank Group Consolidated Financial Report, 6M ended 2026-09-30 (IFRS) | SoftBank Group Consolidated Financial Report, 6M ended 2026-09-30 (IFRS)",https://group.softbank/system/files/pdf/ir/financials/financial_reports/financial-report_q2fy2026_01_en.pdf | https://group.softbank/system/files/pdf/ir/financials/financial_reports/financial-report_q2fy2026_01_en.pdf,2026-11-10 | 2026-11-10,latest quarter vs same quarter a year earlier
+softbank,monthly_net_burn,2783995410.7195487,derived,"SoftBank Group Consolidated Financial Report, 6M ended 2026-09-30 (IFRS) | SoftBank Group Consolidated Financial Report, 6M ended 2026-09-30 (IFRS)",https://group.softbank/system/files/pdf/ir/financials/financial_reports/financial-report_q2fy2026_01_en.pdf | https://group.softbank/system/files/pdf/ir/financials/financial_reports/financial-report_q2fy2026_01_en.pdf,2026-11-10 | 2026-11-10,"-(operating cash flow - capex) / 6, latest half year"
+softbank,equity_value_now,127699886320.57599,market,stockanalysis.com quote page (secondary),https://stockanalysis.com/quote/tyo/9984/,2026-11-13,
+softbank,equity_value_ref,245175141201.89526,derived,stockanalysis.com quote page (secondary) | stockanalysis.com quote page (secondary) | stockanalysis.com and Yahoo Finance (secondary),https://stockanalysis.com/quote/tyo/9984/ | https://stockanalysis.com/quote/tyo/9984/ | https://stockanalysis.com/quote/tyo/9984/,2026-11-13 | 2026-11-13 | 2026-11-13,"market cap x 52-week high / current price; vendor 52-week high 9,074 looks stale; using highest close 6,810 (2026-09-09, stockanalysis history)"
+softbank,floating_debt_share,0.3,judgment,,,,judgment
+softbank,equity_vol,0.6,judgment,,,,judgment
+softbank,top5_customer_share,0.05,judgment,,,,judgment
+softbank,margin_path_score,3.0,judgment,,,,earnings swing with investment marks
+softbank,moat_score,3.0,judgment,,,,holding company; value lies in stakes
+softbank,compute_cost_share,0.0,judgment,,,,judgment
+softbank,compute_revenue_share,0.05,judgment,,,,judgment
+softbank,backlog_cover,0.0,judgment,,,,judgment
+softbank,gpu_asset_share,0.1,judgment,,,,judgment
+softbank,liquidation_haircut,0.4,judgment,,,,listed stakes can be sold or pledged
+softbank,funding_dependence,0.6,judgment,,,,"OpenAI and data center commitments rely on bridge loans, margin loans and asset sales"
+softbank,ig_customer_share,0.5,judgment,,,,judgment
+softbank,circular_revenue_share,0.05,judgment,,,,judgment
+softbank,revenue_stage,recurring,judgment,,,,SoftBank Corp telecom and Arm royalties
+nvidia,cash,56586000000.0,filing,"NVIDIA 8-K Ex.99.1, Q2 FY2027 results release (SEC EDGAR)",https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000073/q2fy27pr.htm,2026-08-26,"Cash & equivalents 22,443 + marketable debt securities 34,143. Excludes marketable equity securities 42,783 (incl. equity = 99,369)."
+nvidia,debt,33366000000.0,filing,"NVIDIA 10-Q Q2 FY2027 (mirror of SEC filing at opencapital.sh, secondary host)",https://www.opencapital.sh/filings/0001045810-26-000075.md,2026-08-26,"Net carrying amount: short-term 1,000 + long-term 32,366; principal 33,500. No commercial paper outstanding ($25bn program)."
+nvidia,debt_due_24m,1000000000.0,filing,"NVIDIA 10-Q Q2 FY2027 (mirror of SEC filing at opencapital.sh, secondary host)",https://www.opencapital.sh/filings/0001045810-26-000075.md,2026-08-26,"Current portion only (3.20% notes due 2026). Next maturities: 2028 notes 4,750 (4.25% and 1.55%); calendar-year maturity table, months not extracted, so part may fall within 24m of 2026-07-26."
+nvidia,total_assets,320272000000.0,filing,"NVIDIA 8-K Ex.99.1, Q2 FY2027 results release (SEC EDGAR)",https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000073/q2fy27pr.htm,2026-08-26,
+nvidia,hard_assets,14285000000.0,filing,"NVIDIA 8-K Ex.99.1, Q2 FY2027 results release (SEC EDGAR)",https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000073/q2fy27pr.htm,2026-08-26,
+nvidia,employees,42000.0,filing,stockanalysis.com (secondary) NVDA statistics,https://stockanalysis.com/stocks/nvda/statistics/,2026-11-08,Not verified against primary 10-K.
+nvidia,gross_margin,0.75,filing,"NVIDIA 8-K Ex.99.1, Q2 FY2027 results release (SEC EDGAR)",https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000073/q2fy27pr.htm,2026-08-26,GAAP
+nvidia,revenue_annual,302970000000.0,filing,"NVIDIA 8-K Ex.99.1, Q2 FY2027 results release (SEC EDGAR) + NVIDIA Q4 FY2026 release",https://seekingalpha.com/pr/20414347,2026-08-26,"Derived: H1 FY27 177,837 + (FY26 215,938 - H1 FY26 90,805)."
+nvidia,revenue_growth,1.0585114348672526,derived,"NVIDIA 8-K Ex.99.1, Q2 FY2027 results release (SEC EDGAR) | NVIDIA 8-K Ex.99.1, Q2 FY2027 results release (SEC EDGAR)",https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000073/q2fy27pr.htm | https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000073/q2fy27pr.htm,2026-08-26 | 2026-08-26,latest quarter vs same quarter a year earlier
+nvidia,monthly_net_burn,-7133333333.333333,derived,"NVIDIA 8-K Ex.99.1, Q2 FY2027 results release (SEC EDGAR) | NVIDIA 8-K Ex.99.1, Q2 FY2027 results release (SEC EDGAR)",https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000073/q2fy27pr.htm | https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000073/q2fy27pr.htm,2026-08-26 | 2026-08-26,"-(operating cash flow - capex) / 3, latest quarter"
+nvidia,equity_value_now,3930000000000.0,market,stockanalysis.com (secondary) NVDA quote page,https://stockanalysis.com/stocks/nvda,2026-11-13,3.93T. Statistics page showed 4.51T at 2026-11-06 close ($186.64).
+nvidia,equity_value_ref,5883637426181.103,derived,stockanalysis.com (secondary) NVDA quote page | stockanalysis.com (secondary) | stockanalysis.com (secondary),https://stockanalysis.com/stocks/nvda | https://stockanalysis.com/stocks/nvda | https://stockanalysis.com/stocks/nvda,2026-11-13 | 2026-11-13 | 2026-11-13,market cap x 52-week high / current price
+nvidia,floating_debt_share,0.0,filing,"NVIDIA 10-Q Q2 FY2027 (mirror of SEC filing at opencapital.sh, secondary host)",https://www.opencapital.sh/filings/0001045810-26-000075.md,2026-08-26,All notes listed carry fixed coupons; no floating-rate notes in debt table.
+nvidia,equity_vol,0.41,market,marketchameleon.com (secondary) NVDA summary,https://marketchameleon.com/Overview/NVDA/Summary,2026-10-28,30-day IMPLIED vol (not 1y historical). 5y beta 2.25 (stockanalysis).
+nvidia,top5_customer_share,0.5,judgment,,,,10-Q Q2 FY27: one direct customer was 16% of revenue and several indirect customers exceed 10%; top five not disclosed
+nvidia,margin_path_score,1.0,judgment,,,,gross margins above 70% and stable
+nvidia,moat_score,1.0,judgment,,,,CUDA software ecosystem and leading accelerators
+nvidia,compute_cost_share,0.0,judgment,,,,does not buy compute as a cost of revenue
+nvidia,compute_revenue_share,0.9,judgment,,,,data center accelerators are most of revenue
+nvidia,backlog_cover,0.5,judgment,,,,large purchase commitments from hyperscalers; not all contracted
+nvidia,gpu_asset_share,0.1,judgment,,,,some GPUs held for its own cloud and leaseback deals
+nvidia,liquidation_haircut,0.5,judgment,,,,generic for PP&E
+nvidia,funding_dependence,0.0,judgment,,,,strongly cash generative
+nvidia,ig_customer_share,0.6,judgment,,,,hyperscalers are investment grade; neoclouds and labs are not
+nvidia,circular_revenue_share,0.15,judgment,,,,invests in customers (OpenAI and neoclouds) that buy its chips
+nvidia,revenue_stage,recurring,judgment,,,,repeat product sales
+amd,cash,15776000000.0,filing,"AMD 8-K Ex.99.1, Q3 2026 results release (SEC EDGAR)",https://www.sec.gov/Archives/edgar/data/0000002488/000000248826000188/q32026991.htm,2026-11-03,"Cash 7,404 + short-term investments 8,372"
+amd,debt,7079000000.0,filing,"AMD 8-K Ex.99.1, Q3 2026 results release (SEC EDGAR)",https://www.sec.gov/Archives/edgar/data/0000002488/000000248826000188/q32026991.htm,2026-11-03,"All long-term; current portion nil (874 at 2025-12-27). Q3 issued 4,726 net of debt/CP, repaid 875. CP balance at qtr end not extracted."
+amd,debt_due_24m,0.0,filing,"AMD 8-K Ex.99.1, Q3 2026 results release (SEC EDGAR)",https://www.sec.gov/Archives/edgar/data/0000002488/000000248826000188/q32026991.htm,2026-11-03,Current portion only = 0. Maturity table not extracted; 10-Q tags list 4.212% notes due 2026 and 4.319% due 2028 (amounts not obtained).
+amd,total_assets,94812000000.0,filing,"AMD 8-K Ex.99.1, Q3 2026 results release (SEC EDGAR)",https://www.sec.gov/Archives/edgar/data/0000002488/000000248826000188/q32026991.htm,2026-11-03,
+amd,hard_assets,3929000000.0,filing,"AMD 8-K Ex.99.1, Q3 2026 results release (SEC EDGAR)",https://www.sec.gov/Archives/edgar/data/0000002488/000000248826000188/q32026991.htm,2026-11-03,
+amd,employees,31000.0,filing,stockanalysis.com (secondary) AMD statistics,https://stockanalysis.com/stocks/amd/statistics/,2026-11-07,Not verified against primary 10-K.
+amd,gross_margin,0.54,filing,"AMD 8-K Ex.99.1, Q3 2026 results release (SEC EDGAR)",https://www.sec.gov/Archives/edgar/data/0000002488/000000248826000188/q32026991.htm,2026-11-03,"GAAP 54% as reported (7,210/13,377 = 53.9%)"
+amd,revenue_annual,45436000000.0,filing,"AMD 8-K Ex.99.1, Q3 2026 results release (SEC EDGAR) + AMD Q4/FY2025 release",https://ir.amd.com/news-events/press-releases/detail/1276/,2026-11-03,"Derived: 9M2026 35,166 + Q4 2025 10,270."
+amd,revenue_growth,0.4467878001297858,derived,"AMD 8-K Ex.99.1, Q3 2026 results release (SEC EDGAR) | AMD 8-K Ex.99.1, Q3 2026 results release (SEC EDGAR)",https://www.sec.gov/Archives/edgar/data/0000002488/000000248826000188/q32026991.htm | https://www.sec.gov/Archives/edgar/data/0000002488/000000248826000188/q32026991.htm,2026-11-03 | 2026-11-03,latest quarter vs same quarter a year earlier
+amd,monthly_net_burn,-184666666.66666666,derived,"AMD 8-K Ex.99.1, Q3 2026 results release (SEC EDGAR) | AMD 8-K Ex.99.1, Q3 2026 results release (SEC EDGAR)",https://www.sec.gov/Archives/edgar/data/0000002488/000000248826000188/q32026991.htm | https://www.sec.gov/Archives/edgar/data/0000002488/000000248826000188/q32026991.htm,2026-11-03 | 2026-11-03,"-(operating cash flow - capex) / 3, latest quarter"
+amd,equity_value_now,875900000000.0,market,stockanalysis.com (secondary) AMD quote page,https://stockanalysis.com/stocks/amd/,2026-11-13,875.90B
+amd,equity_value_ref,1080024094671.0109,derived,stockanalysis.com (secondary) AMD quote page | stockanalysis.com (secondary) | stockanalysis.com (secondary),https://stockanalysis.com/stocks/amd/ | https://stockanalysis.com/stocks/amd/ | https://stockanalysis.com/stocks/amd/,2026-11-13 | 2026-11-13 | 2026-11-13,market cap x 52-week high / current price
+amd,floating_debt_share,0.0,judgment,,,,fixed-rate notes
+amd,equity_vol,0.593,market,marketchameleon.com (secondary) AMD summary,https://marketchameleon.com/Overview/AMD/Summary,2026-10-26,30-day IMPLIED vol. 5y beta 2.54.
+amd,top5_customer_share,0.4,judgment,,,,10% customer note not read; judgment
+amd,margin_path_score,2.0,judgment,,,,gross margin around 50% and improving with data center mix
+amd,moat_score,2.0,judgment,,,,strong number two in CPUs and accelerators
+amd,compute_cost_share,0.0,judgment,,,,judgment
+amd,compute_revenue_share,0.5,judgment,,,,data center segment is about half of revenue
+amd,backlog_cover,0.3,judgment,,,,judgment
+amd,gpu_asset_share,0.0,judgment,,,,judgment
+amd,liquidation_haircut,0.5,judgment,,,,generic for PP&E
+amd,funding_dependence,0.05,judgment,,,,cash generative
+amd,ig_customer_share,0.5,judgment,,,,judgment
+amd,circular_revenue_share,0.1,judgment,,,,OpenAI supply deal comes with warrants for AMD shares
+amd,revenue_stage,recurring,judgment,,,,repeat product sales
+broadcom,cash,23975000000.0,filing,"Broadcom 8-K Ex.99, Q3 FY2026 results release (SEC EDGAR)",https://www.sec.gov/Archives/edgar/data/0001730168/000173016826000076/avgo-08022026x8kxex99.htm,2026-09-02,Cash & equivalents only; no separate short-term investments line.
+broadcom,debt,59419000000.0,filing,"Broadcom 8-K Ex.99, Q3 FY2026 results release (SEC EDGAR)",https://www.sec.gov/Archives/edgar/data/0001730168/000173016826000076/avgo-08022026x8kxex99.htm,2026-09-02,"Short-term debt 2,252 + long-term debt 57,167 (carrying). Long-term down from 61,984 at 2025-11-02; Q3 debt repayments 5,628."
+broadcom,debt_due_24m,2252000000.0,filing,Broadcom 10-Q Q3 FY2026 (SEC EDGAR),https://www.sec.gov/Archives/edgar/data/0001730168/000173016826000080/avgo-20260802.htm,2026-09-02,"Current portion (= Sept 2026 notes 752 + VMware Aug 2026 notes 1,500). 10-Q XBRL tranche list also shows Jan 2028 777 and Feb 2028 750 (within 24m) and VMware Aug 2028 750 (at ~24m): ~3,779-4,529 total if added. Tranche list read was partial."
+broadcom,total_assets,188148000000.0,filing,"Broadcom 8-K Ex.99, Q3 FY2026 results release (SEC EDGAR)",https://www.sec.gov/Archives/edgar/data/0001730168/000173016826000076/avgo-08022026x8kxex99.htm,2026-09-02,
+broadcom,hard_assets,3144000000.0,filing,"Broadcom 8-K Ex.99, Q3 FY2026 results release (SEC EDGAR)",https://www.sec.gov/Archives/edgar/data/0001730168/000173016826000076/avgo-08022026x8kxex99.htm,2026-09-02,
+broadcom,employees,33000.0,filing,Broadcom 10-K FY2025 (SEC EDGAR),https://www.sec.gov/Archives/edgar/data/1730168/000173016825000121/avgo-20251102.htm,2025-12,"Approx. 33,000"
+broadcom,gross_margin,0.691,filing,"Broadcom 8-K Ex.99, Q3 FY2026 results release (SEC EDGAR)",https://www.sec.gov/Archives/edgar/data/0001730168/000173016826000076/avgo-08022026x8kxex99.htm,2026-09-02,"Derived from GAAP gross margin $20,456 / revenue 29,591."
+broadcom,revenue_annual,89104000000.0,filing,"Broadcom 8-K Ex.99, Q3 FY2026 results release (SEC EDGAR) + Q4 FY2025 release",https://www.sec.gov/Archives/edgar/data/1730168/000173016825000116/avgo-11022025x8kxex99.htm,2026-09-02,"Derived: 9M FY26 71,089 + Q4 FY25 18,015."
+broadcom,revenue_growth,0.8550025075225678,derived,"Broadcom 8-K Ex.99, Q3 FY2026 results release (SEC EDGAR) | Broadcom 8-K Ex.99, Q3 FY2026 results release (SEC EDGAR)",https://www.sec.gov/Archives/edgar/data/0001730168/000173016826000076/avgo-08022026x8kxex99.htm | https://www.sec.gov/Archives/edgar/data/0001730168/000173016826000076/avgo-08022026x8kxex99.htm,2026-09-02 | 2026-09-02,latest quarter vs same quarter a year earlier
+broadcom,monthly_net_burn,-4555000000.0,derived,"Broadcom 8-K Ex.99, Q3 FY2026 results release (SEC EDGAR) | Broadcom 8-K Ex.99, Q3 FY2026 results release (SEC EDGAR)",https://www.sec.gov/Archives/edgar/data/0001730168/000173016826000076/avgo-08022026x8kxex99.htm | https://www.sec.gov/Archives/edgar/data/0001730168/000173016826000076/avgo-08022026x8kxex99.htm,2026-09-02 | 2026-09-02,"-(operating cash flow - capex) / 3, latest quarter"
+broadcom,equity_value_now,1660000000000.0,market,stockanalysis.com (secondary) AVGO quote page,https://stockanalysis.com/stocks/avgo/?ksid=3031576619,2026-11-13,1.66T
+broadcom,equity_value_ref,2367943286936.976,derived,stockanalysis.com (secondary) AVGO quote page | stockanalysis.com (secondary) | stockanalysis.com (secondary),https://stockanalysis.com/stocks/avgo/?ksid=3031576619 | https://stockanalysis.com/stocks/avgo/?ksid=3031576619 | https://stockanalysis.com/stocks/avgo/?ksid=3031576619,2026-11-13 | 2026-11-13 | 2026-11-13,market cap x 52-week high / current price
+broadcom,floating_debt_share,0.2,judgment,,,,term loans from the VMware deal (judgment)
+broadcom,equity_vol,0.395,market,marketchameleon.com (secondary) AVGO summary,https://marketchameleon.com/Overview/AVGO/Summary,2026-10-26,30-day IMPLIED vol.
+broadcom,top5_customer_share,0.4,judgment,,,,10-K FY2025: top five end customers about 40% of net revenue
+broadcom,margin_path_score,2.0,judgment,,,,high and stable margins
+broadcom,moat_score,2.0,judgment,,,,custom AI accelerators and networking leadership; VMware lock-in
+broadcom,compute_cost_share,0.0,judgment,,,,judgment
+broadcom,compute_revenue_share,0.5,judgment,,,,AI semiconductors are a large and growing share
+broadcom,backlog_cover,0.5,judgment,,,,reports a large AI order backlog
+broadcom,gpu_asset_share,0.0,judgment,,,,judgment
+broadcom,liquidation_haircut,0.5,judgment,,,,generic
+broadcom,funding_dependence,0.05,judgment,,,,cash generative; debt from the VMware deal
+broadcom,ig_customer_share,0.7,judgment,,,,customers are mostly hyperscalers
+broadcom,circular_revenue_share,0.05,judgment,,,,reported backstops for customers' AI chip financing
+broadcom,revenue_stage,recurring,judgment,,,,chips plus VMware subscriptions
+intel,cash,54005000000.0,filing,"Intel 8-K Ex.99.1, Q3 2026 earnings release (SEC EDGAR)",https://www.sec.gov/Archives/edgar/data/0000050863/000005086326000188/q326earningsrelease.htm,2026-10-29,"Cash 21,846 + short-term investments 32,159. Trading assets not separately shown. Aug 2026 equity offering ~$22.6bn net."
+intel,debt,50134000000.0,filing,"Intel 8-K Ex.99.1, Q3 2026 earnings release (SEC EDGAR)",https://www.sec.gov/Archives/edgar/data/0000050863/000005086326000188/q326earningsrelease.htm,2026-10-29,"Short-term debt 3,817 + long-term debt 46,317"
+intel,debt_due_24m,3817000000.0,filing,"Intel 8-K Ex.99.1, Q3 2026 earnings release (SEC EDGAR)",https://www.sec.gov/Archives/edgar/data/0000050863/000005086326000188/q326earningsrelease.htm,2026-10-29,Short-term debt only; maturity schedule not obtained (10-K PDF fetch failed).
+intel,total_assets,228574000000.0,filing,"Intel 8-K Ex.99.1, Q3 2026 earnings release (SEC EDGAR)",https://www.sec.gov/Archives/edgar/data/0000050863/000005086326000188/q326earningsrelease.htm,2026-10-29,
+intel,hard_assets,105314000000.0,filing,"Intel 8-K Ex.99.1, Q3 2026 earnings release (SEC EDGAR)",https://www.sec.gov/Archives/edgar/data/0000050863/000005086326000188/q326earningsrelease.htm,2026-10-29,
+intel,employees,81100.0,filing,"Intel 8-K Ex.99.1, Q3 2026 earnings release (SEC EDGAR)",https://www.sec.gov/Archives/edgar/data/0000050863/000005086326000188/q326earningsrelease.htm,2026-10-29,"Intel 76.5k + Mobileye/other 4.6k. stockanalysis shows 85,100 (older)."
+intel,gross_margin,0.43,filing,"Intel 8-K Ex.99.1, Q3 2026 earnings release (SEC EDGAR)",https://www.sec.gov/Archives/edgar/data/0000050863/000005086326000188/q326earningsrelease.htm,2026-10-29,GAAP
+intel,revenue_annual,59892000000.0,filing,Intel 10-Q Q3 2026 (Intel IR PDF) + Intel Q4/FY2025 release,https://www.intc.com/news-events/press-releases/detail/1759,2026-10-29,"Derived: 9M2026 46,218 + Q4 2025 13,674."
+intel,revenue_growth,0.20947777045338012,derived,"Intel 8-K Ex.99.1, Q3 2026 earnings release (SEC EDGAR) | Intel 8-K Ex.99.1, Q3 2026 earnings release (SEC EDGAR)",https://www.sec.gov/Archives/edgar/data/0000050863/000005086326000188/q326earningsrelease.htm | https://www.sec.gov/Archives/edgar/data/0000050863/000005086326000188/q326earningsrelease.htm,2026-10-29 | 2026-10-29,latest quarter vs same quarter a year earlier
+intel,monthly_net_burn,-287666666.6666667,derived,"Intel 8-K Ex.99.1, Q3 2026 earnings release (SEC EDGAR) | Intel 8-K Ex.99.1, Q3 2026 earnings release (SEC EDGAR)",https://www.sec.gov/Archives/edgar/data/0000050863/000005086326000188/q326earningsrelease.htm | https://www.sec.gov/Archives/edgar/data/0000050863/000005086326000188/q326earningsrelease.htm,2026-10-29 | 2026-10-29,"-(operating cash flow - capex) / 3, latest quarter"
+intel,equity_value_now,299130000000.0,market,stockanalysis.com (secondary) INTC quote page,https://stockanalysis.com/stocks/intc,2026-11-06,299.13B; marketchameleon 309.7B at 2026-11-04
+intel,equity_value_ref,756594802771.855,derived,stockanalysis.com (secondary) INTC quote page | stockanalysis.com (secondary) | stockanalysis.com (secondary),https://stockanalysis.com/stocks/intc | https://stockanalysis.com/stocks/intc | https://stockanalysis.com/stocks/intc,2026-11-06 | 2026-11-06 | 2026-11-06,market cap x 52-week high / current price
+intel,floating_debt_share,0.05,judgment,,,,mostly fixed-rate notes
+intel,equity_vol,0.636,market,marketchameleon.com (secondary) INTC summary,https://marketchameleon.com/Overview/INTC/Summary,2026-11-04,30-day IMPLIED vol.
+intel,top5_customer_share,0.5,judgment,,,,FY2025: three largest customers 43% of revenue (secondary source citing the 10-K); top five somewhat higher
+intel,margin_path_score,4.0,judgment,,,,losses and a costly foundry build-out
+intel,moat_score,3.0,judgment,,,,x86 franchise eroding; foundry unproven
+intel,compute_cost_share,0.0,judgment,,,,judgment
+intel,compute_revenue_share,0.3,judgment,,,,data center and AI share of revenue
+intel,backlog_cover,0.3,judgment,,,,judgment
+intel,gpu_asset_share,0.0,judgment,,,,judgment
+intel,liquidation_haircut,0.6,judgment,,,,fabs are specialised and expensive to repurpose
+intel,funding_dependence,0.4,judgment,,,,negative free cash flow; equity from the US government and strategic investors
+intel,ig_customer_share,0.6,judgment,,,,PC makers and hyperscalers
+intel,circular_revenue_share,0.05,judgment,,,,judgment
+intel,revenue_stage,recurring,judgment,,,,repeat product sales
+corning,cash,2537000000.0,filing,"Corning 8-K Ex.99, Q3 2026 earnings release (SEC EDGAR)",https://www.sec.gov/Archives/edgar/data/0000024741/000002474126000273/glw-20261027xex99xq32026.htm,2026-10-27,Cash & equivalents; no short-term investments line reported.
+corning,debt,8200000000.0,filing,"Corning 8-K Ex.99, Q3 2026 earnings release (SEC EDGAR)",https://www.sec.gov/Archives/edgar/data/0000024741/000002474126000273/glw-20261027xex99xq32026.htm,2026-10-27,"Current portion of LTD & short-term borrowings 933 + long-term debt 7,267"
+corning,debt_due_24m,933000000.0,filing,"Corning 8-K Ex.99, Q3 2026 earnings release (SEC EDGAR)",https://www.sec.gov/Archives/edgar/data/0000024741/000002474126000273/glw-20261027xex99xq32026.htm,2026-10-27,Current portion + ST borrowings only; maturity table not obtained from 10-K.
+corning,total_assets,34126000000.0,filing,"Corning 8-K Ex.99, Q3 2026 earnings release (SEC EDGAR)",https://www.sec.gov/Archives/edgar/data/0000024741/000002474126000273/glw-20261027xex99xq32026.htm,2026-10-27,
+corning,hard_assets,15517000000.0,filing,"Corning 8-K Ex.99, Q3 2026 earnings release (SEC EDGAR)",https://www.sec.gov/Archives/edgar/data/0000024741/000002474126000273/glw-20261027xex99xq32026.htm,2026-10-27,
+corning,employees,67200.0,filing,Corning 2025 Form 10-K (corning.com),https://www.corning.com/media/worldwide/global/documents/corning_10-k_2025.pdf,2026-02-12,"Approx. 67,200 full- and part-time in 44 countries"
+corning,gross_margin,0.373,filing,"Corning 8-K Ex.99, Q3 2026 earnings release (SEC EDGAR)",https://www.sec.gov/Archives/edgar/data/0000024741/000002474126000273/glw-20261027xex99xq32026.htm,2026-10-27,"GAAP gross margin $1,810"
+corning,revenue_annual,17719000000.0,filing,"Corning 8-K Ex.99, Q3 2026 earnings release (SEC EDGAR) + Corning 2025 Form 10-K (corning.com)",https://www.sec.gov/Archives/edgar/data/0000024741/000002474126000273/glw-20261027xex99xq32026.htm,2026-10-27,"Derived: FY2025 15,629 + 9M2026 13,504 - 9M2025 11,414."
+corning,revenue_growth,0.18414634146341458,derived,"Corning 8-K Ex.99, Q3 2026 earnings release (SEC EDGAR) | Corning 8-K Ex.99, Q3 2026 earnings release (SEC EDGAR)",https://www.sec.gov/Archives/edgar/data/0000024741/000002474126000273/glw-20261027xex99xq32026.htm | https://www.sec.gov/Archives/edgar/data/0000024741/000002474126000273/glw-20261027xex99xq32026.htm,2026-10-27 | 2026-10-27,latest quarter vs same quarter a year earlier
+corning,monthly_net_burn,-172000000.0,derived,"Corning 8-K Ex.99, Q3 2026 earnings release (SEC EDGAR) | Corning 8-K Ex.99, Q3 2026 earnings release (SEC EDGAR)",https://www.sec.gov/Archives/edgar/data/0000024741/000002474126000273/glw-20261027xex99xq32026.htm | https://www.sec.gov/Archives/edgar/data/0000024741/000002474126000273/glw-20261027xex99xq32026.htm,2026-10-27 | 2026-10-27,"-(operating cash flow - capex) / 3, latest quarter"
+corning,equity_value_now,98300000000.0,market,marketchameleon.com (secondary) GLW summary,https://marketchameleon.com/Overview/GLW/Summary,2026-11-13,$98.3bn; stockanalysis 91.42B at 2026-11-06 close ($106.13)
+corning,equity_value_ref,168888499298.73773,derived,marketchameleon.com (secondary) GLW summary | marketchameleon.com (secondary) | marketchameleon.com (secondary),https://marketchameleon.com/Overview/GLW/Summary | https://marketchameleon.com/Overview/GLW/Summary | https://marketchameleon.com/Overview/GLW/Summary,2026-11-13 | 2026-11-13 | 2026-11-13,market cap x 52-week high / current price; vendor 52-week high 271.78 conflicts with Apr-May 2026 52-week-high headlines near $196 and October prices of $124-128; using 196
+corning,floating_debt_share,0.05,judgment,,,,judgment
+corning,equity_vol,0.645,market,marketchameleon.com (secondary) GLW summary,https://marketchameleon.com/Overview/GLW/Summary,2026-11-13,30-day IMPLIED vol. 5y beta 1.12.
+corning,top5_customer_share,0.3,judgment,,,,judgment; 10-K names no customer above 10% except display panel makers
+corning,margin_path_score,2.0,judgment,,,,margins recovering with optical demand
+corning,moat_score,2.0,judgment,,,,leading optical fiber and specialty glass maker
+corning,compute_cost_share,0.0,judgment,,,,judgment
+corning,compute_revenue_share,0.2,judgment,,,,optical communications for data centers
+corning,backlog_cover,0.3,judgment,,,,multi-year fiber supply deals with hyperscalers
+corning,gpu_asset_share,0.0,judgment,,,,judgment
+corning,liquidation_haircut,0.5,judgment,,,,judgment
+corning,funding_dependence,0.1,judgment,,,,judgment
+corning,ig_customer_share,0.6,judgment,,,,judgment
+corning,circular_revenue_share,0.0,judgment,,,,judgment
+corning,revenue_stage,recurring,judgment,,,,judgment
+coreweave,cash,4184000000.0,filing,CoreWeave IR press release: CoreWeave Reports Strong Third Quarter 2026 Results,https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Third-Quarter-2026-Results/default.aspx,2026-11-10,"Cash & equivalents 4,122 + marketable securities 62. Excludes restricted cash 1,405 current + 877 non-current (2,282)."
+coreweave,debt,46873000000.0,filing,CoreWeave IR press release: CoreWeave Reports Strong Third Quarter 2026 Results,https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Third-Quarter-2026-Results/default.aspx,2026-11-10,"Sum of balance-sheet lines: recourse debt current 9,183 + non-current 32,417; non-recourse debt current 1,389 + non-current 3,884. EXCLUDES finance lease liabilities (296 current + 353 non-current = 649) and operating leases."
+coreweave,debt_due_24m,10572000000.0,filing,CoreWeave IR press release: CoreWeave Reports Strong Third Quarter 2026 Results,https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Third-Quarter-2026-Results/default.aspx,2026-11-10,"Current portion only (recourse 9,183 + non-recourse 1,389). Year-by-year maturity table (Note 10) could not be read: WebFetch output of the 10-Q truncated before the debt note. True 24m figure is higher."
+coreweave,total_assets,91481000000.0,filing,CoreWeave IR press release: CoreWeave Reports Strong Third Quarter 2026 Results,https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Third-Quarter-2026-Results/default.aspx,2026-11-10,
+coreweave,hard_assets,56778000000.0,filing,CoreWeave IR press release: CoreWeave Reports Strong Third Quarter 2026 Results,https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Third-Quarter-2026-Results/default.aspx,2026-11-10,"Property and equipment, net. Operating lease ROU assets 18,922 reported separately (not included)."
+coreweave,employees,2189.0,filing,stockanalysis.com (SECONDARY) statistics page,https://stockanalysis.com/stocks/crwv/statistics/,2026-11-08,"Not in Q3 press release or readable 10-Q portion; secondary figure, date of count unverified."
+coreweave,gross_margin,0.6769,filing,CoreWeave IR press release: CoreWeave Reports Strong Third Quarter 2026 Results,https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Third-Quarter-2026-Results/default.aspx,2026-11-10,"Computed: (revenue 3,661 - cost of revenue 1,183)/revenue. Company does not report gross profit. CoreWeave's cost of revenue line appears to exclude most depreciation (carried in technology & infrastructure), so this overstates an all-in gross margin; Q3 operating income was 207 (5.7% margin)."
+coreweave,revenue_annual,9886000000.0,filing,CoreWeave IR press release: CoreWeave Reports Strong Third Quarter 2026 Results; CoreWeave press release: Q4 and FY2025 Results (Business Wire),https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Third-Quarter-2026-Results/default.aspx ; https://www.businesswire.com/news/home/20260226281661/en/CoreWeave-Reports-Strong-Fourth-Quarter-and-Fiscal-Year-2025-Results,2026-11-10,"Derived: 9M 2026 revenue 8,314 + Q4 2025 revenue 1,572."
+coreweave,revenue_growth,1.6820512820512818,derived,CoreWeave IR press release: CoreWeave Reports Strong Third Quarter 2026 Results | CoreWeave IR press release: CoreWeave Reports Strong Third Quarter 2026 Results,https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Third-Quarter-2026-Results/default.aspx | https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Third-Quarter-2026-Results/default.aspx,2026-11-10 | 2026-11-10,latest quarter vs same quarter a year earlier
+coreweave,monthly_net_burn,2488666666.6666665,derived,CoreWeave IR press release: CoreWeave Reports Strong Third Quarter 2026 Results | CoreWeave IR press release: CoreWeave Reports Strong Third Quarter 2026 Results,https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Third-Quarter-2026-Results/default.aspx | https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Third-Quarter-2026-Results/default.aspx,2026-11-10 | 2026-11-10,"-(operating cash flow - capex) / 3, latest quarter"
+coreweave,equity_value_now,25590000000.0,market,stockanalysis.com (SECONDARY) quote page,https://stockanalysis.com/stocks/crwv/,2026-11-06,"Page appeared stale (close of Nov 6). Shares outstanding 551.54m per same page. At the Nov 10 close of 48.73, implied cap ~26,876."
+coreweave,equity_value_ref,72600400164.16992,derived,stockanalysis.com (SECONDARY) quote page | heygotrade.com news (SECONDARY) | stockanalysis.com (SECONDARY) quote page,https://stockanalysis.com/stocks/crwv/ | https://www.heygotrade.com/en/news/coreweave-crwv-stock-news-november-11-2026/ | https://stockanalysis.com/stocks/crwv/,2026-11-06 | 2026-11-10 | 2026-11-06,market cap x 52-week high / current price
+coreweave,floating_debt_share,0.6,judgment,,,,delayed-draw term loans are floating; senior notes fixed (judgment unless filing gives it)
+coreweave,equity_vol,1.0195,market,alphaquery.com (SECONDARY),https://www.alphaquery.com/stock/CRWV/volatility-option-statistics/180-day/historical-volatility,2026-11-13,180-day historical (1-year not shown free). 30-day HV 1.3528.
+coreweave,top5_customer_share,0.75,judgment,,,,10-Q Q3 2026: two customers were 30% and 24% of quarterly revenue (54%); top five not disclosed
+coreweave,margin_path_score,3.0,judgment,,,,adjusted margins strong but heavy depreciation and interest; path to GAAP profit unproven
+coreweave,moat_score,4.0,judgment,,,,GPU capacity is largely interchangeable; edge is speed to deploy and contracts
+coreweave,compute_cost_share,0.0,judgment,,,,seller of compute; GPU cost sits in capex and depreciation
+coreweave,compute_revenue_share,1.0,judgment,,,,all revenue is GPU cloud rental
+coreweave,backlog_cover,0.8,judgment,,,,revenue backlog is several times annual revenue; most near-term revenue is contracted
+coreweave,gpu_asset_share,0.85,judgment,,,,most PP&E is GPU servers and networking
+coreweave,liquidation_haircut,0.55,judgment,,,,used GPUs and leasehold data center fit-outs lose value fast in a glut
+coreweave,funding_dependence,0.8,judgment,,,,capex far above operating cash flow; build-out funded by new debt
+coreweave,ig_customer_share,0.5,judgment,,,,Microsoft and Meta are investment grade; OpenAI and smaller labs are not
+coreweave,circular_revenue_share,0.15,judgment,,,,Nvidia is an investor and supplier and has agreed to buy unused capacity
+coreweave,revenue_stage,recurring,judgment,,,,multi-year take-or-pay compute contracts
+oracle,cash,37077000000.0,filing,Oracle IR press release / 8-K tables: Q1 FY2027 results,https://s23.q4cdn.com/440135859/files/content_files/1q27-pressrelease-September_FINAL.pdf,2026-09-10,"Cash & equivalents 36,369 + marketable securities 708."
+oracle,debt,125337000000.0,filing,Oracle IR press release / 8-K tables: Q1 FY2027 results,https://s23.q4cdn.com/440135859/files/content_files/1q27-pressrelease-September_FINAL.pdf,2026-09-10,"Notes payable and other borrowings: current 7,625 + non-current 117,712 (summed). Finance lease liabilities not included (reported within other liabilities; Aug-2025 10-Q showed 4,017 a year earlier; current figure not captured). Operating leases excluded."
+oracle,debt_due_24m,7625000000.0,filing,Oracle IR press release / 8-K tables: Q1 FY2027 results,https://s23.q4cdn.com/440135859/files/content_files/1q27-pressrelease-September_FINAL.pdf,2026-09-10,Current portion only; FY27 Q1 10-Q maturity table not located (primary 10-Q PDF for Aug-2026 not found; only Aug-2025 10-Q surfaced).
+oracle,total_assets,303259000000.0,filing,Oracle IR press release / 8-K tables: Q1 FY2027 results,https://s23.q4cdn.com/440135859/files/content_files/1q27-pressrelease-September_FINAL.pdf,2026-09-10,
+oracle,hard_assets,127845000000.0,filing,Oracle IR press release / 8-K tables: Q1 FY2027 results,https://s23.q4cdn.com/440135859/files/content_files/1q27-pressrelease-September_FINAL.pdf,2026-09-10,"Property, plant and equipment, net as reported; whether finance-lease ROU is inside not confirmed."
+oracle,employees,141000.0,filing,stockanalysis.com (SECONDARY) statistics page,https://stockanalysis.com/stocks/orcl/statistics/,2026-11-07,Secondary; date of count unverified.
+oracle,gross_margin,0.6003,filing,Oracle IR press release / 8-K tables: Q1 FY2027 results,https://s23.q4cdn.com/440135859/files/content_files/1q27-pressrelease-September_FINAL.pdf,2026-09-10,"Computed; Oracle does not report gross profit. Cost lines used: cloud & software 6,400 + hardware 281 + services 1,052 = 7,733. Excludes amortization of intangibles and S&M/R&D. Operating margin 35% (op income 6,728)."
+oracle,revenue_annual,71776000000.0,filing,Oracle IR press release / 8-K tables: Q1 FY2027 results,https://investor.oracle.com/investor-news/news-details/2026/Oracle-Announces-Q1-Results-Driven-by-Triple-Digit-Growth-in-Cloud-Infrastructure-Revenues/default.aspx,2026-09-10,"Derived: FY2026 revenue 67,357 - Q1 FY26 14,926 + Q1 FY27 19,345."
+oracle,revenue_growth,0.2960605654562509,derived,Oracle IR press release / 8-K tables: Q1 FY2027 results | Oracle IR press release / 8-K tables: Q1 FY2027 results,https://s23.q4cdn.com/440135859/files/content_files/1q27-pressrelease-September_FINAL.pdf | https://s23.q4cdn.com/440135859/files/content_files/1q27-pressrelease-September_FINAL.pdf,2026-09-10 | 2026-09-10,latest quarter vs same quarter a year earlier
+oracle,monthly_net_burn,1798666666.6666667,derived,Oracle IR press release / 8-K tables: Q1 FY2027 results | Oracle IR press release / 8-K tables: Q1 FY2027 results,https://s23.q4cdn.com/440135859/files/content_files/1q27-pressrelease-September_FINAL.pdf | https://s23.q4cdn.com/440135859/files/content_files/1q27-pressrelease-September_FINAL.pdf,2026-09-10 | 2026-09-10,"-(operating cash flow - capex) / 3, latest quarter"
+oracle,equity_value_now,361970000000.0,market,stockanalysis.com (SECONDARY) quote page,https://stockanalysis.com/stocks/orcl/,2026-11-06,"Page appeared stale (Nov 6 close 116.10); shares 3.12bn. At Nov 10 close 117.98, implied ~368,100."
+oracle,equity_value_ref,767782611459.5695,derived,stockanalysis.com (SECONDARY) quote page | heygotrade.com news (SECONDARY) | stockanalysis.com (SECONDARY) quote page,https://stockanalysis.com/stocks/orcl/ | https://www.heygotrade.com/id/news/saham-oracle-orcl-turun-11-november-2026/ | https://stockanalysis.com/stocks/orcl/,2026-11-06 | 2026-11-10 | 2026-11-06,market cap x 52-week high / current price
+oracle,floating_debt_share,0.1,judgment,,,,mostly fixed-rate bonds
+oracle,equity_vol,0.6389,market,alphaquery.com (SECONDARY),https://www.alphaquery.com/stock/ORCL/volatility-option-statistics/180-day/historical-volatility,2026-11-13,30-day HV 0.7544. Beta (5Y) 1.78 per stockanalysis.
+oracle,top5_customer_share,0.3,judgment,,,,cloud backlog concentrated in a few AI customers; total revenue is diversified (judgment)
+oracle,margin_path_score,3.0,judgment,,,,cloud infrastructure growth dilutes margins and depreciation is rising
+oracle,moat_score,2.0,judgment,,,,database and enterprise applications are entrenched
+oracle,compute_cost_share,0.05,judgment,,,,buys GPUs as capex; little compute bought as opex
+oracle,compute_revenue_share,0.3,judgment,,,,cloud infrastructure share of revenue is growing fast (judgment from segment trend)
+oracle,backlog_cover,0.8,judgment,,,,remaining performance obligations are many times annual revenue
+oracle,gpu_asset_share,0.6,judgment,,,,recent PP&E growth is mostly AI data center capacity
+oracle,liquidation_haircut,0.4,judgment,,,,mix of owned data centers and GPU equipment
+oracle,funding_dependence,0.6,judgment,,,,free cash flow negative; capex funded with bonds and loans
+oracle,ig_customer_share,0.5,judgment,,,,OpenAI is a large contracted customer and is not rated investment grade
+oracle,circular_revenue_share,0.1,judgment,,,,OpenAI contracts tied to the Stargate joint venture
+oracle,revenue_stage,recurring,judgment,,,,support and cloud subscriptions
+meta,cash,82449000000.0,filing,Meta IR press release: Meta Reports Third Quarter 2026 Results,https://s21.q4cdn.com/399680738/files/doc_news/Meta-Reports-Third-Quarter-2026-Results-2026.pdf,2026-10-21,"Cash & equivalents 11,222 + marketable securities 71,227. Excludes restricted cash equivalents ~12,830 (incl. 10,800 escrow for infrastructure purchase agreements)."
+meta,debt,83669000000.0,filing,Meta Form 10-Q Q3 2026 (SEC EDGAR),https://www.sec.gov/Archives/edgar/data/0001326801/000162828026066773/meta-20260930.htm,2026-10-21,"Long-term debt non-current 80,922 + current 2,747 (carrying; face 84,000 less 331 discount/costs). All listed as fixed-rate senior unsecured notes. EXCLUDES finance lease liabilities (not captured) and operating leases (2,522 + 28,651). Off-balance-sheet: data-center ventures (Louisiana, Texas) residual value guarantees max 41,493; total max loss exposure 68,404."
+meta,debt_due_24m,4247000000.0,filing,Meta Form 10-Q Q3 2026 (SEC EDGAR),https://www.sec.gov/Archives/edgar/data/0001326801/000162828026066773/meta-20260930.htm,2026-10-21,"Current portion 2,747 (2027 maturity 2,750) + 2028 maturities 1,500 (upper bound: some 2028 notes may fall after 2028-09-30). Remainder-2026 maturities: none."
+meta,total_assets,478836000000.0,filing,Meta IR press release: Meta Reports Third Quarter 2026 Results,https://s21.q4cdn.com/399680738/files/doc_news/Meta-Reports-Third-Quarter-2026-Results-2026.pdf,2026-10-21,
+meta,hard_assets,253222000000.0,filing,Meta Form 10-Q Q3 2026 (SEC EDGAR),https://www.sec.gov/Archives/edgar/data/0001326801/000162828026066773/meta-20260930.htm,2026-10-21,"Property and equipment, net; per 10-Q XBRL tag this INCLUDES finance-lease ROU assets (gross finance-lease ROU 11,704)."
+meta,employees,66775.0,filing,Meta IR press release: Meta Reports Third Quarter 2026 Results,https://s21.q4cdn.com/399680738/files/doc_news/Meta-Reports-Third-Quarter-2026-Results-2026.pdf,2026-10-21,
+meta,gross_margin,0.7931,filing,Meta IR press release: Meta Reports Third Quarter 2026 Results,https://s21.q4cdn.com/399680738/files/doc_news/Meta-Reports-Third-Quarter-2026-Results-2026.pdf,2026-10-21,"Computed from cost of revenue 13,369; Meta does not report gross profit."
+meta,revenue_annual,241605000000.0,filing,Meta Form 10-Q Q3 2026 (SEC EDGAR); Meta Q4 2025 press release,https://www.sec.gov/Archives/edgar/data/0001326801/000162828026066773/meta-20260930.htm ; https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Fourth-Quarter-and-Full-Year-2025-Results/default.aspx,2026-10-21,"Derived: 9M 2026 revenue 181,712 + Q4 2025 revenue 59,893."
+meta,revenue_growth,0.2607041099098395,derived,Meta IR press release: Meta Reports Third Quarter 2026 Results | Meta IR press release: Meta Reports Third Quarter 2026 Results,https://s21.q4cdn.com/399680738/files/doc_news/Meta-Reports-Third-Quarter-2026-Results-2026.pdf | https://s21.q4cdn.com/399680738/files/doc_news/Meta-Reports-Third-Quarter-2026-Results-2026.pdf,2026-10-21 | 2026-10-21,latest quarter vs same quarter a year earlier
+meta,monthly_net_burn,385333333.3333333,derived,Meta IR press release: Meta Reports Third Quarter 2026 Results | Meta IR press release: Meta Reports Third Quarter 2026 Results,https://s21.q4cdn.com/399680738/files/doc_news/Meta-Reports-Third-Quarter-2026-Results-2026.pdf | https://s21.q4cdn.com/399680738/files/doc_news/Meta-Reports-Third-Quarter-2026-Results-2026.pdf,2026-10-21 | 2026-10-21,"-(operating cash flow - capex) / 3, latest quarter"
+meta,equity_value_now,1640000000000.0,market,stockanalysis.com (SECONDARY) statistics page,https://stockanalysis.com/stocks/meta/statistics/,2026-11-14,Rounded $1.64T as shown.
+meta,equity_value_ref,1993025915940.719,derived,stockanalysis.com (SECONDARY) statistics page | stockanalysis.com (SECONDARY) statistics page | stockanalysis.com (SECONDARY) quote page,https://stockanalysis.com/stocks/meta/statistics/ | https://stockanalysis.com/stocks/meta/statistics/ | https://stockanalysis.com/stocks/meta/,2026-11-14 | 2026-11-13 | 2026-11-13,market cap x 52-week high / current price
+meta,floating_debt_share,0.0,filing,Meta Form 10-Q Q3 2026 (SEC EDGAR),https://www.sec.gov/Archives/edgar/data/0001326801/000162828026066773/meta-20260930.htm,2026-10-21,"10-Q debt note lists only fixed-rate senior notes (2022, 2023, 2024, Nov-2025, May-2026 series); no CP or FRNs mentioned. Treat as ~0."
+meta,equity_vol,0.4555,market,alphaquery.com (SECONDARY),https://www.alphaquery.com/stock/META/volatility-option-statistics/180-day/historical-volatility,2026-11-13,30-day HV 0.4098.
+meta,top5_customer_share,0.05,judgment,,,,no customer is material
+meta,margin_path_score,2.0,judgment,,,,high operating margin under pressure from AI capex and depreciation
+meta,moat_score,1.0,judgment,,,,dominant social platforms
+meta,compute_cost_share,0.1,judgment,,,,some cloud capacity rented as opex; most compute is capex
+meta,compute_revenue_share,0.0,judgment,,,,does not sell compute
+meta,backlog_cover,0.0,judgment,,,,judgment
+meta,gpu_asset_share,0.5,judgment,,,,recent PP&E growth is mostly AI servers and data centers
+meta,liquidation_haircut,0.4,judgment,,,,judgment
+meta,funding_dependence,0.2,judgment,,,,capex near operating cash flow; bonds and data center joint ventures fill the gap
+meta,ig_customer_share,0.4,judgment,,,,millions of advertisers
+meta,circular_revenue_share,0.0,judgment,,,,judgment
+meta,revenue_stage,recurring,judgment,,,,advertising
+amazon,cash,114226000000.0,filing,Amazon IR press release: Amazon.com Announces Third Quarter Results,https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/,2026-10-29,"Cash & equivalents 55,783 + marketable securities 58,443."
+amazon,debt,180332000000.0,filing,"Amazon Form 10-Q Q3 2026 (filed 2026-10-30, via Amazon IR/SEC filings)",https://d18rn0p25nwr6d.cloudfront.net/CIK-0001018724/ee4fffc7-7dfe-40b1-917e-12baa11eb95f.pdf,2026-10-30,"Long-term debt 173,125 + current portion 6,827 (face 180,887) + other short-term credit-facility borrowings 380; no commercial paper outstanding. EXCLUDES finance lease liabilities 14,495 (current 1,866) and operating leases. With finance leases: 194,827."
+amazon,debt_due_24m,7207000000.0,filing,"Amazon Form 10-Q Q3 2026 (filed 2026-10-30, via Amazon IR/SEC filings)",https://d18rn0p25nwr6d.cloudfront.net/CIK-0001018724/ee4fffc7-7dfe-40b1-917e-12baa11eb95f.pdf,2026-10-30,"Current portion of LTD 6,827 + short-term borrowings 380. Principal-only maturities by year not given (commitments table combines principal+interest: rem-2026 1,413; 2027 16,566; 2028 19,567)."
+amazon,total_assets,1243390000000.0,filing,Amazon IR press release: Amazon.com Announces Third Quarter Results,https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/,2026-10-29,
+amazon,hard_assets,508862000000.0,filing,Amazon IR press release: Amazon.com Announces Third Quarter Results,https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/,2026-10-29,"Property and equipment, net (Amazon includes finance-lease assets in PP&E)."
+amazon,employees,1638000.0,filing,Amazon IR press release: Amazon.com Announces Third Quarter Results,https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/,2026-10-29,"Per press release extraction; stockanalysis.com shows 1,576,000 (older count)."
+amazon,gross_margin,0.5317,filing,Amazon IR press release: Amazon.com Announces Third Quarter Results,https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/,2026-10-29,"Computed as 1 - cost of sales 94,573 / net sales; Amazon reports no gross profit and puts fulfillment/tech costs below cost of sales. Operating margin 13.9%."
+amazon,revenue_annual,797455000000.0,filing,Amazon IR press release: Amazon.com Announces Third Quarter Results,https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/,2026-10-29,
+amazon,revenue_growth,0.1208587492853932,derived,Amazon IR press release: Amazon.com Announces Third Quarter Results | Amazon IR press release: Amazon.com Announces Third Quarter Results,https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/ | https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/,2026-10-29 | 2026-10-29,latest quarter vs same quarter a year earlier
+amazon,monthly_net_burn,11152000000.0,derived,Amazon IR press release: Amazon.com Announces Third Quarter Results | Amazon IR press release: Amazon.com Announces Third Quarter Results,https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/ | https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/,2026-10-29 | 2026-10-29,"-(operating cash flow - capex) / 3, latest quarter"
+amazon,equity_value_now,2880000000000.0,market,stockanalysis.com (SECONDARY) statistics page,https://stockanalysis.com/stocks/amzn/statistics/,2026-11-14,Rounded $2.88T; shares 10.81bn.
+amazon,equity_value_ref,3101837545938.648,derived,stockanalysis.com (SECONDARY) statistics page | stockanalysis.com (SECONDARY) statistics page | stockanalysis.com (SECONDARY) quote page,https://stockanalysis.com/stocks/amzn/statistics/ | https://stockanalysis.com/stocks/amzn/statistics/ | https://stockanalysis.com/stocks/amzn/,2026-11-14 | 2026-11-13 | 2026-11-13,market cap x 52-week high / current price
+amazon,floating_debt_share,0.05,judgment,,,,judgment
+amazon,equity_vol,0.3743,market,alphaquery.com (SECONDARY),https://www.alphaquery.com/stock/AMZN/volatility-option-statistics/180-day/historical-volatility,2026-11-13,30-day HV 0.4040.
+amazon,top5_customer_share,0.02,judgment,,,,no customer is material
+amazon,margin_path_score,2.0,judgment,,,,AWS and advertising lift margins
+amazon,moat_score,1.0,judgment,,,,scale in retail and cloud
+amazon,compute_cost_share,0.05,judgment,,,,judgment
+amazon,compute_revenue_share,0.17,judgment,,,,AWS share of total revenue
+amazon,backlog_cover,0.6,judgment,,,,AWS backlog of contracted commitments
+amazon,gpu_asset_share,0.3,judgment,,,,judgment
+amazon,liquidation_haircut,0.4,judgment,,,,judgment
+amazon,funding_dependence,0.1,judgment,,,,judgment
+amazon,ig_customer_share,0.4,judgment,,,,judgment
+amazon,circular_revenue_share,0.02,judgment,,,,Anthropic is an investee and AWS customer
+amazon,revenue_stage,recurring,judgment,,,,judgment
