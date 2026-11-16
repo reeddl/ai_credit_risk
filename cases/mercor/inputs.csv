@@ -1,0 +1,30 @@
+field,base,low,high,kind,source,url,date,note
+company_id,mercor,,,label,,,,
+segment,data_weak_moat,data_strong_moat,,judgment,,,,"Human expert data marketplace. Weak moat: labs can switch suppliers (Meta paused after the March 2026 breach) and Scale AI, Surge AI and Handshake compete. Strong moat shown as the alternative."
+public,False,,,label,,,,private company
+cash,1000000000,500000000,1500000000,estimate,"ARR Club (citing CEO interview) + Mercor Series D post",https://www.arr.club/signal/mercor-arr-hit-1-5b | https://www.mercor.com/blog/series-d/,2026-06-04 | 2026-11-10,"Not disclosed. Mid-2026: 'more than $500M cash', above total raised (secondary, unverified). Plus an assumed $500M primary from the $750M Series D, which included an employee tender of undisclosed size. Range: all-tender to all-primary."
+monthly_net_burn,-2500000,-10000000,40000000,estimate,"Sacra; Dealroom (anonymous source with knowledge of the financials)",https://sacra.com/c/mercor/ | https://dealroom.co/news/137121-mercor-doubles-to-2b-gross-revenue-run-rate-as-ai-labs-buy-expert-data/,2026-07-06,"Reported free-cash-flow positive in early 2026, about $6M profit in H1 2025. Base assumes FCF about +1% of gross run rate. High case: a post-raise investment ramp (environments, Deeptune)."
+revenue_annual,3000000000,2000000000,3000000000,reported,"Brendan Foody on X, via CellCog summary; Sacra estimate ~$3B end Oct 2026",https://cellcog.ai/blog/mercor-series-d-20-billion/ | https://sacra.com/c/mercor/,2026-11-10,"Gross run rate (customer spend before contractor payouts). Unaudited, not in the press release. Low = June 2026 run rate (~$2B, TNW). Net of contractor pay it is roughly $0.9-1.2B."
+revenue_growth,5.0,3.0,5.0,derived,"Contrary (citing TechCrunch Oct 27 2025) + Foody Nov 10 2026",https://research.contrary.com/company/mercor,2025-10-27 | 2026-11-10,"~$500M run rate Oct 2025 to ~$3B Nov 2026. Any value above 0.5 scores the same."
+revenue_stage,recurring,,,judgment,,,,"Repeat project work for the same labs; not multi-year contracted"
+gross_margin,0.35,0.25,0.40,reported,"The Information via TNW and Dealroom; ARR Club",https://thenextweb.com/news/mercor-20-billion-valuation-deeptune-acquisition | https://www.arr.club/signal/mercor-arr-hit-1-5b,2026-07-10 | 2026-06-04,"Contractors keep 60-70% of gross billings; ARR Club gives 35-40% gross margin. Low 0.25 = if inference spend sits in cost of revenue. 0.30 is a bin edge."
+margin_path_score,2,2,3,judgment,,,,"Reported FCF positive at a 30-40% gross margin; pressure from contractor pay and inference spend"
+moat_score,4,3,5,judgment,,,,"Network of 5M+ experts and lab relationships, but low switching costs and strong rivals"
+employees,400,300,1000,reported,Sacra; Wikipedia,https://sacra.com/c/mercor/ | https://en.wikipedia.org/wiki/Mercor,2026 | 2025,"Sacra: 400+ full-time (undated). Wikipedia: 300 (2025). Excludes 30,000+ weekly active contractors."
+compute_cost_share,0.10,0.05,0.15,estimate,Mercor Series D post (Foody),https://www.mercor.com/blog/series-d/,2026-11-10,"Inference spend about 3x employee salaries. Assumes ~400 staff x ~$250k = $100M salaries, so ~$300M inference, ~10% of gross run rate."
+compute_revenue_share,0,,,judgment,,,,does not sell compute
+backlog_cover,0,,,judgment,,,,
+gpu_asset_share,0,,,judgment,,,,owns no GPUs as far as public sources show
+debt,0,0,250000000,reported,"None found in funding coverage",https://sacra.com/c/mercor/ | https://research.contrary.com/company/mercor,2026-11,"No debt or venture debt reported. High case is a hypothetical $250M facility."
+floating_debt_share,0,,,judgment,,,,only matters if debt exists
+debt_due_24m,0,,,judgment,,,,
+total_assets,1500000000,1000000000,2000000000,estimate,,,,"Cash + ~1.5 months of gross billings in receivables (~$375M) + small goodwill (Deeptune)"
+hard_assets,20000000,,,estimate,,,,"Offices and equipment only"
+liquidation_haircut,0.5,,,judgment,,,,
+funding_dependence,0.05,0.0,0.30,judgment,,,,"Reported cash generative and just raised; little of next year's cash need comes from new money"
+top5_customer_share,0.93,0.75,0.97,reported,"The Information, via AI Weekly",https://aiweekly.co/alerts/mercor-books-614m-in-h1-2026-leaning-on-openai-anthropic,2026-07-21,"About 91% of H1 2026 gross revenue ($614M) from OpenAI and Anthropic; top five is at least that. Low = if enterprise growth since then (Foody's Nov 2026 chart) diluted it."
+ig_customer_share,0.07,0.03,0.20,judgment,,,,"OpenAI and Anthropic are unrated and equity funded; Google is investment grade, Meta paused work"
+circular_revenue_share,0.02,0.0,0.10,judgment,Mercor Series D post,https://www.mercor.com/blog/series-d/,2026-11-10,"NVIDIA, Salesforce and Zoom invested in the Series D; whether they are also customers is not disclosed"
+equity_value_ref,20000000000,,,reported,"Mercor Series D post; Reuters (via WSAU)",https://www.mercor.com/blog/series-d/ | https://wsau.com/?p=1034191,2026-11-10,"$750M Series D at a $20B valuation. A 90% markdown means a mark of $2B or less."
+equity_value_now,20000000000,,,reported,Mercor Series D post,https://www.mercor.com/blog/series-d/,2026-11-10,"No mark since the round, so the current mark equals the round price"
+equity_vol,0.8,0.6,1.0,judgment,,,,"No traded comparable; the benchmark uses 1.0 for CoreWeave"

@@ -70,6 +70,12 @@ benchmark/propose_weights.py` refits the chip and fab weight scale and writes
 `benchmark/results/weight_proposal.md`. See section 6 of
 `docs/model_document.md` for findings and caveats.
 
+## Cases
+
+`cases/mercor/` runs one private, equity-funded company (Mercor) through the
+model from sourced public figures, with a sensitivity and a customer-loss
+what-if: `python cases/mercor/run_mercor.py`.
+
 ## Layout
 
 | Path | What it holds |
@@ -87,4 +93,5 @@ benchmark/propose_weights.py` refits the chip and fab weight scale and writes
 | `benchmark/data/` | CDS quotes, filing figures, judgments, segment map, built inputs |
 | `benchmark/build_inputs.py` | Filings and judgments to model inputs, with provenance |
 | `benchmark/results/` | Latest benchmark report and tables |
+| `cases/mercor/` | Mercor inputs with sources, run script, results |
 | `docs/model_document.md` | Draft model document |
