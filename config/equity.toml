@@ -32,8 +32,8 @@ earnings_floor = 0.05       # shocked EPS never falls below 5% of consensus
 floor_pe = 5.6              # Micron's forward P/E at its 2018 peak
 
 [revision.default]
-low = 0.52
-central = 0.87
+low = 0.64
+central = 0.93
 high = 1.22
 
 # Gross margin points lost per unit of revenue lost, as pricing power fades.

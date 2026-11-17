@@ -209,7 +209,7 @@ and owner before results are used.
 | `driver.leg2.beta` (driver.toml) | 1.5 | Judgment | 2026-11-17 | Placeholder |
 | `driver.cuts` (driver.toml) | mild 10%, stall 20%, bust 35% | Judgment | 2026-11-17 | Placeholder |
 | `driver.credit_reference.cut` (driver.toml) | 20% | Set so version 1 shock sizes are reproduced | 2026-11-17 | Convention |
-| `revision.default` (equity.toml) | kappa low 0.52, central 0.87, high 1.22 (growth cut per unit EPS cut) | Fit on Nvidia 2018 and 2022, `data/analogs/fit.md`; both peak EPS figures approximate | 2026-11-17 | Fitted, thin |
+| `revision.default` (equity.toml) | kappa low 0.64, central 0.93, high 1.22 (growth cut per unit EPS cut) | Fit on Nvidia 2018 and 2022, `data/analogs/fit.md`; Nvidia 2022 fully sourced, Nvidia 2018 peak EPS approximate | 2026-11-17 | Fitted, thin |
 | `revision.floor_pe` (equity.toml) | 5.6x forward | Micron's forward P/E at its 2018 peak; peak EPS approximate | 2026-11-17 | Fitted, thin |
 | `margin_hit.default` (equity.toml) | low 0.02, central 0.08, high 0.15 | Judgment | 2026-11-17 | Placeholder |
 | `segments.*.revenue_elasticity` (equity.toml) | per segment, e.g. chip designers 1.0 / 1.2 / 1.4 | Judgment | 2026-11-17 | Placeholder |
