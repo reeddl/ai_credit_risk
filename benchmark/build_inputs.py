@@ -53,6 +53,7 @@ TICKER_TO_ID = {
     "CRWV": "coreweave", "ORCL": "oracle", "META": "meta", "AMZN": "amazon",
     "NVDA": "nvidia", "AMD": "amd", "AVGO": "broadcom", "INTC": "intel", "GLW": "corning",
     "TSM": "tsmc", "2330.TW": "tsmc", "000660.KS": "sk_hynix", "9984.T": "softbank",
+    "VST": "vistra",
 }
 
 # Vendor 52-week highs that the collected price history contradicts. The
@@ -112,20 +113,21 @@ def _company_id(ticker: str) -> str:
     raise KeyError(f"unknown ticker {ticker!r}")
 
 
-def load_filings() -> list[dict]:
+def load_filings(data: Path = DATA) -> list[dict]:
     out = []
-    for path in sorted((DATA / "filings").glob("*.json")):
+    for path in sorted((data / "filings").glob("*.json")):
         out.extend(json.loads(path.read_text()))
     return out
 
 
-def build() -> tuple[pd.DataFrame, pd.DataFrame]:
-    seg = pd.read_csv(DATA / "segment_map.csv").set_index("company_id")
-    judg = pd.read_csv(DATA / "judgments.csv", dtype={"value": str})
+def build(data: Path = DATA) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """Inputs for the companies whose filings, judgments and segment map sit in ``data``."""
+    seg = pd.read_csv(data / "segment_map.csv").set_index("company_id")
+    judg = pd.read_csv(data / "judgments.csv", dtype={"value": str})
     jmap = {(r.company_id, r.field): r for r in judg.itertuples()}
 
     rows, prov = [], []
-    for c in load_filings():
+    for c in load_filings(data):
         cid = _company_id(c["ticker"])
         fx = _fx(c)
         row: dict = {"company_id": cid, "segment": seg.loc[cid, "segment"], "public": True}
@@ -218,10 +220,23 @@ def build() -> tuple[pd.DataFrame, pd.DataFrame]:
     return companies, pd.DataFrame(prov)
 
 
-def main() -> None:
-    companies, prov = build()
-    companies.to_csv(DATA / "companies_real.csv", index=False)
-    prov.to_csv(DATA / "companies_sources.csv", index=False)
+UNIVERSE = ROOT / "data" / "universe"
+
+
+def main(argv=None) -> None:
+    import argparse
+
+    p = argparse.ArgumentParser(description="Build credit model inputs from filings and judgments.")
+    p.add_argument("--universe", action="store_true",
+                   help="build the equity universe's extra names (data/universe/) instead of the CDS set")
+    a = p.parse_args(argv)
+    if a.universe:
+        data, names = UNIVERSE, ("credit_inputs.csv", "credit_sources.csv")
+    else:
+        data, names = DATA, ("companies_real.csv", "companies_sources.csv")
+    companies, prov = build(data)
+    companies.to_csv(data / names[0], index=False)
+    prov.to_csv(data / names[1], index=False)
     print(f"Wrote {len(companies)} companies and {len(prov)} provenance rows")
 
 

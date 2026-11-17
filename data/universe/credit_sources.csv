@@ -1,0 +1,27 @@
+company_id,field,value,kind,source,url,date,note
+vistra,cash,2744000000.0,filing,stockanalysis.com quarterly balance sheet (SECONDARY),https://stockanalysis.com/stocks/vst/financials/balance-sheet/?p=quarterly,2026-11-13,"Cash and equivalents 2,743 (also in the release's liquidity section) + trading securities 1"
+vistra,debt,21768000000.0,filing,stockanalysis.com quarterly balance sheet (SECONDARY),https://stockanalysis.com/stocks/vst/financials/balance-sheet/?p=quarterly,2026-11-13,"Current portion of long-term debt 3,499 + long-term debt 18,269; no short-term borrowings shown"
+vistra,debt_due_24m,3499000000.0,filing,stockanalysis.com quarterly balance sheet (SECONDARY),https://stockanalysis.com/stocks/vst/financials/balance-sheet/?p=quarterly,2026-11-13,"Current portion only (due within 12 months); no 13-24 month schedule found, so an understatement"
+vistra,total_assets,45029000000.0,filing,stockanalysis.com quarterly balance sheet (SECONDARY),https://stockanalysis.com/stocks/vst/financials/balance-sheet/?p=quarterly,2026-11-13,
+vistra,hard_assets,17599000000.0,filing,stockanalysis.com quarterly balance sheet (SECONDARY),https://stockanalysis.com/stocks/vst/financials/balance-sheet/?p=quarterly,2026-11-13,
+vistra,employees,6390.0,filing,"stockanalysis.com company profile (SECONDARY, S&P Global data)",https://stockanalysis.com/stocks/vst/company/,2026-10-15,Date of count not stated
+vistra,gross_margin,0.4152,judgment,,,,TTM gross margin from stockanalysis.com statistics (Nov 13 2026); the release reports no gross profit
+vistra,revenue_annual,20588000000.0,filing,MarketScreener FY2025 net sales; Vistra Q3 2026 results release,https://www.marketscreener.com/news/vistra-reports-third-quarter-2026-results-ce785fd2d98df121 | https://www.marketscreener.com/quote/stock/VISTRA-CORP-34858180/finances/,2026-11-06,"Derived: FY2025 17,738 - 9M 2025 13,154 + 9M 2026 16,004"
+vistra,revenue_growth,0.2768054717360693,derived,Vistra Q3 2026 results release (PRNewswire via MarketScreener) | Vistra Q3 2026 results release (PRNewswire via MarketScreener),https://www.marketscreener.com/news/vistra-reports-third-quarter-2026-results-ce785fd2d98df121 | https://www.marketscreener.com/news/vistra-reports-third-quarter-2026-results-ce785fd2d98df121,2026-11-06 | 2026-11-06,latest quarter vs same quarter a year earlier
+vistra,monthly_net_burn,-453666666.6666667,derived,"Vistra Q3 2026 results release; Q2 2026 10-Q (stocktitan summary, SECONDARY) | Vistra Q3 2026 results release; Q2 2026 10-Q (stocktitan summary, SECONDARY)",https://www.marketscreener.com/news/vistra-reports-third-quarter-2026-results-ce785fd2d98df121 | https://www.stocktitan.net/sec-filings/VST/10-q-vistra-corp-quarterly-earnings-report-1ad73ce9d9e7.html | https://www.marketscreener.com/news/vistra-reports-third-quarter-2026-results-ce785fd2d98df121 | https://www.stocktitan.net/sec-filings/VST/10-q-vistra-corp-quarterly-earnings-report-1ad73ce9d9e7.html,2026-11-06 | 2026-11-06,"-(operating cash flow - capex) / 3, latest quarter"
+vistra,equity_value_now,45093000000.0,market,stockanalysis.com statistics and quote pages (SECONDARY),https://stockanalysis.com/stocks/vst/statistics/ | https://stockanalysis.com/stocks/vst/,2026-11-13,Derived: 133.01 x 339.0m shares (42.31bn market cap at 124.80 on Nov 6)
+vistra,equity_value_ref,64173024359.07075,derived,stockanalysis.com statistics and quote pages (SECONDARY) | stockanalysis.com quote page (SECONDARY) | stockanalysis.com quote page (SECONDARY),https://stockanalysis.com/stocks/vst/statistics/ | https://stockanalysis.com/stocks/vst/ | https://stockanalysis.com/stocks/vst/ | https://stockanalysis.com/stocks/vst/,2026-11-13 | 2026-11-13 | 2026-11-13,market cap x 52-week high / current price
+vistra,floating_debt_share,0.15,judgment,,,,mostly fixed-rate senior notes plus a term loan (judgment)
+vistra,equity_vol,0.5519,market,alphaquery.com (SECONDARY),https://www.alphaquery.com/stock/VST/volatility-option-statistics/180-day/historical-volatility,2026-11-16,
+vistra,top5_customer_share,0.2,judgment,,,,millions of retail customers plus a few large data center contracts (judgment)
+vistra,margin_path_score,2.0,judgment,,,,margins expanding with power prices and data center contracts
+vistra,moat_score,2.0,judgment,,,,owns scarce dispatchable generation including nuclear in deregulated markets
+vistra,compute_cost_share,0.0,judgment,,,,judgment
+vistra,compute_revenue_share,0.15,judgment,,,,data center power contracts are a growing but minority share of revenue (judgment)
+vistra,backlog_cover,0.7,judgment,,,,long-term power purchase agreements with data center customers (judgment)
+vistra,gpu_asset_share,0.0,judgment,,,,judgment
+vistra,liquidation_haircut,0.4,judgment,,,,power plants are long-lived assets with active buyers
+vistra,funding_dependence,0.1,judgment,,,,capex largely funded from operating cash flow; refinances maturing debt
+vistra,ig_customer_share,0.5,judgment,,,,mix of retail customers and investment-grade hyperscaler offtakers (judgment)
+vistra,circular_revenue_share,0.0,judgment,,,,judgment
+vistra,revenue_stage,recurring,judgment,,,,retail electricity and wholesale power sales

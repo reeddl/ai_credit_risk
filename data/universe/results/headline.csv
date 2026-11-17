@@ -1,0 +1,9 @@
+rank,name,segment,driver_leg,forward_pe,implied_growth,eps_elasticity_central,move_10pct_low,move_10pct_central,move_10pct_high,stall_central,bust_central,bust_high,credit_pd_base,credit_pd_bust,merton_pd_bust_high,bust_flags
+1,AMD,chip_designer,hyperscaler,34.4111,0.226577,2.16034,-0.47558,-0.684432,-0.8477,-0.907576,-0.960311,-0.991863,0.00850467,0.0281652,1,tails_disagree crosses_90
+2,Oracle,neocloud,credit_funded,13.7295,0.0326911,1.24664,-0.411904,-0.633269,-0.695123,-0.744663,-0.859071,-0.952637,0.0255224,0.107422,1,tails_disagree crosses_90
+3,TSMC,fab_equipment,hyperscaler,15.793,0.0544667,1.63468,-0.371277,-0.584497,-0.723515,-0.76134,-0.848286,-0.91877,0.00393336,0.00926852,1,tails_disagree crosses_90
+4,Nvidia,chip_designer,hyperscaler,10.366,-0.035057,1.49991,-0.370476,-0.540802,-0.562311,-0.621831,-0.743375,-0.818658,0.00850467,0.0275558,0.393854,tails_disagree
+5,Broadcom,chip_designer,hyperscaler,21.2498,0.11579,0.996632,-0.263395,-0.41168,-0.56901,-0.658766,-0.828394,-0.85264,0.00777838,0.0173596,0.531125,tails_disagree
+6,Vistra,power,hyperscaler,12.2364,-0.000821595,0.860096,-0.139502,-0.367578,-0.60974,-0.600242,-0.680118,-0.778214,0.00139134,0.00386817,0.264974,tails_disagree
+7,SK Hynix,fab_equipment,hyperscaler,2.2832,-0.410428,1.48985,-0.10655,-0.148985,-0.1984,-0.29797,-0.521448,-0.6944,0.00328755,0.00659832,0.135323,tails_disagree
+8,CoreWeave,neocloud,credit_funded,,,,,,,,,,0.155467,0.526887,,credit_only

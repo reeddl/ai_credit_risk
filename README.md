@@ -86,6 +86,21 @@ The stock CSV needs `name, segment, price, eps_next, gross_margin,
 operating_margin`; see `ai_eq/inputs.py` for optional columns. Single-company
 runs keep their input files outside the repo.
 
+### Eight-name universe and tail check
+
+`data/universe/` holds Nvidia, AMD, Broadcom, TSMC, SK Hynix, Oracle,
+CoreWeave and Vistra as model data, with a source row per figure
+(consensus figures flagged as free snapshots). One command ranks all eight
+by price move per 10% cut and checks each against the credit model's tail:
+
+```bash
+python -m ai_eq.universe --out data/universe/results
+```
+
+CoreWeave's consensus EPS is negative, so it runs in the credit model only.
+Vistra's credit inputs build with `python benchmark/build_inputs.py --universe`.
+See section 6.3 of `docs/model_document.md`.
+
 ## Benchmark against CDS
 
 `python -m ai_pd.benchmark` compares model PDs for 12 real companies with
@@ -112,6 +127,8 @@ benchmark/propose_weights.py` refits the chip and fab weight scale and writes
 | `ai_eq/calibrate.py` | Runs the fit and writes `data/analogs/fit.md` |
 | `data/analogs/` | Analog drawdown episodes, a source row per figure, and the fit report |
 | `ai_eq/drawdown.py` | Low, central and high drawdown per stock and cut; headline move per 10% cut |
+| `ai_eq/universe.py` | Eight-name universe: headline table and credit tail check |
+| `data/universe/` | Universe inputs with a source row per figure, Vistra's credit inputs, and results |
 | `ai_pd/defaults.py` | Default events and markdown labeling |
 | `ai_pd/features.py` | Raw inputs to metrics to 1-5 scores |
 | `ai_pd/scorecard.py` | Log-odds combination, 1-year and 3-year PD |

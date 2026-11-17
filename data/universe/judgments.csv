@@ -1,0 +1,15 @@
+company_id,field,value,note
+vistra,revenue_stage,recurring,retail electricity and wholesale power sales
+vistra,gross_margin,0.4152,TTM gross margin from stockanalysis.com statistics (Nov 13 2026); the release reports no gross profit
+vistra,margin_path_score,2,margins expanding with power prices and data center contracts
+vistra,moat_score,2,owns scarce dispatchable generation including nuclear in deregulated markets
+vistra,compute_cost_share,0.0,
+vistra,compute_revenue_share,0.15,data center power contracts are a growing but minority share of revenue (judgment)
+vistra,backlog_cover,0.7,long-term power purchase agreements with data center customers (judgment)
+vistra,gpu_asset_share,0.0,
+vistra,liquidation_haircut,0.4,power plants are long-lived assets with active buyers
+vistra,funding_dependence,0.1,capex largely funded from operating cash flow; refinances maturing debt
+vistra,ig_customer_share,0.5,mix of retail customers and investment-grade hyperscaler offtakers (judgment)
+vistra,circular_revenue_share,0.0,
+vistra,floating_debt_share,0.15,mostly fixed-rate senior notes plus a term loan (judgment)
+vistra,top5_customer_share,0.2,millions of retail customers plus a few large data center contracts (judgment)

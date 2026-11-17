@@ -196,6 +196,50 @@ problems (collateral ignoring cash, compute sensitivity penalising chip
 sellers) that push Nvidia and Broadcom up today. Fixing those would lower
 their PDs and call for a refit.
 
+### 6.3 Equity universe and credit tail check (November 17, 2026)
+
+Eight listed names run through the equity engine (`ai_eq`) and the credit
+model on the same compute demand driver: Nvidia, AMD, Broadcom, TSMC,
+SK Hynix, Oracle, CoreWeave and Vistra. Inputs are in `data/universe/`
+with a source row per figure (`stock_sources.csv`, `credit_sources.csv`).
+Run `python -m ai_eq.universe --out data/universe/results`.
+
+Inputs. Prices are November 13, 2026 closes. Next-year EPS is the consensus
+for the first fiscal year ending 9 to 21 months later, read from free
+MarketScreener pages (marked `free_snapshot`; the pages give no date for
+their estimates). Operating margin is that year's consensus EBIT margin;
+gross margin is trailing twelve months. SK Hynix's consensus EBIT margin is
+above its trailing gross margin, so its trailing operating margin is used.
+Broadcom's revenue elasticity is the chip-designer band scaled by the AI
+share of fiscal 2027 revenue (65.7%); Oracle's is half the neocloud band
+(judgment). CoreWeave's consensus EPS is negative through 2028, so it runs
+in the credit model only. Vistra's credit inputs were added from its third
+quarter 2026 results; the other names reuse the CDS benchmark inputs.
+
+Tail check. For each name and named cut, the credit model's stressed PD (the
+worse of demand stall and compute glut at that cut) is set against the
+Merton PD with equity moved by the engine's central and high drawdown. A gap
+above 1.5 in log-odds (PDs floored at 3 basis points) is flagged, as is a
+high drawdown that alone takes equity below 10% of its 52-week high.
+
+Findings on this run (`data/universe/results/headline.md`):
+
+- Central move per 10% cut ranges from -15% (SK Hynix) to -68% (AMD). Most
+  of the move comes from the growth revision, not the earnings cut: kappa
+  applies to every name at the size fitted on Nvidia, so names priced for
+  high growth (AMD at 34x) fall hardest, and SK Hynix (2.3x, below the 5.6x
+  floor) moves on earnings alone. Mild-cut moves are likely overstated, as
+  noted when kappa was fitted.
+- The two models disagree in the tail. At the bust cut the credit model's
+  stressed PDs are 0.4% to 11% for the seven profitable names, while the
+  equity engine's high case takes AMD, Oracle and TSMC through the 90%
+  markdown barrier. Either the credit scenarios are too mild for these
+  names or the equity engine is too harsh; the analog fit is too thin to
+  say which.
+- Merton inputs (market cap, debt, volatility) come from the credit inputs,
+  dated November 10 to 13, so the equity move is applied to a market cap a
+  few days older than the engine's price for some names.
+
 ## 7. Parameter log
 
 All parameters live in `config/model.toml`. Each should gain a source, date
@@ -214,3 +258,6 @@ and owner before results are used.
 | `margin_hit.default` (equity.toml) | low 0.02, central 0.08, high 0.15 | Judgment | 2026-11-17 | Placeholder |
 | `segments.*.revenue_elasticity` (equity.toml) | per segment, e.g. chip designers 1.0 / 1.2 / 1.4 | Judgment | 2026-11-17 | Placeholder |
 | `valuation` (equity.toml) | r 10%, 4 explicit years, 5-year fade, 3% terminal, 5% earnings floor | Judgment | 2026-11-17 | Placeholder |
+| Broadcom `revenue_elasticity` (data/universe/stocks.csv) | 0.66 / 0.79 / 0.92 | Chip-designer band x AI share of FY2027 revenue (65.7%) | 2026-11-17 | Derived |
+| Oracle `revenue_elasticity` (data/universe/stocks.csv) | 0.50 / 0.65 / 0.80 | Half the neocloud band | 2026-11-17 | Judgment |
+| `PD_FLOOR` (ai_eq/universe.py) | 3 basis points | Basel minimum PD; floor for the tail-check log-odds gap only | 2026-11-17 | Convention |
