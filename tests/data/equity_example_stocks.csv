@@ -1,0 +1,4 @@
+name,segment,price,eps_next,gross_margin,operating_margin,years_to_first_flow
+example_chip,chip_designer,100,9.7,0.70,0.55,1.0
+example_neocloud,neocloud,40,2.0,0.45,0.15,1.0
+example_power,power,80,4.5,0.40,0.25,0.5

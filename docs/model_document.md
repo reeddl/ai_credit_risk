@@ -209,3 +209,7 @@ and owner before results are used.
 | `driver.leg2.beta` (driver.toml) | 1.5 | Judgment | 2026-11-17 | Placeholder |
 | `driver.cuts` (driver.toml) | mild 10%, stall 20%, bust 35% | Judgment | 2026-11-17 | Placeholder |
 | `driver.credit_reference.cut` (driver.toml) | 20% | Set so version 1 shock sizes are reproduced | 2026-11-17 | Convention |
+| `revision.default` (equity.toml) | k low 0, central 0.25, high 0.5 | Judgment, to be fitted per segment on analog drawdowns (build step 3) | 2026-11-17 | Placeholder |
+| `margin_hit.default` (equity.toml) | low 0.02, central 0.08, high 0.15 | Judgment | 2026-11-17 | Placeholder |
+| `segments.*.revenue_elasticity` (equity.toml) | per segment, e.g. chip designers 1.0 / 1.2 / 1.4 | Judgment | 2026-11-17 | Placeholder |
+| `valuation` (equity.toml) | r 10%, 4 explicit years, 5-year fade, 3% terminal, 5% earnings floor | Judgment | 2026-11-17 | Placeholder |
