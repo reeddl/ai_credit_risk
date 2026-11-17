@@ -9,7 +9,7 @@ import pandas as pd
 from ai_eq.config import CASES, EquityConfig, load_equity_config
 from ai_eq.exposure import Stock, eps_elasticity, shocked_eps_factor
 from ai_eq.rdcf import implied_growth, value
-from ai_eq.revision import k_band, revised_growth
+from ai_eq.revision import kappa_band, revised_growth
 from ai_risk.driver import Driver, load_driver
 
 HEADLINE_CUT = 0.10
@@ -41,8 +41,10 @@ def drawdown(stock: Stock, cut, case: str = "central", cfg: EquityConfig | None 
     c = driver.leg_cut(driver.resolve(cut) if cut is not None else 0.0, cfg.leg(stock.segment))
     g0 = implied_growth(stock.price, stock.eps_next, r, **val.kw)
     e = eps_elasticity(stock, cfg)[case]
-    eps = stock.eps_next * shocked_eps_factor(e, c, cfg.valuation["earnings_floor"])
-    g = revised_growth(g0, k_band(stock.segment, cfg)[case], c)
+    factor = shocked_eps_factor(e, c, cfg.valuation["earnings_floor"])
+    eps = stock.eps_next * factor
+    g_floor = implied_growth(cfg.floor_pe, 1.0, r, **val.kw)
+    g = revised_growth(g0, kappa_band(stock.segment, cfg)[case], 1.0 - factor, g_floor)
     return value(eps, g, r, **val.kw) / stock.price - 1.0
 
 

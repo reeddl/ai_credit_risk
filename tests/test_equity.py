@@ -47,7 +47,7 @@ class ConfigTest(unittest.TestCase):
         self.assertEqual(set(CFG.segments), set(load_config().segments))
 
     def test_bands_out_of_order_rejected(self):
-        bad = cfg_with(lambda r: r["revision"]["default"].update(low=0.6))
+        bad = cfg_with(lambda r: r["revision"]["default"].update(low=1.5))
         with self.assertRaises(ValueError):
             validate(bad)
 
@@ -120,10 +120,12 @@ class DrawdownTest(unittest.TestCase):
         hi = replace(s, revenue_elasticity={"low": 1.6, "central": 1.6, "high": 1.6})
         self.assertLess(drawdown(hi, 0.2, "central", CFG, DRV), drawdown(lo, 0.2, "central", CFG, DRV))
 
-    def test_drawdown_deepens_with_k(self):
-        more_k = cfg_with(lambda r: r["revision"]["default"].update(central=0.6, high=0.6))
+    def test_drawdown_deepens_with_kappa(self):
+        more_k = cfg_with(lambda r: r["revision"]["default"].update(central=2.0, high=2.0))
         for s in STOCKS:
-            self.assertLess(drawdown(s, 0.2, "central", more_k, DRV), drawdown(s, 0.2, "central", CFG, DRV))
+            self.assertLessEqual(drawdown(s, 0.05, "central", more_k, DRV), drawdown(s, 0.05, "central", CFG, DRV) + 1e-12)
+        chip = STOCKS[0]
+        self.assertLess(drawdown(chip, 0.05, "central", more_k, DRV), drawdown(chip, 0.05, "central", CFG, DRV))
 
     def test_low_central_high_ordered(self):
         for s in STOCKS:
