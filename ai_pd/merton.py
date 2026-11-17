@@ -65,8 +65,8 @@ def merton_pd(
     threshold: float = 0.90,
 ) -> float:
     """Probability that V_T ends below max(D, V*) within horizon t."""
-    if equity_ref <= 0 or equity_vol <= 0:
-        return float("nan")
+    if not (equity_ref > 0 and equity_vol > 0 and equity_now == equity_now):
+        return float("nan")  # no market data (NaN fails every comparison)
     if equity_now <= (1.0 - threshold) * equity_ref:
         return 1.0  # already marked down past the threshold
     v0 = equity_now + max(debt, 0.0) * math.exp(-r * t)

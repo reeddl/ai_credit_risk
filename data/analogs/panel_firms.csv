@@ -1,0 +1,82 @@
+firm_id,name,ticker_then,boom,expected,note
+core_scientific,Core Scientific,CORZ,crypto_miners,failed,Filed for bankruptcy in the 2022 crypto winter
+marathon,Marathon Digital Holdings,MARA,crypto_miners,survived,Large listed miner; now MARA Holdings
+riot,Riot Platforms,RIOT,crypto_miners,survived,Large listed miner; formerly Riot Blockchain
+greenidge,Greenidge Generation Holdings,GREE,crypto_miners,survived,Miner with its own power plant
+stronghold,Stronghold Digital Mining,SDIG,crypto_miners,survived,Miner with its own power plants
+cleanspark,CleanSpark,CLSK,crypto_miners,survived,Listed miner
+cipher_mining,Cipher Mining,CIFR,crypto_miners,survived,Listed miner
+terawulf_miner,TeraWulf,WULF,crypto_miners,survived,Listed miner
+mawson,Mawson Infrastructure Group,MIGI,crypto_miners,survived,Listed miner
+bit_digital,Bit Digital,BTBT,crypto_miners,survived,Listed miner
+soluna,Soluna Holdings,SLNH,crypto_miners,survived,Miner and hosting
+applied_blockchain,Applied Digital,APLD,crypto_miners,survived,Mining host before AI data centers
+sunedison,SunEdison,SUNE,solar,failed,Filed for bankruptcy in 2016; formerly MEMC Electronic Materials
+evergreen_solar,Evergreen Solar,ESLR,solar,failed,Filed for bankruptcy in 2011
+energy_conversion,Energy Conversion Devices,ENER,solar,failed,Filed for bankruptcy in 2012
+gt_advanced,GT Advanced Technologies,GTAT,solar,failed,Solar and sapphire equipment; filed for bankruptcy in 2014
+satcon,Satcon Technology,SATC,solar,failed,Solar inverters; filed for bankruptcy in 2012
+first_solar,First Solar,FSLR,solar,survived,Survivor
+sunpower,SunPower,SPWR,solar,failed,Survived the 2010s; filed for bankruptcy in 2024
+solarcity,SolarCity,SCTY,solar,acquired,Acquired by Tesla in 2016
+vivint_solar,Vivint Solar,VSLR,solar,acquired,Acquired by Sunrun in 2020
+terraform_power,TerraForm Power,TERP,solar,survived,SunEdison yieldco
+terraform_global,TerraForm Global,GLBL,solar,survived,SunEdison yieldco
+real_goods,Real Goods Solar,RGSE,solar,survived,Small installer
+enphase,Enphase Energy,ENPH,solar,survived,Survivor; microinverters
+solaredge,SolarEdge Technologies,SEDG,solar,survived,Survivor; inverters
+sunrun,Sunrun,RUN,solar,survived,Survivor; residential installer
+ascent_solar,Ascent Solar Technologies,ASTI,solar,survived,Small thin-film maker
+chesapeake,Chesapeake Energy,CHK,shale,failed,Filed for bankruptcy in 2020
+whiting,Whiting Petroleum,WLL,shale,failed,Filed for bankruptcy in 2020
+oasis,Oasis Petroleum,OAS,shale,failed,Filed for bankruptcy in 2020
+sandridge,SandRidge Energy,SD,shale,failed,Filed for bankruptcy in 2016
+linn,Linn Energy,LINE,shale,failed,Filed for bankruptcy in 2016
+halcon,Halcon Resources,HK,shale,failed,Filed for bankruptcy in 2016 and 2019
+ultra,Ultra Petroleum,UPL,shale,failed,Filed for bankruptcy in 2016 and 2020
+swift,Swift Energy,SFY,shale,failed,Filed for bankruptcy in 2015
+goodrich,Goodrich Petroleum,GDP,shale,failed,Filed for bankruptcy in 2016
+stone,Stone Energy,SGY,shale,failed,Filed for bankruptcy in 2016
+energy_xxi,Energy XXI,EXXI,shale,failed,Filed for bankruptcy in 2016
+penn_virginia,Penn Virginia,PVA,shale,failed,Filed for bankruptcy in 2016
+magnum_hunter,Magnum Hunter Resources,MHR,shale,failed,Filed for bankruptcy in 2015
+midstates,Midstates Petroleum,MPO,shale,failed,Filed for bankruptcy in 2016
+bonanza_creek,Bonanza Creek Energy,BCEI,shale,failed,Filed for bankruptcy in 2016
+extraction,Extraction Oil & Gas,XOG,shale,failed,Filed for bankruptcy in 2020
+gulfport,Gulfport Energy,GPOR,shale,failed,Filed for bankruptcy in 2020
+denbury,Denbury Resources,DNR,shale,failed,Filed for bankruptcy in 2020
+california_resources,California Resources,CRC,shale,failed,Filed for bankruptcy in 2020
+unit_corp,Unit Corporation,UNT,shale,failed,Filed for bankruptcy in 2020
+approach,Approach Resources,AREX,shale,failed,Filed for bankruptcy in 2019
+continental,Continental Resources,CLR,shale,survived,Survivor
+eog,EOG Resources,EOG,shale,survived,Survivor
+pioneer,Pioneer Natural Resources,PXD,shale,survived,Survivor
+devon,Devon Energy,DVN,shale,survived,Survivor
+diamondback,Diamondback Energy,FANG,shale,survived,Survivor
+antero,Antero Resources,AR,shale,survived,Survivor
+range,Range Resources,RRC,shale,survived,Survivor
+southwestern,Southwestern Energy,SWN,shale,survived,Survivor
+laredo,Laredo Petroleum,LPI,shale,survived,Survivor
+callon,Callon Petroleum,CPE,shale,survived,Survivor
+comstock,Comstock Resources,CRK,shale,survived,Survivor
+sm_energy,SM Energy,SM,shale,survived,Survivor
+lordstown,Lordstown Motors,RIDE,ev_spac,failed,Filed for bankruptcy in 2023
+proterra,Proterra,PTRA,ev_spac,failed,Filed for bankruptcy in 2023
+electric_last_mile,Electric Last Mile Solutions,ELMS,ev_spac,failed,Filed for bankruptcy in 2022
+canoo,Canoo,GOEV,ev_spac,failed,Filed for bankruptcy in 2025
+fisker,Fisker,FSR,ev_spac,failed,Filed for bankruptcy in 2024
+nikola,Nikola,NKLA,ev_spac,failed,Filed for bankruptcy in 2025
+lucid,Lucid Group,LCID,ev_spac,survived,Survivor
+rivian,Rivian Automotive,RIVN,ev_spac,survived,Survivor
+faraday,Faraday Future Intelligent Electric,FFIE,ev_spac,deep_loss,Equity fell more than 90%
+workhorse,Workhorse Group,WKHS,ev_spac,deep_loss,Equity fell more than 90%
+hyliion,Hyliion Holdings,HYLN,ev_spac,deep_loss,Equity fell more than 90%
+quantumscape,QuantumScape,QS,ev_spac,survived,Survivor
+romeo,Romeo Power,RMO,ev_spac,acquired,Acquired by Nikola in 2022
+xl_fleet,XL Fleet,XL,ev_spac,deep_loss,Equity fell more than 90%
+lightning_emotors,Lightning eMotors,ZEV,ev_spac,failed,Went into receivership in 2023
+hyzon,Hyzon Motors,HYZN,ev_spac,failed,Wound down in 2024
+chargepoint,ChargePoint Holdings,CHPT,ev_spac,survived,Survivor
+evgo,EVgo,EVGO,ev_spac,survived,Survivor
+velodyne,Velodyne Lidar,VLDR,ev_spac,acquired,Merged with Ouster in 2023
+luminar,Luminar Technologies,LAZR,ev_spac,survived,Lidar maker

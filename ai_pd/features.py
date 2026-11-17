@@ -50,14 +50,21 @@ def check_columns(df: pd.DataFrame) -> None:
 
 
 def _safe_div(num: pd.Series, den: pd.Series, when_zero: float) -> pd.Series:
-    den = den.astype(float)
-    out = num.astype(float) / den.where(den > 0)
-    return out.fillna(when_zero)
+    """num / den; ``when_zero`` where den is zero or negative; missing if either input is missing.
+
+    A missing result scores as neutral (3), so a company that does not report
+    an input (employees, say) is neither helped nor hurt by it.
+    """
+    num, den = num.astype(float), den.astype(float)
+    out = num / den.where(den > 0)
+    known = num.notna() & den.notna()
+    return out.where(~(known & out.isna()), when_zero)
 
 
 def revenue_score(stage: pd.Series, growth: pd.Series) -> pd.Series:
+    # Missing growth on recurring revenue scores neutral (3), not as a decline.
     recurring = np.select(
-        [growth >= 0.5, growth >= 0.2, growth >= 0.0], [1, 2, 3], default=4
+        [growth >= 0.5, growth >= 0.2, growth >= 0.0, growth.isna()], [1, 2, 3, 3], default=4
     )
     score = np.where(stage == "none", 5, np.where(stage == "pilot", 4, recurring))
     return pd.Series(score, index=stage.index, dtype=float)

@@ -52,16 +52,54 @@ designers and fabs, see section 6.2 of the model document).
 Needs Python 3.11+, numpy and pandas.
 
 ```bash
-python -m ai_pd.run --n-per-segment 5 --seed 7 --out output
+python -m ai_pd.run --out output                  # real companies
 python -m ai_pd.run --compute-cut bust --out output_bust   # or mild, stall, or a fraction like 0.15
+python -m ai_pd.run --synthetic --n-per-segment 5 --seed 7 --out output_synth
 python -m unittest discover -s tests -t .
 ```
 
-To score real companies, pass a CSV with the columns in
-`ai_pd/features.py` (`RAW_COLUMNS`): `python -m ai_pd.run --companies my.csv`.
+By default the model runs on `data/real/companies.csv` (built from SEC
+filings, below) or, until that exists, the 12 hand-built benchmark
+companies. `--companies my.csv` takes any CSV with the columns in
+`ai_pd/features.py` (`RAW_COLUMNS`). `--synthetic` runs the version 1
+generated companies, which the tests still use.
 
 Outputs in `output/`: `companies.csv` (base, Merton and stressed PDs per
 company), `feature_scores.csv`, `sensitivity.csv` and `summary.md`.
+
+## Running the SEC pull
+
+The real-company inputs and the boom panel come from SEC filings. Run the
+download on your own computer (it needs only Python 3.9+, no packages):
+
+1. From the repository folder, run, with your own name and email:
+
+   ```bash
+   python tools/fetch_sec.py --user-agent "Your Name you@example.com"
+   ```
+
+   The SEC requires a name and email in the User-Agent of every automated
+   request. The script sends it only to the SEC, never stores it, and stays
+   under the SEC's 10-requests-a-second limit. Expect 10 to 20 minutes.
+   `--dry-run` lists every URL first. If it stops, run it again: saved files
+   are skipped.
+2. It writes a `sec_pull/` folder: company facts, filing indexes, daily
+   prices, `cik_map.csv`, `unresolved.csv` and `manifest.csv` (every URL,
+   time and SHA-256).
+3. Open `sec_pull/unresolved.csv`. Boom firms the script couldn't match by
+   name can be added by CIK in `data/analogs/cik_overrides.csv`
+   (`firm_id,cik`); run again to fetch them. Leaving some out is fine.
+4. Zip the `sec_pull` folder and attach the zip in the step 5 thread.
+
+Then the build runs from the pull:
+
+```bash
+python -m ai_pd.real --pull sec_pull --as-of 2026-11-14   # data/real/companies.csv
+python -m ai_pd.panel --pull sec_pull                     # data/analogs/credit_panel/firm_years.csv
+python -m ai_pd.fit                                       # data/analogs/credit_panel/fit.md
+```
+
+`ai_pd.fit` writes a proposal; it does not change `config/model.toml`.
 
 ## Equity drawdown engine
 
@@ -125,7 +163,7 @@ benchmark/propose_weights.py` refits the chip and fab weight scale and writes
 | `ai_eq/rdcf.py` | Reverse DCF: implied growth after next year, and scenario value |
 | `ai_eq/revision.py` | Growth revision: kappa and the floor multiple, and their fit on analog episodes |
 | `ai_eq/calibrate.py` | Runs the fit and writes `data/analogs/fit.md` |
-| `data/analogs/` | Analog drawdown episodes, a source row per figure, and the fit report |
+| `data/analogs/` | Analog drawdown episodes and their fit; the boom list and boom firms for the credit panel |
 | `ai_eq/drawdown.py` | Low, central and high drawdown per stock and cut; headline move per 10% cut |
 | `ai_eq/universe.py` | Eight-name universe: headline table and credit tail check |
 | `data/universe/` | Universe inputs with a source row per figure, Vistra's credit inputs, and results |
@@ -134,7 +172,13 @@ benchmark/propose_weights.py` refits the chip and fab weight scale and writes
 | `ai_pd/scorecard.py` | Log-odds combination, 1-year and 3-year PD |
 | `ai_pd/merton.py` | Structural cross-check with the wider barrier |
 | `ai_pd/scenarios.py` | Stress scenarios |
-| `ai_pd/synthetic.py` | Synthetic companies per segment |
+| `ai_pd/synthetic.py` | Synthetic companies per segment (tests and `--synthetic`) |
+| `tools/fetch_sec.py` | SEC filings and prices download, run locally |
+| `ai_pd/xbrl.py` | Point-in-time financial inputs from SEC XBRL company facts |
+| `ai_pd/real.py` | Real-company inputs with provenance (`data/real/`) |
+| `ai_pd/panel.py` | Boom firm-years with default labels (`data/analogs/credit_panel/`) |
+| `ai_pd/fit.py` | Penalised fit of the financial weights and the leave-one-boom-out test |
+| `data/real/` | The 69-name universe and segment defaults for judgment inputs |
 | `ai_pd/sensitivity.py` | One-at-a-time sensitivity |
 | `ai_pd/market_implied.py` | CDS spread to PD, risk-neutral to physical, rank statistics |
 | `ai_pd/benchmark.py` | Model vs CDS comparison and report |

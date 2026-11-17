@@ -199,7 +199,7 @@ class CommandLineTest(unittest.TestCase):
     def test_named_and_numeric_cuts_run(self):
         for cut in ("bust", "0.15"):
             with tempfile.TemporaryDirectory() as tmp, redirect_stdout(io.StringIO()):
-                run_main(["--n-per-segment", "2", "--compute-cut", cut, "--out", tmp])
+                run_main(["--synthetic", "--n-per-segment", "2", "--compute-cut", cut, "--out", tmp])
                 self.assertTrue(any(Path(tmp).iterdir()))
 
 
