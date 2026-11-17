@@ -7,7 +7,8 @@
 #   EPS elasticity e = revenue_elasticity * (gross_margin + margin_hit) / operating_margin
 #   shocked EPS    E = E0 * max(1 - e * c_leg, earnings_floor)
 #   implied growth g0 solves reverse DCF(E0, g0) = price
-#   shocked growth g = g0 - k * c_leg
+#   EPS cut        x = 1 - E / E0
+#   shocked growth g = g0 - min(kappa * x, max(g0 - g(floor_pe), 0))
 #   drawdown       DCF(E, g) / price - 1
 
 [valuation]
@@ -18,13 +19,22 @@ terminal_growth = 0.03
 years_to_first_flow = 1.0   # per stock override: years_to_first_flow column
 earnings_floor = 0.05       # shocked EPS never falls below 5% of consensus
 
-# Growth revision coefficient k: how much post-peak growth is cut per unit
-# cut to the driver. Pooled placeholder until step 3 fits it per segment
-# from analog drawdowns; a [revision.segments.<name>] table overrides it.
+# Growth revision. A cut that takes next year's EPS down by a fraction x
+# lowers the growth the market prices after next year by kappa * x, but never
+# below the growth implied by floor_pe (a forward P/E): a name already priced
+# like a cyclical at peak earnings has no growth left to revise away. The
+# floor is a multiple, not a growth rate, so it means the same thing at any
+# discount rate. Fitted on analog drawdowns by
+# `python -m ai_eq.calibrate` (data/analogs/); see data/analogs/fit.md.
+# kappa low / central / high = min / median / max over the fitted episodes.
+# In driver units this is k = kappa * EPS elasticity.
+[revision]
+floor_pe = 5.6              # Micron's forward P/E at its 2018 peak
+
 [revision.default]
-low = 0.0
-central = 0.25
-high = 0.5
+low = 0.52
+central = 0.87
+high = 1.22
 
 # Gross margin points lost per unit of revenue lost, as pricing power fades.
 [margin_hit.default]

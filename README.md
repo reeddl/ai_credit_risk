@@ -71,7 +71,12 @@ It runs off the same driver. Per stock, the EPS elasticity is revenue
 elasticity to the driver times operating leverage; a reverse DCF reads the
 growth today's price implies after next year; a cut lowers next year's EPS
 by `1 - elasticity * cut` (floored at 5% of consensus) and that growth by
-`k * cut`. Settings and placeholders are in `config/equity.toml`.
+`kappa` times the EPS cut, but never below the growth a 5.6x forward P/E
+implies. Settings and placeholders are in `config/equity.toml`.
+
+`kappa` and the floor are fitted on past drawdowns in `data/analogs/`
+(`python -m ai_eq.calibrate`, report in `data/analogs/fit.md`). Each figure
+there is marked sourced, derived or approximate.
 
 ```bash
 python -m ai_eq.run --stocks my_stocks.csv --cut mild --cut bust --out output_eq
@@ -103,7 +108,9 @@ benchmark/propose_weights.py` refits the chip and fab weight scale and writes
 | `config/equity.toml` | Equity engine: valuation settings, k, margin hit, revenue elasticity and driver leg per segment |
 | `ai_eq/exposure.py` | EPS elasticity to the driver |
 | `ai_eq/rdcf.py` | Reverse DCF: implied growth after next year, and scenario value |
-| `ai_eq/revision.py` | Growth revision coefficient k (placeholder until fitted) |
+| `ai_eq/revision.py` | Growth revision: kappa and the floor multiple, and their fit on analog episodes |
+| `ai_eq/calibrate.py` | Runs the fit and writes `data/analogs/fit.md` |
+| `data/analogs/` | Analog drawdown episodes, a source row per figure, and the fit report |
 | `ai_eq/drawdown.py` | Low, central and high drawdown per stock and cut; headline move per 10% cut |
 | `ai_pd/defaults.py` | Default events and markdown labeling |
 | `ai_pd/features.py` | Raw inputs to metrics to 1-5 scores |

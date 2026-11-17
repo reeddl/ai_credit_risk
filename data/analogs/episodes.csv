@@ -1,0 +1,6 @@
+episode,company,segment,role,exclude_reason,target_eps,peak_date,peak_price,peak_eps,later_date,later_price,later_eps,years_to_first_flow
+nvidia_2018,Nvidia,chip_designer,kappa,,FY20 (Feb 2019 to Jan 2020) consensus EPS,2018-10-01,289.36,7.90,2018-12-21,129.57,6.93,1.0
+nvidia_2022,Nvidia,chip_designer,kappa,,FY23 (Feb 2022 to Jan 2023) consensus EPS,2021-11-29,333.76,5.00,2022-10-13,108.13,3.37,1.0
+micron_2018,Micron,chip_designer,floor,,FY19 (Sep 2018 to Aug 2019) consensus EPS,2018-05-29,64.50,11.50,2019-02-25,42.57,7.68,1.0
+cisco_2000,Cisco,networking,excluded,No same-year consensus EPS found for the peak; the 2001 multiple (over 30x) is on a later fiscal year,FY01 and FY02,2000-03-27,80.00,,2001-03-22,20.50,,1.0
+nvidia_2026,Nvidia,chip_designer,excluded,Estimates rose while the stock fell (forward P/E 20.8x to 13.5x); a pure multiple move with no earnings cut cannot pin down a revision per unit cut,FY28 consensus EPS,,,,2026-11-13,162.85,15.74,1.2

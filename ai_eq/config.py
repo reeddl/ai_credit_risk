@@ -35,8 +35,12 @@ class EquityConfig:
         band = node.get("segments", {}).get(segment, node["default"])
         return {c: float(band[c]) for c in CASES}
 
-    def k(self, segment: str) -> dict[str, float]:
+    def kappa(self, segment: str) -> dict[str, float]:
         return self._banded("revision", segment)
+
+    @property
+    def floor_pe(self) -> float:
+        return float(self.raw["revision"]["floor_pe"])
 
     def margin_hit(self, segment: str) -> dict[str, float]:
         return self._banded("margin_hit", segment)
@@ -62,6 +66,8 @@ def validate(cfg: EquityConfig) -> None:
         raise ValueError("explicit_years must be >= 0 and fade_years >= 1")
     if not 0.0 < v["earnings_floor"] < 1.0:
         raise ValueError("earnings_floor must be in (0, 1)")
+    if not 1.0 < cfg.floor_pe < 1.0 / (v["discount_rate"] - v["terminal_growth"]):
+        raise ValueError("floor_pe must be above 1 and below the no-growth multiple")
     if v["years_to_first_flow"] < 0:
         raise ValueError("years_to_first_flow must be >= 0")
     for name in cfg.segments:
@@ -71,10 +77,10 @@ def validate(cfg: EquityConfig) -> None:
         _ordered(re, f"segment {name} revenue_elasticity")
         if re["low"] < 0:
             raise ValueError(f"segment {name}: revenue_elasticity must be >= 0")
-        _ordered(cfg.k(name), f"revision k for {name}")
+        _ordered(cfg.kappa(name), f"revision kappa for {name}")
         _ordered(cfg.margin_hit(name), f"margin_hit for {name}")
-        if cfg.k(name)["low"] < 0 or cfg.margin_hit(name)["low"] < 0:
-            raise ValueError(f"segment {name}: k and margin_hit must be >= 0")
+        if cfg.kappa(name)["low"] < 0 or cfg.margin_hit(name)["low"] < 0:
+            raise ValueError(f"segment {name}: kappa and margin_hit must be >= 0")
 
 
 def load_equity_config(path: str | Path = DEFAULT_EQUITY) -> EquityConfig:
