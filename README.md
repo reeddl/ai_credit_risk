@@ -31,7 +31,11 @@ equity, so shutdowns and deep markdowns are how most of their failures show up.
    from the scorecard are flagged, not averaged.
 4. **Scenarios.** Compute glut, demand stall, funding freeze, rates up, and
    all four combined. Each moves raw inputs, re-scores the features and adds a
-   segment-level shift.
+   segment-level shift. Compute glut and demand stall run off the shared
+   compute demand driver (`config/driver.toml`): a cut to next year's big four
+   hyperscaler AI capex estimate, with neocloud, lab and sovereign spending
+   cut 1.5x as hard. Their shock sizes in `config/model.toml` apply at the
+   reference cut (20%) and scale with the cut elsewhere.
 5. **Calibration.** PDs map to implied rating grades (placeholder boundaries).
 6. **Sensitivity.** Feature weights and segment priors are shifted one at a
    time to show which assumptions move PDs most.
@@ -49,6 +53,7 @@ Needs Python 3.11+, numpy and pandas.
 
 ```bash
 python -m ai_pd.run --n-per-segment 5 --seed 7 --out output
+python -m ai_pd.run --compute-cut bust --out output_bust   # or mild, stall, or a fraction like 0.15
 python -m unittest discover -s tests -t .
 ```
 
@@ -75,6 +80,8 @@ benchmark/propose_weights.py` refits the chip and fab weight scale and writes
 | Path | What it holds |
 | --- | --- |
 | `config/model.toml` | Default definition, segments, features, scenarios, grade map |
+| `config/driver.toml` | Compute demand driver: consensus capex, second-leg beta, named cuts, reference cut |
+| `ai_risk/driver.py` | The driver, shared with the equity drawdown engine to come |
 | `ai_pd/defaults.py` | Default events and markdown labeling |
 | `ai_pd/features.py` | Raw inputs to metrics to 1-5 scores |
 | `ai_pd/scorecard.py` | Log-odds combination, 1-year and 3-year PD |

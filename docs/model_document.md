@@ -56,7 +56,14 @@ scope as borrowers but matter as counterparties.
    σ_V = σ_E E / V0, zero asset drift. Gaps above 1.5 log-odds are flagged.
 5. **Scenarios.** Each shocks raw inputs (GPU prices and utilisation,
    revenue and growth, equity marks, rates) and adds γ_segment × severity
-   for segment-wide effects.
+   for segment-wide effects. Compute glut and demand stall are tied to the
+   shared compute demand driver: a cut c to next year's big four
+   hyperscaler AI capex estimate (consensus $934.5bn for 2027, as of
+   2 November 2026). Demand stall follows that leg; compute glut follows the
+   credit-funded leg (neoclouds, labs, sovereigns), cut min(1.5c, 1). Shock
+   sizes and severity as written apply at the reference cut of 20% and scale
+   in proportion to the leg's cut, floored at −95%. Funding freeze and
+   rates up keep fixed sizes.
 6. **Calibration.** PDs map to implied grades using placeholder boundaries
    to be replaced with a published agency default study.
 
@@ -198,3 +205,7 @@ and owner before results are used.
 | --- | --- | --- | --- | --- |
 | `segments.chip_designer.weight_scale` | 0.45 | CDS benchmark fit, section 6.2 | 2026-11-16 | Proposed |
 | `segments.fab_equipment.weight_scale` | 0.45 | CDS benchmark fit, section 6.2 | 2026-11-16 | Proposed |
+| `driver.consensus` (driver.toml) | 934.5 ($bn, 2027) | TradingNews summary of company consensus | 2026-11-02 | Sourced, secondary |
+| `driver.leg2.beta` (driver.toml) | 1.5 | Judgment | 2026-11-17 | Placeholder |
+| `driver.cuts` (driver.toml) | mild 10%, stall 20%, bust 35% | Judgment | 2026-11-17 | Placeholder |
+| `driver.credit_reference.cut` (driver.toml) | 20% | Set so version 1 shock sizes are reproduced | 2026-11-17 | Convention |

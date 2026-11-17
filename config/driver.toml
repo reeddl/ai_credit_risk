@@ -1,0 +1,35 @@
+# Compute demand driver, shared by the credit model and (later) the equity
+# drawdown engine. It is the one assumption whose sensitivity gets tested:
+# every stress scenario is a cut to this estimate.
+#
+# Consensus figures are dated snapshots with sources. leg2_beta and the
+# scenario cuts are placeholders, not forecasts.
+
+[driver]
+name = "Big four hyperscaler AI capex, next calendar year"
+unit = "USD bn"
+year = 2027
+consensus = 934.5
+prior_year = 722.5
+as_of = "2026-11-02"
+source = "TradingNews, 2 Nov 2026: 2027 consensus Alphabet 284.8, Amazon 256.5, Microsoft 207.6, Meta 185.6; 2026 spend 700 to 745 (midpoint used)"
+url = "https://www.tradingnews.com/news/ncidia-206-usd-trades-at-13x-fy-2028-eps-as-hyperscaler-capex-heads-toward-1t-usd"
+
+# Second leg: neocloud, lab and sovereign spending. It is funded by credit and
+# private equity, so it is cut harder than the first leg: leg 2 cut =
+# min(leg2_beta x leg 1 cut, 1). Placeholder.
+[driver.leg2]
+name = "Neocloud, lab and sovereign AI capex"
+beta = 1.5
+
+# Named cuts to the leg 1 estimate.
+[driver.cuts]
+mild = 0.10
+stall = 0.20
+bust = 0.35
+
+# The cut at which the credit model's scenario shock sizes in model.toml apply
+# as written. Other cuts scale those shocks in proportion to the cut on the
+# scenario's leg. With the default (stall), version 1 outputs are reproduced.
+[driver.credit_reference]
+cut = 0.20

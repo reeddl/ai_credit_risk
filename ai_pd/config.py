@@ -11,6 +11,7 @@ from typing import Any
 DEFAULT_CONFIG = Path(__file__).resolve().parent.parent / "config" / "model.toml"
 
 SCENARIO_DRIVERS = ("compute_glut", "demand_stall", "funding_freeze", "rates_up")
+DRIVER_LEGS = ("hyperscaler", "credit_funded")
 DIRECTIONS = ("higher_safer", "lower_safer", "score")
 
 
@@ -76,6 +77,9 @@ def validate(cfg: ModelConfig) -> None:
                 raise ValueError(f"feature {feat_id}: bins are out of order for {feat['direction']}")
 
     for name, sc in cfg.scenarios.items():
+        leg = sc.get("driver_leg")
+        if leg is not None and leg not in DRIVER_LEGS:
+            raise ValueError(f"scenario {name}: unknown driver_leg {leg!r}")
         for part in sc.get("combine", []):
             if part not in cfg.scenarios or "combine" in cfg.scenarios[part]:
                 raise ValueError(f"scenario {name}: cannot combine {part}")

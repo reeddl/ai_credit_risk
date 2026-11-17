@@ -8,6 +8,8 @@ import numpy as np
 import pandas as pd
 
 from .calibration import implied_grade
+from ai_risk.driver import Driver
+
 from .config import ModelConfig
 from .features import score_features
 from .merton import merton_pd_frame
@@ -28,7 +30,18 @@ def run_base(df: pd.DataFrame, cfg: ModelConfig) -> tuple[pd.DataFrame, pd.DataF
     return scores, pds
 
 
-def run_model(df: pd.DataFrame, cfg: ModelConfig) -> Results:
+def run_model(
+    df: pd.DataFrame,
+    cfg: ModelConfig,
+    cut: float | str | None = None,
+    driver: Driver | None = None,
+) -> Results:
+    """Base, Merton and stressed PDs.
+
+    ``cut`` is the cut to the compute demand estimate that the driver-linked
+    scenarios run at: a fraction, a named cut (mild, stall, bust) or None
+    for the reference cut, which reproduces version 1.
+    """
     threshold = cfg.default_definition["markdown_threshold"]
     r = cfg.model["risk_free_rate"]
     gap_flag = cfg.model["merton_gap_flag_logodds"]
@@ -49,9 +62,9 @@ def run_model(df: pd.DataFrame, cfg: ModelConfig) -> Results:
 
     stressed_scores: dict[str, pd.DataFrame] = {}
     for name in cfg.scenarios:
-        shocked = apply_scenario(df, name, cfg)
+        shocked = apply_scenario(df, name, cfg, cut, driver)
         s_scores = score_features(shocked, cfg)
-        s_pd = score_pd(df["segment"], s_scores, cfg, severities(name, cfg))
+        s_pd = score_pd(df["segment"], s_scores, cfg, severities(name, cfg, cut, driver))
         out[f"pd_1y_{name}"] = s_pd["pd_1y"]
         out[f"pd_merton_1y_{name}"] = merton_pd_frame(shocked, r=r, threshold=threshold)
         stressed_scores[name] = s_scores
