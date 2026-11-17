@@ -240,6 +240,44 @@ Findings on this run (`data/universe/results/headline.md`):
   dated November 10 to 13, so the equity move is applied to a market cap a
   few days older than the engine's price for some names.
 
+### 6.4 Real companies and the boom panel (November 17, 2026, in progress)
+
+Version 1 ran on synthetic companies. Step 5 moves it onto listed companies
+and fits the financial feature weights on past booms.
+
+- **Real companies.** `data/real/universe.csv` lists 69 names across the 13
+  segments. `ai_pd/real.py` builds their inputs from SEC XBRL filings as they
+  stood on an as-of date (`ai_pd/xbrl.py`), with one provenance row per input.
+  TSMC, SK Hynix and SoftBank file in IFRS or outside the SEC and keep their
+  hand-built benchmark rows. Judgment inputs come from the benchmark's hand
+  judgments where they exist, otherwise from a segment default marked
+  `segment_default`.
+- **Boom panel.** `data/analogs/panel_firms.csv` lists 81 firms from four
+  post-2009 booms (crypto miners, solar, shale, SPAC-funded EVs). Each 10-K a
+  firm filed inside its boom is one firm-year. The label is the model's
+  default definition within 12 months: an 8-K reporting bankruptcy (item
+  1.03) or a close at or below 10% of the observation-date close. Firm-years
+  with no sign the firm was still followed a year later are left out of the
+  fit. The `expected` column (failed or survived) was written from memory
+  and is only a cross-check, never a label.
+- **Fit.** Penalised logistic regression on the six financial features
+  (runway, revenue, gross margin, rate sensitivity, leverage, collateral),
+  with a separate intercept per boom and a normal prior of sd 0.15 per weight
+  centred on today's hand weights. Judgment features have no history and
+  keep their hand weights.
+- **Hold-out.** Leave one boom out; the crypto miners are the headline. The
+  fitted weights are compared with the hand weights on the same held-out
+  data. The result is reported as it comes out.
+- **Missing inputs.** A ratio with a missing input now scores neutral (3)
+  instead of falling back to its zero-denominator value; missing revenue
+  growth on recurring revenue scores 3 instead of 4. Results for complete
+  inputs are unchanged.
+
+Status: the code, lists and tests are in place. The SEC refuses downloads
+from the cloud environment this was built in, so the filings are pulled
+locally with `tools/fetch_sec.py` (README, "Running the SEC pull"). Results
+go here once that pull is in.
+
 ## 7. Parameter log
 
 All parameters live in `config/model.toml`. Each should gain a source, date
@@ -261,3 +299,7 @@ and owner before results are used.
 | Broadcom `revenue_elasticity` (data/universe/stocks.csv) | 0.66 / 0.79 / 0.92 | Chip-designer band x AI share of FY2027 revenue (65.7%) | 2026-11-17 | Derived |
 | Oracle `revenue_elasticity` (data/universe/stocks.csv) | 0.50 / 0.65 / 0.80 | Half the neocloud band | 2026-11-17 | Judgment |
 | `PD_FLOOR` (ai_eq/universe.py) | 3 basis points | Basel minimum PD; floor for the tail-check log-odds gap only | 2026-11-17 | Convention |
+| `TAU` (ai_pd/fit.py) | 0.15 per weight | Judgment: hand weights move only with clear evidence | 2026-11-17 | Placeholder |
+| `ALPHA_SD` (ai_pd/fit.py) | 2.0 log-odds | Weak prior on boom intercepts | 2026-11-17 | Convention |
+| `PANEL_JUDGMENTS` (ai_pd/panel.py) | floating debt 25%, liquidation haircut 50% | Judgment; enter rate sensitivity and collateral for panel firms | 2026-11-17 | Placeholder |
+| `FOLLOW_DAYS` (ai_pd/panel.py) | 300 days | A filing this long after the observation counts as the firm still followed | 2026-11-17 | Convention |

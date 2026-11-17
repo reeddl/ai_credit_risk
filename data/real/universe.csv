@@ -1,0 +1,70 @@
+company_id,ticker,name,segment,fit,build,reason
+nvidia,NVDA,NVIDIA,chip_designer,good,xbrl,Fabless AI accelerator designer
+amd,AMD,Advanced Micro Devices,chip_designer,good,xbrl,Fabless CPU and GPU designer
+broadcom,AVGO,Broadcom,chip_designer,approximate,xbrl,Custom AI chips plus networking and a large software business
+marvell,MRVL,Marvell Technology,chip_designer,good,xbrl,Custom AI chips and data center interconnect
+qualcomm,QCOM,Qualcomm,chip_designer,approximate,xbrl,Mostly phone chips and licensing; small data center line
+arm,ARM,Arm Holdings,chip_designer,approximate,xbrl,CPU designs licensed into data center and edge chips
+astera_labs,ALAB,Astera Labs,chip_designer,good,xbrl,Connectivity chips for AI servers
+credo,CRDO,Credo Technology,chip_designer,good,xbrl,High-speed cables and chips for AI clusters
+tsmc,TSM,TSMC,fab_equipment,good,hand,Leading-edge foundry; files IFRS in TWD so kept from the hand-built set
+sk_hynix,000660.KS,SK Hynix,fab_equipment,good,hand,HBM memory maker; not an SEC filer so kept from the hand-built set
+intel,INTC,Intel,fab_equipment,approximate,xbrl,Integrated maker with its own fabs and a foundry business
+micron,MU,Micron Technology,fab_equipment,good,xbrl,Memory maker and HBM supplier
+applied_materials,AMAT,Applied Materials,fab_equipment,good,xbrl,Wafer fab equipment
+lam_research,LRCX,Lam Research,fab_equipment,good,xbrl,Wafer fab equipment
+kla,KLAC,KLA,fab_equipment,good,xbrl,Process control equipment
+asml,ASML,ASML Holding,fab_equipment,good,xbrl,Lithography equipment; foreign filer so may not build from XBRL
+globalfoundries,GFS,GlobalFoundries,fab_equipment,good,xbrl,Foundry on mature nodes
+western_digital,WDC,Western Digital,fab_equipment,approximate,xbrl,Hard drives for data center storage
+seagate,STX,Seagate Technology,fab_equipment,approximate,xbrl,Hard drives for data center storage
+arista,ANET,Arista Networks,networking,good,xbrl,Data center switching
+cisco,CSCO,Cisco Systems,networking,approximate,xbrl,Enterprise and data center networking
+corning,GLW,Corning,networking,approximate,xbrl,Optical fiber and connectivity for data centers; also display glass
+coherent,COHR,Coherent,networking,good,xbrl,Optical transceivers for AI clusters
+lumentum,LITE,Lumentum,networking,good,xbrl,Optical components for AI clusters
+ciena,CIEN,Ciena,networking,good,xbrl,Optical networking between data centers
+super_micro,SMCI,Super Micro Computer,networking,approximate,xbrl,AI servers; no server segment so placed with networking
+dell,DELL,Dell Technologies,networking,approximate,xbrl,AI servers plus PCs; no server segment
+hpe,HPE,Hewlett Packard Enterprise,networking,approximate,xbrl,Servers and networking; no server segment
+coreweave,CRWV,CoreWeave,neocloud,good,xbrl,GPU cloud that rents compute
+oracle,ORCL,Oracle,neocloud,approximate,xbrl,Fast-growing GPU data center operator; most revenue still software
+nebius,NBIS,Nebius Group,neocloud,good,xbrl,GPU cloud; foreign filer so may not build from XBRL
+applied_digital,APLD,Applied Digital,neocloud,good,xbrl,Builds and leases AI data centers
+core_scientific,CORZ,Core Scientific,neocloud,approximate,xbrl,Bitcoin miner converting to AI hosting
+iren,IREN,IREN,neocloud,approximate,xbrl,Bitcoin miner adding GPU cloud
+terawulf,WULF,TeraWulf,neocloud,approximate,xbrl,Bitcoin miner leasing AI data center capacity
+cipher,CIFR,Cipher Mining,neocloud,approximate,xbrl,Bitcoin miner leasing AI data center capacity
+digital_realty,DLR,Digital Realty,neocloud,approximate,xbrl,Data center landlord rather than GPU renter
+amazon,AMZN,Amazon,neocloud,poor,xbrl,AWS is a cloud operator but Amazon is a diversified retailer and hyperscaler
+vistra,VST,Vistra,power,good,xbrl,Independent power producer selling to data centers
+constellation,CEG,Constellation Energy,power,good,xbrl,Nuclear generator selling to data centers
+talen,TLN,Talen Energy,power,good,xbrl,Nuclear and gas generator with a data center contract
+nrg,NRG,NRG Energy,power,good,xbrl,Power producer and retailer
+oklo,OKLO,Oklo,power,approximate,xbrl,Pre-revenue small reactor developer
+nuscale,SMR,NuScale Power,power,approximate,xbrl,Small reactor designer with little revenue
+bloom,BE,Bloom Energy,power,good,xbrl,Fuel cells for on-site data center power
+ge_vernova,GEV,GE Vernova,power,approximate,xbrl,Gas turbines and grid equipment
+vertiv,VRT,Vertiv,power,approximate,xbrl,Data center power and cooling equipment
+snowflake,SNOW,Snowflake,infra_software,good,xbrl,Data platform used for AI workloads
+mongodb,MDB,MongoDB,infra_software,good,xbrl,Database for AI applications
+datadog,DDOG,Datadog,infra_software,good,xbrl,Observability for cloud and AI workloads
+cloudflare,NET,Cloudflare,infra_software,approximate,xbrl,Network and edge inference platform
+palantir,PLTR,Palantir Technologies,app_maker,good,xbrl,AI platform and applications
+servicenow,NOW,ServiceNow,app_maker,approximate,xbrl,Workflow software adding AI agents
+salesforce,CRM,Salesforce,app_maker,approximate,xbrl,CRM software adding AI agents
+c3ai,AI,C3.ai,app_maker,good,xbrl,Enterprise AI applications
+soundhound,SOUN,SoundHound AI,app_maker,good,xbrl,Voice AI applications
+uipath,PATH,UiPath,app_maker,approximate,xbrl,Automation software adding AI agents
+applovin,APP,AppLovin,app_maker,approximate,xbrl,AI ad targeting platform
+meta,META,Meta Platforms,closed_model,poor,xbrl,Builds frontier models but is an advertising company
+microsoft,MSFT,Microsoft,closed_model,poor,xbrl,Hyperscaler and OpenAI partner; no segment fits
+alphabet,GOOGL,Alphabet,closed_model,poor,xbrl,Builds frontier models but is an advertising and cloud company
+sp_global,SPGI,S&P Global,data_strong_moat,good,xbrl,Proprietary financial data licensed to AI users
+moodys,MCO,Moody's,data_strong_moat,good,xbrl,Proprietary credit data
+factset,FDS,FactSet Research Systems,data_strong_moat,good,xbrl,Proprietary financial data
+reddit,RDDT,Reddit,data_strong_moat,approximate,xbrl,Licenses user content for model training; mostly ads
+innodata,INOD,Innodata,data_weak_moat,good,xbrl,Data labeling and annotation for model builders
+symbotic,SYM,Symbotic,robotics,good,xbrl,Warehouse robotics
+tesla,TSLA,Tesla,robotics,poor,xbrl,Cars and energy with robotics and autonomy ambitions
+softbank,9984.T,SoftBank Group,gpu_lessor,poor,hand,Holding company financing AI; not an SEC filer so kept from the hand-built set
