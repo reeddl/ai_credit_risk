@@ -1,0 +1,87 @@
+# Equity drawdown engine (ai_eq). Every number here is a placeholder unless
+# its row in docs/model_document.md section 7 says otherwise.
+#
+# A scenario is a cut c to the compute demand driver (config/driver.toml).
+# Per stock and case (low, central, high):
+#   leg cut        c_leg = driver leg cut for the stock's segment
+#   EPS elasticity e = revenue_elasticity * (gross_margin + margin_hit) / operating_margin
+#   shocked EPS    E = E0 * max(1 - e * c_leg, earnings_floor)
+#   implied growth g0 solves reverse DCF(E0, g0) = price
+#   shocked growth g = g0 - k * c_leg
+#   drawdown       DCF(E, g) / price - 1
+
+[valuation]
+discount_rate = 0.10        # per stock override: discount_rate column
+explicit_years = 4          # years at the implied growth after the first flow
+fade_years = 5              # linear fade from that growth to terminal growth
+terminal_growth = 0.03
+years_to_first_flow = 1.0   # per stock override: years_to_first_flow column
+earnings_floor = 0.05       # shocked EPS never falls below 5% of consensus
+
+# Growth revision coefficient k: how much post-peak growth is cut per unit
+# cut to the driver. Pooled placeholder until step 3 fits it per segment
+# from analog drawdowns; a [revision.segments.<name>] table overrides it.
+[revision.default]
+low = 0.0
+central = 0.25
+high = 0.5
+
+# Gross margin points lost per unit of revenue lost, as pricing power fades.
+[margin_hit.default]
+low = 0.02
+central = 0.08
+high = 0.15
+
+# Revenue elasticity to the driver, [low, central, high], and the driver leg
+# the segment's revenue follows. Segment names match config/model.toml.
+[segments.chip_designer]
+revenue_elasticity = [1.0, 1.2, 1.4]
+driver_leg = "hyperscaler"
+
+[segments.fab_equipment]
+revenue_elasticity = [1.0, 1.3, 1.6]
+driver_leg = "hyperscaler"
+
+[segments.networking]
+revenue_elasticity = [0.9, 1.1, 1.3]
+driver_leg = "hyperscaler"
+
+[segments.neocloud]
+revenue_elasticity = [1.0, 1.3, 1.6]
+driver_leg = "credit_funded"
+
+[segments.gpu_lessor]
+revenue_elasticity = [1.0, 1.3, 1.6]
+driver_leg = "credit_funded"
+
+[segments.power]
+revenue_elasticity = [0.2, 0.4, 0.6]
+driver_leg = "hyperscaler"
+
+[segments.infra_software]
+revenue_elasticity = [0.3, 0.5, 0.7]
+driver_leg = "hyperscaler"
+
+[segments.closed_model]
+revenue_elasticity = [0.5, 0.8, 1.1]
+driver_leg = "hyperscaler"
+
+[segments.open_weight_model]
+revenue_elasticity = [0.3, 0.6, 0.9]
+driver_leg = "hyperscaler"
+
+[segments.app_maker]
+revenue_elasticity = [0.2, 0.4, 0.6]
+driver_leg = "hyperscaler"
+
+[segments.data_strong_moat]
+revenue_elasticity = [0.2, 0.4, 0.6]
+driver_leg = "hyperscaler"
+
+[segments.data_weak_moat]
+revenue_elasticity = [0.4, 0.7, 1.0]
+driver_leg = "hyperscaler"
+
+[segments.robotics]
+revenue_elasticity = [0.1, 0.3, 0.5]
+driver_leg = "hyperscaler"

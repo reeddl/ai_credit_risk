@@ -63,6 +63,24 @@ To score real companies, pass a CSV with the columns in
 Outputs in `output/`: `companies.csv` (base, Merton and stressed PDs per
 company), `feature_scores.csv`, `sensitivity.csv` and `summary.md`.
 
+## Equity drawdown engine
+
+`ai_eq` answers a different question from the credit model: if the market
+cuts its estimate of AI compute demand by X%, how far does a stock fall?
+It runs off the same driver. Per stock, the EPS elasticity is revenue
+elasticity to the driver times operating leverage; a reverse DCF reads the
+growth today's price implies after next year; a cut lowers next year's EPS
+by `1 - elasticity * cut` (floored at 5% of consensus) and that growth by
+`k * cut`. Settings and placeholders are in `config/equity.toml`.
+
+```bash
+python -m ai_eq.run --stocks my_stocks.csv --cut mild --cut bust --out output_eq
+```
+
+The stock CSV needs `name, segment, price, eps_next, gross_margin,
+operating_margin`; see `ai_eq/inputs.py` for optional columns. Single-company
+runs keep their input files outside the repo.
+
 ## Benchmark against CDS
 
 `python -m ai_pd.benchmark` compares model PDs for 12 real companies with
@@ -81,7 +99,12 @@ benchmark/propose_weights.py` refits the chip and fab weight scale and writes
 | --- | --- |
 | `config/model.toml` | Default definition, segments, features, scenarios, grade map |
 | `config/driver.toml` | Compute demand driver: consensus capex, second-leg beta, named cuts, reference cut |
-| `ai_risk/driver.py` | The driver, shared with the equity drawdown engine to come |
+| `ai_risk/driver.py` | The driver, shared by the credit scenarios and the equity engine |
+| `config/equity.toml` | Equity engine: valuation settings, k, margin hit, revenue elasticity and driver leg per segment |
+| `ai_eq/exposure.py` | EPS elasticity to the driver |
+| `ai_eq/rdcf.py` | Reverse DCF: implied growth after next year, and scenario value |
+| `ai_eq/revision.py` | Growth revision coefficient k (placeholder until fitted) |
+| `ai_eq/drawdown.py` | Low, central and high drawdown per stock and cut; headline move per 10% cut |
 | `ai_pd/defaults.py` | Default events and markdown labeling |
 | `ai_pd/features.py` | Raw inputs to metrics to 1-5 scores |
 | `ai_pd/scorecard.py` | Log-odds combination, 1-year and 3-year PD |
