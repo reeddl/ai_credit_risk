@@ -1,0 +1,163 @@
+[
+ {
+  "company": "Vistra",
+  "ticker": "VST",
+  "period_end": {
+   "value": "2026-09-30",
+   "unit": "date",
+   "period": "Q3 2026 (qtr ended 2026-09-30)",
+   "source": "Vistra Q3 2026 results release (PRNewswire via MarketScreener)",
+   "url": "https://www.marketscreener.com/news/vistra-reports-third-quarter-2026-results-ce785fd2d98df121",
+   "date": "2026-11-06",
+   "note": ""
+  },
+  "report_date": {
+   "value": "2026-11-06",
+   "unit": "date",
+   "period": "Q3 2026 (qtr ended 2026-09-30)",
+   "source": "Vistra Q3 2026 results release (PRNewswire via MarketScreener)",
+   "url": "https://www.marketscreener.com/news/vistra-reports-third-quarter-2026-results-ce785fd2d98df121",
+   "date": "2026-11-06",
+   "note": ""
+  },
+  "cash_and_st_investments": {
+   "value": 2744,
+   "unit": "USD_m",
+   "period": "as of 2026-09-30",
+   "source": "stockanalysis.com quarterly balance sheet (SECONDARY)",
+   "url": "https://stockanalysis.com/stocks/vst/financials/balance-sheet/?p=quarterly",
+   "date": "2026-11-13",
+   "note": "Cash and equivalents 2,743 (also in the release's liquidity section) + trading securities 1"
+  },
+  "total_debt": {
+   "value": 21768,
+   "unit": "USD_m",
+   "period": "as of 2026-09-30",
+   "source": "stockanalysis.com quarterly balance sheet (SECONDARY)",
+   "url": "https://stockanalysis.com/stocks/vst/financials/balance-sheet/?p=quarterly",
+   "date": "2026-11-13",
+   "note": "Current portion of long-term debt 3,499 + long-term debt 18,269; no short-term borrowings shown"
+  },
+  "debt_due_within_24m": {
+   "value": 3499,
+   "unit": "USD_m",
+   "period": "as of 2026-09-30",
+   "source": "stockanalysis.com quarterly balance sheet (SECONDARY)",
+   "url": "https://stockanalysis.com/stocks/vst/financials/balance-sheet/?p=quarterly",
+   "date": "2026-11-13",
+   "note": "Current portion only (due within 12 months); no 13-24 month schedule found, so an understatement"
+  },
+  "total_assets": {
+   "value": 45029,
+   "unit": "USD_m",
+   "period": "as of 2026-09-30",
+   "source": "stockanalysis.com quarterly balance sheet (SECONDARY)",
+   "url": "https://stockanalysis.com/stocks/vst/financials/balance-sheet/?p=quarterly",
+   "date": "2026-11-13",
+   "note": ""
+  },
+  "ppe_net": {
+   "value": 17599,
+   "unit": "USD_m",
+   "period": "as of 2026-09-30",
+   "source": "stockanalysis.com quarterly balance sheet (SECONDARY)",
+   "url": "https://stockanalysis.com/stocks/vst/financials/balance-sheet/?p=quarterly",
+   "date": "2026-11-13",
+   "note": ""
+  },
+  "employees": {
+   "value": 6390,
+   "unit": "count",
+   "period": "latest disclosed",
+   "source": "stockanalysis.com company profile (SECONDARY, S&P Global data)",
+   "url": "https://stockanalysis.com/stocks/vst/company/",
+   "date": "2026-10-15",
+   "note": "Date of count not stated"
+  },
+  "revenue_latest_quarter": {
+   "value": 6347,
+   "unit": "USD_m",
+   "period": "Q3 2026",
+   "source": "Vistra Q3 2026 results release (PRNewswire via MarketScreener)",
+   "url": "https://www.marketscreener.com/news/vistra-reports-third-quarter-2026-results-ce785fd2d98df121",
+   "date": "2026-11-06",
+   "note": "Operating revenues"
+  },
+  "revenue_same_quarter_prior_year": {
+   "value": 4971,
+   "unit": "USD_m",
+   "period": "Q3 2025",
+   "source": "Vistra Q3 2026 results release (PRNewswire via MarketScreener)",
+   "url": "https://www.marketscreener.com/news/vistra-reports-third-quarter-2026-results-ce785fd2d98df121",
+   "date": "2026-11-06",
+   "note": "Operating revenues"
+  },
+  "revenue_ttm": {
+   "value": 20588,
+   "unit": "USD_m",
+   "period": "4Q to 2026-09-30",
+   "source": "MarketScreener FY2025 net sales; Vistra Q3 2026 results release",
+   "url": "https://www.marketscreener.com/news/vistra-reports-third-quarter-2026-results-ce785fd2d98df121 | https://www.marketscreener.com/quote/stock/VISTRA-CORP-34858180/finances/",
+   "date": "2026-11-06",
+   "note": "Derived: FY2025 17,738 - 9M 2025 13,154 + 9M 2026 16,004"
+  },
+  "operating_cash_flow_quarter": {
+   "value": 2108,
+   "unit": "USD_m",
+   "period": "Q3 2026",
+   "source": "Vistra Q3 2026 results release; Q2 2026 10-Q (stocktitan summary, SECONDARY)",
+   "url": "https://www.marketscreener.com/news/vistra-reports-third-quarter-2026-results-ce785fd2d98df121 | https://www.stocktitan.net/sec-filings/VST/10-q-vistra-corp-quarterly-earnings-report-1ad73ce9d9e7.html",
+   "date": "2026-11-06",
+   "note": "Derived: 9M 2026 4,330 - 6M 2026 2,222"
+  },
+  "capex_quarter": {
+   "value": 747,
+   "unit": "USD_m",
+   "period": "Q3 2026",
+   "source": "Vistra Q3 2026 results release; Q2 2026 10-Q (stocktitan summary, SECONDARY)",
+   "url": "https://www.marketscreener.com/news/vistra-reports-third-quarter-2026-results-ce785fd2d98df121 | https://www.stocktitan.net/sec-filings/VST/10-q-vistra-corp-quarterly-earnings-report-1ad73ce9d9e7.html",
+   "date": "2026-11-06",
+   "note": "Derived: 9M 2026 2,319 - 6M 2026 1,572; includes nuclear fuel purchases and LTSA prepayments"
+  },
+  "market_cap": {
+   "value": 45093,
+   "unit": "USD_m",
+   "period": "close 2026-11-13",
+   "source": "stockanalysis.com statistics and quote pages (SECONDARY)",
+   "url": "https://stockanalysis.com/stocks/vst/statistics/ | https://stockanalysis.com/stocks/vst/",
+   "date": "2026-11-13",
+   "note": "Derived: 133.01 x 339.0m shares (42.31bn market cap at 124.80 on Nov 6)"
+  },
+  "share_price_current": {
+   "value": 133.01,
+   "unit": "USD",
+   "period": "close 2026-11-13",
+   "source": "stockanalysis.com quote page (SECONDARY)",
+   "url": "https://stockanalysis.com/stocks/vst/",
+   "date": "2026-11-13",
+   "note": ""
+  },
+  "share_price_52w_high": {
+   "value": 189.29,
+   "unit": "USD",
+   "period": "52 weeks to 2026-11-13",
+   "source": "stockanalysis.com quote page (SECONDARY)",
+   "url": "https://stockanalysis.com/stocks/vst/",
+   "date": "2026-11-13",
+   "note": "52-week low 110.89"
+  },
+  "equity_vol_historical": {
+   "value": 0.5519,
+   "unit": "annualized_fraction",
+   "period": "180-day close-to-close HV",
+   "source": "alphaquery.com (SECONDARY)",
+   "url": "https://www.alphaquery.com/stock/VST/volatility-option-statistics/180-day/historical-volatility",
+   "date": "2026-11-16",
+   "note": ""
+  },
+  "fx_to_usd": {
+   "value": 1.0,
+   "note": "USD reporter"
+  }
+ }
+]

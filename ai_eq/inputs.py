@@ -34,7 +34,10 @@ def _band(row, stem):
 
 
 def read_stocks(path: str | Path) -> list[Stock]:
-    df = pd.read_csv(path)
+    return stocks_from_frame(pd.read_csv(path))
+
+
+def stocks_from_frame(df: pd.DataFrame) -> list[Stock]:
     missing = [c for c in REQUIRED if c not in df.columns]
     if missing:
         raise ValueError(f"missing columns: {missing}")
