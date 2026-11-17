@@ -5,13 +5,53 @@ Each scenario does two things:
    which changes its feature scores and its Merton inputs.
 2. Its severity switches on the segment gamma term in the scorecard, for
    segment-wide effects the features don't capture.
+
+A scenario with a ``driver_leg`` is tied to the shared compute demand driver
+(``ai_risk.driver``). Its written shock sizes and severity apply at the
+driver's reference cut; at another cut they scale by ``Driver.shock_scale``.
+Passing ``cut=None`` uses the reference cut, which reproduces version 1.
 """
 
 from __future__ import annotations
 
 import pandas as pd
 
+from ai_risk.driver import Driver, load_driver
+
 from .config import ModelConfig
+
+# Raw-input shocks that scale with the driver. Each is a fractional change,
+# floored so a large cut cannot push a quantity below zero.
+SCALED_KEYS = ("gpu_price_change", "utilisation_change", "revenue_change", "growth_change")
+SHOCK_FLOOR = -0.95
+
+_DEFAULT_DRIVER: Driver | None = None
+
+
+def default_driver() -> Driver:
+    global _DEFAULT_DRIVER
+    if _DEFAULT_DRIVER is None:
+        _DEFAULT_DRIVER = load_driver()
+    return _DEFAULT_DRIVER
+
+
+def scale_for(part: str, cfg: ModelConfig, cut: float | str | None = None, driver: Driver | None = None) -> float:
+    """Multiplier on a single scenario's shocks and severity at this cut."""
+    leg = cfg.scenarios[part].get("driver_leg")
+    if leg is None:
+        return 1.0
+    return (driver or default_driver()).shock_scale(cut, leg)
+
+
+def scaled_scenario(part: str, cfg: ModelConfig, cut: float | str | None = None, driver: Driver | None = None) -> dict:
+    """A single scenario's settings with its driver-linked shocks scaled."""
+    sc = dict(cfg.scenarios[part])
+    k = scale_for(part, cfg, cut, driver)
+    for key in SCALED_KEYS:
+        if key in sc:
+            sc[key] = max(sc[key] * k, SHOCK_FLOOR)
+    sc["severity"] = sc.get("severity", 1.0) * k
+    return sc
 
 # Which scorecard gamma each single scenario drives.
 DRIVER_OF = {
@@ -27,13 +67,15 @@ def _parts(name: str, cfg: ModelConfig) -> list[str]:
     return list(sc["combine"]) if "combine" in sc else [name]
 
 
-def severities(name: str, cfg: ModelConfig) -> dict[str, float]:
+def severities(
+    name: str, cfg: ModelConfig, cut: float | str | None = None, driver: Driver | None = None
+) -> dict[str, float]:
     out: dict[str, float] = {}
     for part in _parts(name, cfg):
-        driver = DRIVER_OF.get(part)
-        if driver is None:
+        gamma = DRIVER_OF.get(part)
+        if gamma is None:
             raise ValueError(f"scenario {part} has no scorecard driver")
-        out[driver] = out.get(driver, 0.0) + cfg.scenarios[part].get("severity", 1.0)
+        out[gamma] = out.get(gamma, 0.0) + scaled_scenario(part, cfg, cut, driver)["severity"]
     return out
 
 
@@ -46,7 +88,9 @@ def _apply_one(df: pd.DataFrame, sc: dict) -> pd.DataFrame:
     util = sc.get("utilisation_change", 0.0)
     if price or util:
         exposed = out["compute_revenue_share"] * (1.0 - out["backlog_cover"])
-        rev_factor = (1.0 + (price + util) * exposed).clip(lower=0.0)
+        # Floored like the single shocks: revenue that hit exactly zero would
+        # be scored as pre-revenue (neutral), which reads as safer.
+        rev_factor = (1.0 + (price + util) * exposed).clip(lower=1.0 + SHOCK_FLOOR)
         lost_revenue = out["revenue_annual"] * (1.0 - rev_factor)
         costs = out["revenue_annual"] * (1.0 - out["gross_margin"])
         new_rev = out["revenue_annual"] * rev_factor
@@ -89,8 +133,14 @@ def _apply_one(df: pd.DataFrame, sc: dict) -> pd.DataFrame:
     return out
 
 
-def apply_scenario(df: pd.DataFrame, name: str, cfg: ModelConfig) -> pd.DataFrame:
+def apply_scenario(
+    df: pd.DataFrame,
+    name: str,
+    cfg: ModelConfig,
+    cut: float | str | None = None,
+    driver: Driver | None = None,
+) -> pd.DataFrame:
     out = df
     for part in _parts(name, cfg):
-        out = _apply_one(out, cfg.scenarios[part])
+        out = _apply_one(out, scaled_scenario(part, cfg, cut, driver))
     return out

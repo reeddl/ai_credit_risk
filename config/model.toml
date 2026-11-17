@@ -239,6 +239,11 @@ weight = 0.05
 # Scenarios. severity scales the segment gamma term. The other keys move the
 # company's raw inputs, which re-scores its features. Shock sizes are
 # parameters set from the analog episodes, not forecasts.
+#
+# driver_leg links a scenario to the shared compute demand driver
+# (config/driver.toml). Its shock sizes and severity, as written here, apply
+# at the driver's reference cut and scale in proportion to the cut on that
+# leg. Scenarios with no driver_leg keep fixed sizes.
 # ---------------------------------------------------------------------------
 
 [scenarios.compute_glut]
@@ -246,12 +251,14 @@ description = "GPU rental prices fall sharply and utilisation drops"
 severity = 1.0
 gpu_price_change = -0.40
 utilisation_change = -0.20
+driver_leg = "credit_funded"
 
 [scenarios.demand_stall]
 description = "Enterprise AI spending flattens; model API revenue misses plans"
 severity = 1.0
 revenue_change = -0.20
 growth_change = -0.30
+driver_leg = "hyperscaler"
 
 [scenarios.funding_freeze]
 description = "Venture and private credit for AI dries up for 18 to 24 months"
